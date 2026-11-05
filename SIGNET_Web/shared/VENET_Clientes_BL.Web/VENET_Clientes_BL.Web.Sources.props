@@ -1,0 +1,9 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Clientes\VENET_Clientes_BL\ClientesEntregasManager.cs" Link="Original\ClientesEntregasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Clientes\VENET_Clientes_BL\ClientesDescuentosManager.cs" Link="Original\ClientesDescuentosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Clientes\VENET_Clientes_BL\ClientesContactosManager.cs" Link="Original\ClientesContactosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Clientes\VENET_Clientes_BL\ClientesManager.cs" Link="Original\ClientesManager.cs" />
+  </ItemGroup>
+</Project>

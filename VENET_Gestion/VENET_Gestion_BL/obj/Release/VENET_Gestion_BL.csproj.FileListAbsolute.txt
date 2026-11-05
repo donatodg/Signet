@@ -1,0 +1,12 @@
+E:\ProyectosTeam\Builds\VENET_Gestion_BL.dll
+E:\ProyectosTeam\Builds\VENET_Gestion_BL.pdb
+E:\ProyectosTeam\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Gestion_BL.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Gestion_BL.dll
+E:\ProyectosTeam\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Gestion_BL.pdb
+E:\Proyectos\Builds\VENET_Gestion_BL.dll
+E:\Proyectos\Builds\VENET_Gestion_BL.pdb
+E:\Proyectos\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Gestion_BL.dll
+E:\Proyectos\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Gestion_BL.pdb
+E:\Proyectos\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Gestion_BL.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Gestion_BL.csproj.CoreCompileInputs.cache
+E:\Proyectos\VENET_Gestion\VENET_Gestion_BL\obj\Release\VENET_Ge.BC8F22A3.Up2Date

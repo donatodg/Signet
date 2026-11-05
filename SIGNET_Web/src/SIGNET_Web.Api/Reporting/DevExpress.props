@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <DevExpressRuntimeDir Condition="'$(DevExpressRuntimeDir)' == ''">$(MSBuildThisFileDirectory)..\..\..\..\VENET_Informes\VENET_Informes_UI\bin\Debug</DevExpressRuntimeDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(DevExpressRuntimeDir)\DevExpress.*v23.2*.dll">
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CheckReportingRuntime" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(DevExpressRuntimeDir)\DevExpress.XtraReports.v23.2.dll')"
+           Text="Falta DevExpress Reporting 23.2. Configure DevExpressRuntimeDir con la carpeta de los ensamblados licenciados." />
+  </Target>
+</Project>

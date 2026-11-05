@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <Reference Include="System.Data.Entity" />
+  </ItemGroup>
+  <Import Project="VENET_Tesoreria_BL.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_Tesoreria_BL</AssemblyName>
+    <RootNamespace>VENET_Tesoreria_BL</RootNamespace>
+  </PropertyGroup>
+</Project>
+

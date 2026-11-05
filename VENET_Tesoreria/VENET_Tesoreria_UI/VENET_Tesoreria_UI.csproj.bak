@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C76FDC66-6793-47E8-8144-34F5573E06B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_Tesoreria_UI</RootNamespace>
+    <AssemblyName>VENET_Tesoreria_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VENET_Common">
+      <HintPath>..\..\..\ErsaNET\Builds\VENET_Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBoletaDepositoEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoletaDepositoEfectivo.Designer.cs">
+      <DependentUpon>frmBoletaDepositoEfectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBoletasDepositos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoletasDepositos.Designer.cs">
+      <DependentUpon>frmBoletasDepositos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBoletasDepositos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoletasDepositos_AddMod.Designer.cs">
+      <DependentUpon>frmBoletasDepositos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajas.Designer.cs">
+      <DependentUpon>frmCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajas_AddMod.Designer.cs">
+      <DependentUpon>frmCajas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequeDescuento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequeDescuento.Designer.cs">
+      <DependentUpon>frmChequeDescuento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequeDescuento_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequeDescuento_AddMod.Designer.cs">
+      <DependentUpon>frmChequeDescuento_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequesPropios_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequesPropios_AddMod.Designer.cs">
+      <DependentUpon>frmChequesPropios_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequesTercerosRechazo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequesTercerosRechazo.Designer.cs">
+      <DependentUpon>frmChequesTercerosRechazo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequesPropios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequesPropios.Designer.cs">
+      <DependentUpon>frmChequesPropios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequeTerceros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequeTerceros.Designer.cs">
+      <DependentUpon>frmChequeTerceros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequeTerceros_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequeTerceros_AddMod.Designer.cs">
+      <DependentUpon>frmChequeTerceros_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntidadesCtaCte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntidadesCtaCte.Designer.cs">
+      <DependentUpon>frmEntidadesCtaCte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntidadesCtaCteSaldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntidadesCtaCteSaldos.Designer.cs">
+      <DependentUpon>frmEntidadesCtaCteSaldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntidadesCtaCte_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntidadesCtaCte_AddMod.Designer.cs">
+      <DependentUpon>frmEntidadesCtaCte_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspecies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspecies.Designer.cs">
+      <DependentUpon>frmEspecies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspeciesCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspeciesCotizaciones.Designer.cs">
+      <DependentUpon>frmEspeciesCotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspeciesCtaCte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspeciesCtaCte.Designer.cs">
+      <DependentUpon>frmEspeciesCtaCte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspeciesCtaCteSaldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspeciesCtaCteSaldos.Designer.cs">
+      <DependentUpon>frmEspeciesCtaCteSaldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspeciesCtaCte_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspeciesCtaCte_AddMod.Designer.cs">
+      <DependentUpon>frmEspeciesCtaCte_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspecies_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspecies_AddMod.Designer.cs">
+      <DependentUpon>frmEspecies_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirmantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirmantes.Designer.cs">
+      <DependentUpon>frmFirmantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirmantes_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirmantes_AddMod.Designer.cs">
+      <DependentUpon>frmFirmantes_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaPagos.Designer.cs">
+      <DependentUpon>frmListaPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaPagos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaPagos_AddMod.Designer.cs">
+      <DependentUpon>frmListaPagos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPago.Designer.cs">
+      <DependentUpon>frmOrdenesPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPagoComprobantes_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPagoComprobantes_AddMod.Designer.cs">
+      <DependentUpon>frmOrdenesPagoComprobantes_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPagoDetallePF_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPagoDetallePF_AddMod.Designer.cs">
+      <DependentUpon>frmOrdenesPagoDetallePF_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPagoDetalle_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPagoDetalle_AddMod.Designer.cs">
+      <DependentUpon>frmOrdenesPagoDetalle_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPago_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPago_AddMod.Designer.cs">
+      <DependentUpon>frmOrdenesPago_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaPagosDetalle_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaPagosDetalle_AddMod.Designer.cs">
+      <DependentUpon>frmListaPagosDetalle_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPago_ReporteCompleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPago_ReporteCompleto.Designer.cs">
+      <DependentUpon>frmOrdenesPago_ReporteCompleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReciboDetallePF_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReciboDetallePF_AddMod.Designer.cs">
+      <DependentUpon>frmReciboDetallePF_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReciboDetalle_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReciboDetalle_AddMod.Designer.cs">
+      <DependentUpon>frmReciboDetalle_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecibos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecibos.Designer.cs">
+      <DependentUpon>frmRecibos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecibosComprobantes_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecibosComprobantes_AddMod.Designer.cs">
+      <DependentUpon>frmRecibosComprobantes_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecibos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecibos_AddMod.Designer.cs">
+      <DependentUpon>frmRecibos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecibos_ReporteCompleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecibos_ReporteCompleto.Designer.cs">
+      <DependentUpon>frmRecibos_ReporteCompleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRendiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRendiciones.Designer.cs">
+      <DependentUpon>frmRendiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRendicionesDetalle_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRendicionesDetalle_AddMod.Designer.cs">
+      <DependentUpon>frmRendicionesDetalle_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRendicionesPorConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRendicionesPorConcepto.Designer.cs">
+      <DependentUpon>frmRendicionesPorConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRendiciones_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRendiciones_AddMod.Designer.cs">
+      <DependentUpon>frmRendiciones_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoComprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoComprobante.Designer.cs">
+      <DependentUpon>frmTipoComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoComprobante_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoComprobante_AddMod.Designer.cs">
+      <DependentUpon>frmTipoComprobante_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferencias.Designer.cs">
+      <DependentUpon>frmTransferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferencia_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferencia_OLD.Designer.cs">
+      <DependentUpon>frmTransferencia_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVales.Designer.cs">
+      <DependentUpon>frmVales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValesMasivo_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValesMasivo_AddMod.Designer.cs">
+      <DependentUpon>frmValesMasivo_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValesTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValesTransferencia.Designer.cs">
+      <DependentUpon>frmValesTransferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVales_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVales_AddMod.Designer.cs">
+      <DependentUpon>frmVales_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBoletaDepositoEfectivo.resx">
+      <DependentUpon>frmBoletaDepositoEfectivo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBoletasDepositos.resx">
+      <DependentUpon>frmBoletasDepositos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBoletasDepositos_AddMod.resx">
+      <DependentUpon>frmBoletasDepositos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajas.resx">
+      <DependentUpon>frmCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajas_AddMod.resx">
+      <DependentUpon>frmCajas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequeDescuento.resx">
+      <DependentUpon>frmChequeDescuento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequeDescuento_AddMod.resx">
+      <DependentUpon>frmChequeDescuento_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequesPropios_AddMod.resx">
+      <DependentUpon>frmChequesPropios_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequesTercerosRechazo.resx">
+      <DependentUpon>frmChequesTercerosRechazo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequesPropios.resx">
+      <DependentUpon>frmChequesPropios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequeTerceros.resx">
+      <DependentUpon>frmChequeTerceros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequeTerceros_AddMod.resx">
+      <DependentUpon>frmChequeTerceros_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntidadesCtaCte.resx">
+      <DependentUpon>frmEntidadesCtaCte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntidadesCtaCteSaldos.resx">
+      <DependentUpon>frmEntidadesCtaCteSaldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntidadesCtaCte_AddMod.resx">
+      <DependentUpon>frmEntidadesCtaCte_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspecies.resx">
+      <DependentUpon>frmEspecies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspeciesCotizaciones.resx">
+      <DependentUpon>frmEspeciesCotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspeciesCtaCte.resx">
+      <DependentUpon>frmEspeciesCtaCte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspeciesCtaCteSaldos.resx">
+      <DependentUpon>frmEspeciesCtaCteSaldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspeciesCtaCte_AddMod.resx">
+      <DependentUpon>frmEspeciesCtaCte_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspecies_AddMod.resx">
+      <DependentUpon>frmEspecies_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirmantes.resx">
+      <DependentUpon>frmFirmantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirmantes_AddMod.resx">
+      <DependentUpon>frmFirmantes_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaPagos.resx">
+      <DependentUpon>frmListaPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaPagos_AddMod.resx">
+      <DependentUpon>frmListaPagos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPago.resx">
+      <DependentUpon>frmOrdenesPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPagoComprobantes_AddMod.resx">
+      <DependentUpon>frmOrdenesPagoComprobantes_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPagoDetallePF_AddMod.resx">
+      <DependentUpon>frmOrdenesPagoDetallePF_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPagoDetalle_AddMod.resx">
+      <DependentUpon>frmOrdenesPagoDetalle_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPago_AddMod.resx">
+      <DependentUpon>frmOrdenesPago_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaPagosDetalle_AddMod.resx">
+      <DependentUpon>frmListaPagosDetalle_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPago_ReporteCompleto.resx">
+      <DependentUpon>frmOrdenesPago_ReporteCompleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReciboDetallePF_AddMod.resx">
+      <DependentUpon>frmReciboDetallePF_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReciboDetalle_AddMod.resx">
+      <DependentUpon>frmReciboDetalle_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecibos.resx">
+      <DependentUpon>frmRecibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecibosComprobantes_AddMod.resx">
+      <DependentUpon>frmRecibosComprobantes_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecibos_AddMod.resx">
+      <DependentUpon>frmRecibos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecibos_ReporteCompleto.resx">
+      <DependentUpon>frmRecibos_ReporteCompleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRendiciones.resx">
+      <DependentUpon>frmRendiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRendicionesDetalle_AddMod.resx">
+      <DependentUpon>frmRendicionesDetalle_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRendicionesPorConcepto.resx">
+      <DependentUpon>frmRendicionesPorConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRendiciones_AddMod.resx">
+      <DependentUpon>frmRendiciones_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoComprobante.resx">
+      <DependentUpon>frmTipoComprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoComprobante_AddMod.resx">
+      <DependentUpon>frmTipoComprobante_AddMod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferencias.resx">
+      <DependentUpon>frmTransferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferencia_OLD.resx">
+      <DependentUpon>frmTransferencia_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVales.resx">
+      <DependentUpon>frmVales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValesMasivo_AddMod.resx">
+      <DependentUpon>frmValesMasivo_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValesTransferencia.resx">
+      <DependentUpon>frmValesTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVales_AddMod.resx">
+      <DependentUpon>frmVales_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GrupoErsa.snk" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.BoletaDepositoEfectivoManager+BoletasDepositosEfectivo.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.BoletaDepositoEfectivoManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.BoletasDepositosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.BoletasDepositosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.BoletasDepositosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.CajasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.CajasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.CajasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequeDescuentoManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequeDescuentoManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequeDescuentoManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequePropiosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequePropiosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequePropiosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequeTercerosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequeTercerosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ChequeTercerosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EntidadesCtaCteManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EntidadesCtaCteManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EntidadesCtaCteManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EntidadesCtaCteSaldosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EntidadesCtaCteSaldosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesCotizacionesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesCotizacionesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesCtaCteManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesCtaCteManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesCtaCteManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesCtaCteSaldosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesCtaCteSaldosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.EspeciesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.FirmantesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.FirmantesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.FirmantesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ListaPagosDetalleManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ListaPagosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ListaPagosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ListaPagosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPagoComprobantesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPagoComprobantesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPagoDetalleManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPagoManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPagoManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPagoManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPago_ReporteCompletoManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.OrdenesPago_ReporteCompletoManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ReciboDetalleManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RecibosComprobantesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RecibosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RecibosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RecibosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.Recibos_ReporteCompletoManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.Recibos_ReporteCompletoManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.Recibos_ReporteCompletoManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RendicionesDetalleManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RendicionesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RendicionesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RendicionesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RendicionesPorConceptoManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.RendicionesPorConceptoManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.TipoComprobanteManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.TipoComprobanteManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.TipoComprobanteManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.TransferenciasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ValesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ValesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ValesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Tesoreria_BL.ValesTransferenciaManager.datasource" />
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj">
+      <Project>{888ef654-ab63-4e91-afc1-fc3f60157dd2}</Project>
+      <Name>VENET_DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj">
+      <Project>{d390850f-7182-4492-a49d-a30c1f2791f9}</Project>
+      <Name>VENET_Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_General\VENET_General_UI\VENET_General_UI.csproj">
+      <Project>{1D014D19-8BB0-4AA4-8A2A-9DA5AB20F999}</Project>
+      <Name>VENET_General_UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Gestion\VENET_Gestion_BL\VENET_Gestion_BL.csproj">
+      <Project>{5088F8D0-C339-438F-80C0-4EA7866531F0}</Project>
+      <Name>VENET_Gestion_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Gestion\VENET_Gestion_Reports\VENET_Gestion_Reports.csproj">
+      <Project>{C319359F-D727-4913-BD65-938408B59EFA}</Project>
+      <Name>VENET_Gestion_Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VENET_Tesoreria_BL\VENET_Tesoreria_BL.csproj">
+      <Project>{5357ebd1-029c-4195-abfc-d4e74556f636}</Project>
+      <Name>VENET_Tesoreria_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VENET_Tesoreria_Reports\VENET_Tesoreria_Reports.csproj">
+      <Project>{2f51b313-8a7f-4951-a883-bfcf51f4253a}</Project>
+      <Name>VENET_Tesoreria_Reports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

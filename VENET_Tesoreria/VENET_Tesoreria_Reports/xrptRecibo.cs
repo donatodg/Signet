@@ -1,0 +1,30 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using DevExpress.XtraReports.UI;
+
+namespace VENET_Tesoreria_Reports
+{
+    public partial class xrptRecibo : DevExpress.XtraReports.UI.XtraReport
+    {
+        public xrptRecibo()
+        {
+            InitializeComponent();
+        }
+
+        private void xrLabel17_BeforePrint(object sender, CancelEventArgs e)
+        {
+            if (xrLabel17.Text == "DUPLICADO")
+            {
+                xrLabel9.Visible = false;
+                xrLabel10.Visible = false;
+                xrLabel11.Visible = false;
+                xrLabel2.Visible = false;
+                xrLabel6.Visible = false;
+                xrLabel7.Visible = false;
+                DetailReport.Visible = false;
+            }
+        }
+    }
+}

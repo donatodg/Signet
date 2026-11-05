@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://200.32.4.146/ERSA/TFC_Layer/vehiculo.asmx?wsdl" docRef="http://200.32.4.146/ERSA/TFC_Layer/vehiculo.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://200.32.4.146/ERSA/TFC_Layer/vehiculo.asmx" xmlns:q1="http://agilis.fics.tfc.sisorg.com.ar/" binding="q1:VehiculoSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://200.32.4.146/ERSA/TFC_Layer/vehiculo.asmx" xmlns:q2="http://agilis.fics.tfc.sisorg.com.ar/" binding="q2:VehiculoSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

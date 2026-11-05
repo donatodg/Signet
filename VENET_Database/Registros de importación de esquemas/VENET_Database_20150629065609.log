@@ -1,0 +1,71 @@
+29/06/2015 15:56:09	Este registro contiene información acerca de la operación de importación de esquema en el proyecto 'VENET_Database' del equipo 'ERSA-PC' por el usuario 'Diego'.
+29/06/2015 15:56:09	Se inició la importación del esquema de la base de datos.
+29/06/2015 15:56:23	Recopilando opciones de base de datos
+29/06/2015 15:56:23	Recopilando usuarios
+29/06/2015 15:56:23	Recopilando roles
+29/06/2015 15:56:23	Recopilando roles de aplicación
+29/06/2015 15:56:23	Recopilando pertenencias a roles
+29/06/2015 15:56:23	Recopilando grupos de archivos
+29/06/2015 15:56:23	Recopilando catálogos de texto completo
+29/06/2015 15:56:23	Recopilando ensamblados
+29/06/2015 15:56:23	Recopilando certificados
+29/06/2015 15:56:23	Recopilando claves asimétricas
+29/06/2015 15:56:23	Recopilando claves simétricas
+29/06/2015 15:56:23	Recopilando claves simétricas cifradas
+29/06/2015 15:56:23	Recopilando esquemas
+29/06/2015 15:56:23	Recopilando colecciones de esquemas XML
+29/06/2015 15:56:23	Recopilando tipos de datos definidos por el usuario
+29/06/2015 15:56:23	Recopilando tipos definidos por el usuario
+29/06/2015 15:56:23	Recopilando tipos de tabla
+29/06/2015 15:56:23	Recopilando claves únicas para tipos de tabla
+29/06/2015 15:56:23	Recopilando claves principales para tipos de tabla
+29/06/2015 15:56:23	Recopilando restricciones CHECK para tipos de tabla
+29/06/2015 15:56:23	Recopilando restricciones DEFAULT para tipos de tabla
+29/06/2015 15:56:23	Recopilando funciones de partición
+29/06/2015 15:56:23	Recopilando esquemas de partición
+29/06/2015 15:56:23	Recopilando funciones
+29/06/2015 15:56:24	Recopilando funciones cifradas
+29/06/2015 15:56:24	Recopilando agregados
+29/06/2015 15:56:24	Recopilando procedimientos
+29/06/2015 15:56:24	Recopilando procedimientos cifrados
+29/06/2015 15:56:24	Recopilando tablas
+29/06/2015 15:56:25	Recopilando claves principales
+29/06/2015 15:56:25	Recopilando restricciones UNIQUE
+29/06/2015 15:56:25	Recopilando claves externas
+29/06/2015 15:56:25	Recopilando restricciones DEFAULT
+29/06/2015 15:56:25	Recopilando restricciones CHECK
+29/06/2015 15:56:25	Recopilando vistas
+29/06/2015 15:56:25	Recopilando vistas cifradas
+29/06/2015 15:56:25	Recopilando índices
+29/06/2015 15:56:25	Recopilando estadísticas
+29/06/2015 15:56:25	Recopilando listas de palabras irrelevantes de índices de texto completo
+29/06/2015 15:56:25	Recopilando índices de texto completo
+29/06/2015 15:56:25	Recopilando índices espaciales
+29/06/2015 15:56:25	Recopilando índices XML
+29/06/2015 15:56:26	Recopilando desencadenadores cifrados
+29/06/2015 15:56:26	Recopilando desencadenadores
+29/06/2015 15:56:26	Recopilando DDL triggers cifrados y de CLR
+29/06/2015 15:56:26	Recopilando DDL triggers
+29/06/2015 15:56:26	Recopilando sinónimos
+29/06/2015 15:56:26	Recopilando valores predeterminados
+29/06/2015 15:56:26	Recopilando enlaces UDDT de restricción de datos
+29/06/2015 15:56:26	Recopilando reglas
+29/06/2015 15:56:26	Recopilando enlaces UDDT de restricción de datos
+29/06/2015 15:56:26	Recopilando tipos de mensaje
+29/06/2015 15:56:26	Recopilando colas
+29/06/2015 15:56:26	Recopilando contratos
+29/06/2015 15:56:26	Recopilando servicios
+29/06/2015 15:56:26	Recopilando notificaciones de eventos
+29/06/2015 15:56:26	Recopilando enlaces de servicio remoto
+29/06/2015 15:56:26	Recopilando prioridades de Broker
+29/06/2015 15:56:26	Recopilando firmas
+29/06/2015 15:56:26	Recopilando opciones de compresión de datos
+29/06/2015 15:56:26	Recopilando propiedades extendidas
+29/06/2015 15:56:26	Recopilando credenciales
+29/06/2015 15:56:26	Recopilando inicios de sesión
+29/06/2015 15:56:26	Recopilando auditorías de servidor
+29/06/2015 15:56:29	Buscando elementos duplicados en el proyecto
+29/06/2015 15:56:29	Ha finalizado el procesamiento de los elementos duplicados
+29/06/2015 15:56:32	Finalizó la importación de la base de datos.
+29/06/2015 15:56:32	Se guardó un resumen de la importación en la siguiente ubicación: D:\Proyectos\ErsaNET\VENET_Database\Registros de importación de esquemas\VENET_Database_20150629065609.log
+29/06/2015 15:56:32	Haga clic en Finalizar para continuar...

@@ -1,0 +1,59 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentasDetalleMultipleManager.cs" Link="Original\ComprobantesVentasDetalleMultipleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesCompras_IvaComprasManager.cs" Link="Original\ComprobantesCompras_IvaComprasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentas_IvaVentasManager.cs" Link="Original\ComprobantesVentas_IvaVentasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobanteVentaAsociadoManager.cs" Link="Original\ComprobanteVentaAsociadoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\DuplicaComprobanteManager.cs" Link="Original\DuplicaComprobanteManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\PedidosConfirmacionParcialManager.cs" Link="Original\PedidosConfirmacionParcialManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ControlGestionManager.cs" Link="Original\ControlGestionManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\PadronIIBB_DetalleManager.cs" Link="Original\PadronIIBB_DetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\PedidosEstadosManager.cs" Link="Original\PedidosEstadosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\PedidosManager.cs" Link="Original\PedidosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosActualizaPreciosCostoManager.cs" Link="Original\ProductosActualizaPreciosCostoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosActualizaListasPreciosManager.cs" Link="Original\ProductosActualizaListasPreciosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosActualizaPreciosManager.cs" Link="Original\ProductosActualizaPreciosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosComposicionTodosManager.cs" Link="Original\ProductosComposicionTodosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosComposicion_AddModManager.cs" Link="Original\ProductosComposicion_AddModManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosComposicionManager.cs" Link="Original\ProductosComposicionManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosCompuestosManager.cs" Link="Original\ProductosCompuestosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosDerivadosManager.cs" Link="Original\ProductosDerivadosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosListasPreciosImprimirManager.cs" Link="Original\ProductosListasPreciosImprimirManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosListasPreciosManager.cs" Link="Original\ProductosListasPreciosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosSinMovimientosManager.cs" Link="Original\ProductosSinMovimientosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesComprasDetalleManager.cs" Link="Original\ComprobantesComprasDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesComprasManager.cs" Link="Original\ComprobantesComprasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprasDocumentosModelos.cs" Link="Original\ComprasDocumentosModelos.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprasDocumentosLector.cs" Link="Original\ComprasDocumentosLector.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprasDocumentosService.cs" Link="Original\ComprasDocumentosService.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentasAProcesarManager.cs" Link="Original\ComprobantesVentasAProcesarManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentasConfirmacionParcialManager.cs" Link="Original\ComprobantesVentasConfirmacionParcialManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\CotizacionesManager.cs" Link="Original\CotizacionesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentasPresentacionManager.cs" Link="Original\ComprobantesVentasPresentacionManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesCompras_ReporteCompletoManager.cs" Link="Original\ComprobantesCompras_ReporteCompletoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentas_ReporteCompletoManager.cs" Link="Original\ComprobantesVentas_ReporteCompletoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\DepositosManager.cs" Link="Original\DepositosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\EntidadesUnidadNegociosManager.cs" Link="Original\EntidadesUnidadNegociosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\EntidadesEmpresasManager.cs" Link="Original\EntidadesEmpresasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\EntidadesImpuestosAlicuotasManager.cs" Link="Original\EntidadesImpuestosAlicuotasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\IvaAlicuotaManager.cs" Link="Original\IvaAlicuotaManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosActualizaStockManager.cs" Link="Original\ProductosActualizaStockManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosCategorias2Manager.cs" Link="Original\ProductosCategorias2Manager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosMovimientosManager.cs" Link="Original\ProductosMovimientosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosStockManager.cs" Link="Original\ProductosStockManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosHistorialPreciosManager.cs" Link="Original\ProductosHistorialPreciosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosManager.cs" Link="Original\ProductosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosUnidadVentaManager.cs" Link="Original\ProductosUnidadVentaManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ProductosCategoriasManager.cs" Link="Original\ProductosCategoriasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentasManager.cs" Link="Original\ComprobantesVentasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ComprobantesVentasDetalleManager.cs" Link="Original\ComprobantesVentasDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\ImpuestosAlicuotasManager.cs" Link="Original\ImpuestosAlicuotasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\TipoIvaConfiguracionManager.cs" Link="Original\TipoIvaConfiguracionManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\TipoImpuestosManager.cs" Link="Original\TipoImpuestosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\PadronIIBBManager.cs" Link="Original\PadronIIBBManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\VendedoresManager.cs" Link="Original\VendedoresManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\TipoIvaManager.cs" Link="Original\TipoIvaManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\FormasPagosManager.cs" Link="Original\FormasPagosManager.cs" />
+  </ItemGroup>
+</Project>

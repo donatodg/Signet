@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/">
+      <s:element name="GetTripulante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Legajo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripulanteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTripulanteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ABMTripulante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ABMTripulanteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ABMTripulanteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTripulanteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTripulante" />
+  </wsdl:message>
+  <wsdl:message name="GetTripulanteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTripulanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ABMTripulanteSoapIn">
+    <wsdl:part name="parameters" element="tns:ABMTripulante" />
+  </wsdl:message>
+  <wsdl:message name="ABMTripulanteSoapOut">
+    <wsdl:part name="parameters" element="tns:ABMTripulanteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TripulanteSoap">
+    <wsdl:operation name="GetTripulante">
+      <wsdl:input message="tns:GetTripulanteSoapIn" />
+      <wsdl:output message="tns:GetTripulanteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ABMTripulante">
+      <wsdl:input message="tns:ABMTripulanteSoapIn" />
+      <wsdl:output message="tns:ABMTripulanteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TripulanteSoap" type="tns:TripulanteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTripulante">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTripulante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ABMTripulante">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/ABMTripulante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TripulanteSoap12" type="tns:TripulanteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTripulante">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTripulante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ABMTripulante">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/ABMTripulante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Tripulante">
+    <wsdl:port name="TripulanteSoap" binding="tns:TripulanteSoap">
+      <soap:address location="http://200.32.4.146/ERSA/TFC_Layer/tripulante.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TripulanteSoap12" binding="tns:TripulanteSoap12">
+      <soap12:address location="http://200.32.4.146/ERSA/TFC_Layer/tripulante.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

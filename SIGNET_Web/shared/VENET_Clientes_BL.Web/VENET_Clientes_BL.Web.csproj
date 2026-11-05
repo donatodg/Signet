@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <Reference Include="PresentationCore" />
+  </ItemGroup>
+  <Import Project="VENET_Clientes_BL.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_Clientes_BL</AssemblyName>
+    <RootNamespace>VENET_Clientes_BL</RootNamespace>
+  </PropertyGroup>
+</Project>

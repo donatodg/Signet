@@ -1,0 +1,10 @@
+E:\ProyectosTeam\Builds\VENET_Tesoreria_BL.dll
+E:\ProyectosTeam\Builds\VENET_Tesoreria_BL.pdb
+E:\ProyectosTeam\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Release\VENET_Tesoreria_BL.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Release\VENET_Tesoreria_BL.dll
+E:\ProyectosTeam\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Release\VENET_Tesoreria_BL.pdb
+E:\Proyectos\Builds\VENET_Tesoreria_BL.dll
+E:\Proyectos\Builds\VENET_Tesoreria_BL.pdb
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Release\VENET_Tesoreria_BL.csprojResolveAssemblyReference.cache
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Release\VENET_Tesoreria_BL.dll
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Release\VENET_Tesoreria_BL.pdb

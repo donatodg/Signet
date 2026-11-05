@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#12306b"/>
+      <stop offset="1" stop-color="#1d5fa8"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0.2" cy="0.15" r="0.6">
+      <stop offset="0" stop-color="#4cc9f0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#4cc9f0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0.85" cy="0.85" r="0.6">
+      <stop offset="0" stop-color="#7b61ff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#7b61ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="l" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cc9f0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#4cc9f0" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#7b61ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <rect width="900" height="1200" fill="url(#grid)"/>
+  <rect width="900" height="1200" fill="url(#g1)"/>
+  <rect width="900" height="1200" fill="url(#g2)"/>
+  <g fill="none" stroke="url(#l)" stroke-width="1.5">
+    <path d="M-50 900 C 200 700, 400 1000, 950 600"/>
+    <path d="M-50 940 C 220 760, 420 1040, 950 660" opacity="0.7"/>
+    <path d="M-50 980 C 240 820, 440 1080, 950 720" opacity="0.5"/>
+    <path d="M-50 1020 C 260 880, 460 1120, 950 780" opacity="0.3"/>
+  </g>
+  <g transform="translate(450 420)">
+    <circle r="230" fill="none" stroke="#fff" stroke-opacity="0.08" stroke-width="1.5"/>
+    <circle r="160" fill="none" stroke="#fff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <circle r="90" fill="#ffffff" fill-opacity="0.06" stroke="#4cc9f0" stroke-opacity="0.6" stroke-width="2"/>
+    <g fill="#4cc9f0">
+      <circle cx="230" cy="0" r="7"/>
+      <circle cx="-115" cy="-199" r="5" fill="#7b61ff"/>
+      <circle cx="-80" cy="138" r="6" fill="#fff" fill-opacity="0.8"/>
+    </g>
+    <g fill="#fff" fill-opacity="0.85">
+      <rect x="-45" y="10" width="20" height="40" rx="4"/>
+      <rect x="-15" y="-15" width="20" height="65" rx="4" fill="#4cc9f0"/>
+      <rect x="15" y="-40" width="20" height="90" rx="4"/>
+    </g>
+  </g>
+</svg>

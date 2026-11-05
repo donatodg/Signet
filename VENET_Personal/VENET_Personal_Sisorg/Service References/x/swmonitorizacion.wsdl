@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://sw.smartmovepro.net/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://sw.smartmovepro.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://sw.smartmovepro.net/">
+      <s:element name="RecuperarVehiculosSinConfiguracionPorEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarVehiculosSinConfiguracionPorEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperarVehiculosSinConfiguracionPorEmpresaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarActualizarDespacho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionLinea" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionHorario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionServicio" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEquipo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroInternoVehiculo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="identificadorVehiculo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="patente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaVtv" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="legajoChofer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="identificadorChofer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="apellidoChofer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreChofer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="abreviaturaTipoDocumento" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoUsuarioPorEmpresa" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoOrigenDespacho" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraVencimientoLicencia" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="abreviaturaBanderaIda" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionTipoDistribucionHorariaIda" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="duracionIda" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraDesdeMediaVueltaIda" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraHastaMediaVueltaIda" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="stringDetalleDistribucionHorariaIda" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="abreviaturaBanderaRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionTipoDistribucionHorariaRetorno" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="duracionRetorno" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraDesdeMediaVueltaRetorno" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraHastaMediaVueltaRetorno" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="stringDetalleDistribucionHorariaRetorno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarActualizarDespachoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarActualizarDespachoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CortarDespachoPorIdentificadorVehiculo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="identificadorVehiculo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CortarDespachoPorIdentificadorVehiculoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CortarDespachoPorIdentificadorVehiculoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarDetalleCrucesPuntosDePaso">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraHasta" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarDetalleCrucesPuntosDePasoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperarDetalleCrucesPuntosDePasoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarEstadosActuales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="identificadorVehiculo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarEstadosActualesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperarEstadosActualesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarActualizarDespachoAcotado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionLinea" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionHorario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionServicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="identificadorVehiculo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="identificadorChofer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="abreviaturaBanderaIda" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionTipoDistribucionHorariaIda" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="duracionIda" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraDesdeMediaVueltaIda" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraHastaMediaVueltaIda" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="stringDetalleDistribucionHorariaIda" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="abreviaturaBanderaRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcionTipoDistribucionHorariaRetorno" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="duracionRetorno" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraDesdeMediaVueltaRetorno" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaHoraHastaMediaVueltaRetorno" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="stringDetalleDistribucionHorariaRetorno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarActualizarDespachoAcotadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarActualizarDespachoAcotadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarMensajeADispositivo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoDispositivo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarMensajeADispositivoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnviarMensajeADispositivoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarDetallesDeMensajeEnviado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEntidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoEmpresa" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoMensajeEnviado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarDetallesDeMensajeEnviadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperarDetallesDeMensajeEnviadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RecuperarVehiculosSinConfiguracionPorEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperarVehiculosSinConfiguracionPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarVehiculosSinConfiguracionPorEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperarVehiculosSinConfiguracionPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarActualizarDespachoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarActualizarDespacho" />
+  </wsdl:message>
+  <wsdl:message name="InsertarActualizarDespachoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarActualizarDespachoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortarDespachoPorIdentificadorVehiculoSoapIn">
+    <wsdl:part name="parameters" element="tns:CortarDespachoPorIdentificadorVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="CortarDespachoPorIdentificadorVehiculoSoapOut">
+    <wsdl:part name="parameters" element="tns:CortarDespachoPorIdentificadorVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarDetalleCrucesPuntosDePasoSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperarDetalleCrucesPuntosDePaso" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarDetalleCrucesPuntosDePasoSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperarDetalleCrucesPuntosDePasoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarEstadosActualesSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperarEstadosActuales" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarEstadosActualesSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperarEstadosActualesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarActualizarDespachoAcotadoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarActualizarDespachoAcotado" />
+  </wsdl:message>
+  <wsdl:message name="InsertarActualizarDespachoAcotadoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarActualizarDespachoAcotadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnviarMensajeADispositivoSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviarMensajeADispositivo" />
+  </wsdl:message>
+  <wsdl:message name="EnviarMensajeADispositivoSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviarMensajeADispositivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarDetallesDeMensajeEnviadoSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperarDetallesDeMensajeEnviado" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarDetallesDeMensajeEnviadoSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperarDetallesDeMensajeEnviadoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SWMonitorizacionSoap">
+    <wsdl:operation name="RecuperarVehiculosSinConfiguracionPorEmpresa">
+      <wsdl:input message="tns:RecuperarVehiculosSinConfiguracionPorEmpresaSoapIn" />
+      <wsdl:output message="tns:RecuperarVehiculosSinConfiguracionPorEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarActualizarDespacho">
+      <wsdl:input message="tns:InsertarActualizarDespachoSoapIn" />
+      <wsdl:output message="tns:InsertarActualizarDespachoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CortarDespachoPorIdentificadorVehiculo">
+      <wsdl:input message="tns:CortarDespachoPorIdentificadorVehiculoSoapIn" />
+      <wsdl:output message="tns:CortarDespachoPorIdentificadorVehiculoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarDetalleCrucesPuntosDePaso">
+      <wsdl:input message="tns:RecuperarDetalleCrucesPuntosDePasoSoapIn" />
+      <wsdl:output message="tns:RecuperarDetalleCrucesPuntosDePasoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarEstadosActuales">
+      <wsdl:input message="tns:RecuperarEstadosActualesSoapIn" />
+      <wsdl:output message="tns:RecuperarEstadosActualesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarActualizarDespachoAcotado">
+      <wsdl:input message="tns:InsertarActualizarDespachoAcotadoSoapIn" />
+      <wsdl:output message="tns:InsertarActualizarDespachoAcotadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensajeADispositivo">
+      <wsdl:input message="tns:EnviarMensajeADispositivoSoapIn" />
+      <wsdl:output message="tns:EnviarMensajeADispositivoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarDetallesDeMensajeEnviado">
+      <wsdl:input message="tns:RecuperarDetallesDeMensajeEnviadoSoapIn" />
+      <wsdl:output message="tns:RecuperarDetallesDeMensajeEnviadoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SWMonitorizacionSoap" type="tns:SWMonitorizacionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecuperarVehiculosSinConfiguracionPorEmpresa">
+      <soap:operation soapAction="http://sw.smartmovepro.net/RecuperarVehiculosSinConfiguracionPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarActualizarDespacho">
+      <soap:operation soapAction="http://sw.smartmovepro.net/InsertarActualizarDespacho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CortarDespachoPorIdentificadorVehiculo">
+      <soap:operation soapAction="http://sw.smartmovepro.net/CortarDespachoPorIdentificadorVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarDetalleCrucesPuntosDePaso">
+      <soap:operation soapAction="http://sw.smartmovepro.net/RecuperarDetalleCrucesPuntosDePaso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarEstadosActuales">
+      <soap:operation soapAction="http://sw.smartmovepro.net/RecuperarEstadosActuales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarActualizarDespachoAcotado">
+      <soap:operation soapAction="http://sw.smartmovepro.net/InsertarActualizarDespachoAcotado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensajeADispositivo">
+      <soap:operation soapAction="http://sw.smartmovepro.net/EnviarMensajeADispositivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarDetallesDeMensajeEnviado">
+      <soap:operation soapAction="http://sw.smartmovepro.net/RecuperarDetallesDeMensajeEnviado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SWMonitorizacionSoap12" type="tns:SWMonitorizacionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecuperarVehiculosSinConfiguracionPorEmpresa">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/RecuperarVehiculosSinConfiguracionPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarActualizarDespacho">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/InsertarActualizarDespacho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CortarDespachoPorIdentificadorVehiculo">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/CortarDespachoPorIdentificadorVehiculo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarDetalleCrucesPuntosDePaso">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/RecuperarDetalleCrucesPuntosDePaso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarEstadosActuales">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/RecuperarEstadosActuales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarActualizarDespachoAcotado">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/InsertarActualizarDespachoAcotado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensajeADispositivo">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/EnviarMensajeADispositivo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarDetallesDeMensajeEnviado">
+      <soap12:operation soapAction="http://sw.smartmovepro.net/RecuperarDetallesDeMensajeEnviado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SWMonitorizacion">
+    <wsdl:port name="SWMonitorizacionSoap" binding="tns:SWMonitorizacionSoap">
+      <soap:address location="http://sw.smartmovepro.net/modulomonitorizacion/swmonitorizacion.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SWMonitorizacionSoap12" binding="tns:SWMonitorizacionSoap12">
+      <soap12:address location="http://sw.smartmovepro.net/modulomonitorizacion/swmonitorizacion.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

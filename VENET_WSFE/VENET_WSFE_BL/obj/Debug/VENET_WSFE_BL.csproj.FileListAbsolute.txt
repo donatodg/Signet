@@ -1,0 +1,16 @@
+E:\ProyectosTeam\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\Builds\VENET_WSFE_BL.dll.config
+E:\ProyectosTeam\Builds\VENET_WSFE_BL.dll
+E:\ProyectosTeam\Builds\VENET_WSFE_BL.pdb
+E:\ProyectosTeam\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.dll
+E:\ProyectosTeam\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.pdb
+E:\Proyectos\Builds\VENET_WSFE_BL.dll.config
+E:\Proyectos\Builds\VENET_WSFE_BL.dll
+E:\Proyectos\Builds\VENET_WSFE_BL.pdb
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.dll
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.pdb
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.csproj.CoreCompileInputs.cache
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WS.A2DE4140.Up2Date
+C:\Signet\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.dll
+C:\Signet\VENET_WSFE\VENET_WSFE_BL\obj\Debug\VENET_WSFE_BL.pdb

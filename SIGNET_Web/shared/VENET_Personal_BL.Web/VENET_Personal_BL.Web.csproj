@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+  </ItemGroup>
+  <Import Project="VENET_Personal_BL.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_Personal_BL</AssemblyName>
+    <RootNamespace>VENET_Personal_BL</RootNamespace>
+  </PropertyGroup>
+</Project>

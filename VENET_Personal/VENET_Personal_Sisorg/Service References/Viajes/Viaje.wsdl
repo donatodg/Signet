@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/">
+      <s:element name="FMSNovedadTecnica_ABM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Parameters" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FMSNovedadTecnica_ABMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FMSNovedadTecnica_ABMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViajeByTripulante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TripulanteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViajeByTripulanteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetViajeByTripulanteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViajeByCustomSelection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViajeByCustomSelectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetViajeByCustomSelectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHabilitadosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosWithOcupacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosWithOcupacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHabilitadosWithOcupacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosByOrigenDestino">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="LocalidadOrigenID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="LocalidadDestinoID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosByOrigenDestinoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHabilitadosByOrigenDestinoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosByOrigenDestinoWithOcupacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="LocalidadOrigenID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="LocalidadDestinoID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosByOrigenDestinoWithOcupacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHabilitadosByOrigenDestinoWithOcupacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosByXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParamsXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHabilitadosByXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHabilitadosByXmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecorrido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecorridoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecorridoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPasajeros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPasajerosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPasajerosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripulantes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripulantesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTripulantesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServicios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiciosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehiculos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehiculosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehiculosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLineas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLineasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLineasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVueltas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVueltasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVueltasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetComentario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetComentarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetComentarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AsignarTripulante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TerminalOrigen" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TerminalDestino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TripulanteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UsuarioID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AsignarTripulanteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AsignarTripulanteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AsignarVehiculo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ViajeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TerminalOrigen" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TerminalDestino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="VehiculoID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UsuarioID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CargarAnticipos" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AsignarVehiculoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AsignarVehiculoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FMSNovedadTecnica_ABMSoapIn">
+    <wsdl:part name="parameters" element="tns:FMSNovedadTecnica_ABM" />
+  </wsdl:message>
+  <wsdl:message name="FMSNovedadTecnica_ABMSoapOut">
+    <wsdl:part name="parameters" element="tns:FMSNovedadTecnica_ABMResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetViajeByTripulanteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetViajeByTripulante" />
+  </wsdl:message>
+  <wsdl:message name="GetViajeByTripulanteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetViajeByTripulanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetViajeByCustomSelectionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetViajeByCustomSelection" />
+  </wsdl:message>
+  <wsdl:message name="GetViajeByCustomSelectionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetViajeByCustomSelectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHabilitados" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosWithOcupacionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosWithOcupacion" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosWithOcupacionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosWithOcupacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosByOrigenDestinoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosByOrigenDestino" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosByOrigenDestinoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosByOrigenDestinoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosByOrigenDestinoWithOcupacionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosByOrigenDestinoWithOcupacion" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosByOrigenDestinoWithOcupacionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosByOrigenDestinoWithOcupacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosByXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosByXml" />
+  </wsdl:message>
+  <wsdl:message name="GetHabilitadosByXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHabilitadosByXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecorridoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecorrido" />
+  </wsdl:message>
+  <wsdl:message name="GetRecorridoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecorridoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPasajerosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPasajeros" />
+  </wsdl:message>
+  <wsdl:message name="GetPasajerosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPasajerosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTripulantesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTripulantes" />
+  </wsdl:message>
+  <wsdl:message name="GetTripulantesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTripulantesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiciosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServicios" />
+  </wsdl:message>
+  <wsdl:message name="GetServiciosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVehiculosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehiculos" />
+  </wsdl:message>
+  <wsdl:message name="GetVehiculosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehiculosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLineasSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLineas" />
+  </wsdl:message>
+  <wsdl:message name="GetLineasSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLineasResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVueltasSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVueltas" />
+  </wsdl:message>
+  <wsdl:message name="GetVueltasSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVueltasResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetComentarioSoapIn">
+    <wsdl:part name="parameters" element="tns:GetComentario" />
+  </wsdl:message>
+  <wsdl:message name="GetComentarioSoapOut">
+    <wsdl:part name="parameters" element="tns:GetComentarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="AsignarTripulanteSoapIn">
+    <wsdl:part name="parameters" element="tns:AsignarTripulante" />
+  </wsdl:message>
+  <wsdl:message name="AsignarTripulanteSoapOut">
+    <wsdl:part name="parameters" element="tns:AsignarTripulanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="AsignarVehiculoSoapIn">
+    <wsdl:part name="parameters" element="tns:AsignarVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="AsignarVehiculoSoapOut">
+    <wsdl:part name="parameters" element="tns:AsignarVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ViajeSoap">
+    <wsdl:operation name="FMSNovedadTecnica_ABM">
+      <wsdl:input message="tns:FMSNovedadTecnica_ABMSoapIn" />
+      <wsdl:output message="tns:FMSNovedadTecnica_ABMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViajeByTripulante">
+      <wsdl:input message="tns:GetViajeByTripulanteSoapIn" />
+      <wsdl:output message="tns:GetViajeByTripulanteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViajeByCustomSelection">
+      <wsdl:input message="tns:GetViajeByCustomSelectionSoapIn" />
+      <wsdl:output message="tns:GetViajeByCustomSelectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitados">
+      <wsdl:input message="tns:GetHabilitadosSoapIn" />
+      <wsdl:output message="tns:GetHabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosWithOcupacion">
+      <wsdl:input message="tns:GetHabilitadosWithOcupacionSoapIn" />
+      <wsdl:output message="tns:GetHabilitadosWithOcupacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByOrigenDestino">
+      <wsdl:input message="tns:GetHabilitadosByOrigenDestinoSoapIn" />
+      <wsdl:output message="tns:GetHabilitadosByOrigenDestinoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByOrigenDestinoWithOcupacion">
+      <wsdl:input message="tns:GetHabilitadosByOrigenDestinoWithOcupacionSoapIn" />
+      <wsdl:output message="tns:GetHabilitadosByOrigenDestinoWithOcupacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByXml">
+      <wsdl:input message="tns:GetHabilitadosByXmlSoapIn" />
+      <wsdl:output message="tns:GetHabilitadosByXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecorrido">
+      <wsdl:input message="tns:GetRecorridoSoapIn" />
+      <wsdl:output message="tns:GetRecorridoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPasajeros">
+      <wsdl:input message="tns:GetPasajerosSoapIn" />
+      <wsdl:output message="tns:GetPasajerosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripulantes">
+      <wsdl:input message="tns:GetTripulantesSoapIn" />
+      <wsdl:output message="tns:GetTripulantesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServicios">
+      <wsdl:input message="tns:GetServiciosSoapIn" />
+      <wsdl:output message="tns:GetServiciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehiculos">
+      <wsdl:input message="tns:GetVehiculosSoapIn" />
+      <wsdl:output message="tns:GetVehiculosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLineas">
+      <wsdl:input message="tns:GetLineasSoapIn" />
+      <wsdl:output message="tns:GetLineasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVueltas">
+      <wsdl:input message="tns:GetVueltasSoapIn" />
+      <wsdl:output message="tns:GetVueltasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComentario">
+      <wsdl:input message="tns:GetComentarioSoapIn" />
+      <wsdl:output message="tns:GetComentarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarTripulante">
+      <wsdl:input message="tns:AsignarTripulanteSoapIn" />
+      <wsdl:output message="tns:AsignarTripulanteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarVehiculo">
+      <wsdl:input message="tns:AsignarVehiculoSoapIn" />
+      <wsdl:output message="tns:AsignarVehiculoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ViajeSoap" type="tns:ViajeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FMSNovedadTecnica_ABM">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/FMSNovedadTecnica_ABM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViajeByTripulante">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetViajeByTripulante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViajeByCustomSelection">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetViajeByCustomSelection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitados">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosWithOcupacion">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosWithOcupacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByOrigenDestino">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosByOrigenDestino" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByOrigenDestinoWithOcupacion">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosByOrigenDestinoWithOcupacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByXml">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosByXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecorrido">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetRecorrido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPasajeros">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetPasajeros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripulantes">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTripulantes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServicios">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehiculos">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetVehiculos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLineas">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetLineas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVueltas">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetVueltas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComentario">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetComentario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarTripulante">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/AsignarTripulante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarVehiculo">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/AsignarVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ViajeSoap12" type="tns:ViajeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FMSNovedadTecnica_ABM">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/FMSNovedadTecnica_ABM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViajeByTripulante">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetViajeByTripulante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViajeByCustomSelection">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetViajeByCustomSelection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitados">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosWithOcupacion">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosWithOcupacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByOrigenDestino">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosByOrigenDestino" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByOrigenDestinoWithOcupacion">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosByOrigenDestinoWithOcupacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHabilitadosByXml">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetHabilitadosByXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecorrido">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetRecorrido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPasajeros">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetPasajeros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripulantes">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTripulantes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServicios">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetServicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehiculos">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetVehiculos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLineas">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetLineas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVueltas">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetVueltas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComentario">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetComentario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarTripulante">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/AsignarTripulante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarVehiculo">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/AsignarVehiculo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Viaje">
+    <wsdl:port name="ViajeSoap" binding="tns:ViajeSoap">
+      <soap:address location="http://200.32.4.146/ERSA/TFC_Layer/Viaje.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ViajeSoap12" binding="tns:ViajeSoap12">
+      <soap12:address location="http://200.32.4.146/ERSA/TFC_Layer/Viaje.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

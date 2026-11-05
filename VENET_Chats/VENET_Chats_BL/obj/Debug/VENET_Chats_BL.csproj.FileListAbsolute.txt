@@ -1,0 +1,12 @@
+E:\ProyectosTeam\Builds\VENET_Chats_BL.dll
+E:\ProyectosTeam\Builds\VENET_Chats_BL.pdb
+E:\ProyectosTeam\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Chats_BL.dll
+E:\ProyectosTeam\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Chats_BL.pdb
+E:\ProyectosTeam\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Chats_BL.csprojResolveAssemblyReference.cache
+E:\Proyectos\Builds\VENET_Chats_BL.dll
+E:\Proyectos\Builds\VENET_Chats_BL.pdb
+E:\Proyectos\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Chats_BL.dll
+E:\Proyectos\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Chats_BL.pdb
+E:\Proyectos\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Chats_BL.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Chats_BL.csproj.CoreCompileInputs.cache
+E:\Proyectos\VENET_Chats\VENET_Chats_BL\obj\Debug\VENET_Ch.0FE1C5A5.Up2Date

@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+    <DocnetRuntime>win-x64</DocnetRuntime>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <OutputType>Exe</OutputType>
+    <LangVersion>7.3</LangVersion>
+    <DefineConstants>NATIVE</DefineConstants>
+    <AssemblyName>ComprasDocumentos.Native.Tests</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SignetRoot>$(MSBuildThisFileDirectory)..\..\..\..\</SignetRoot>
+    <NativeDependenciesDir>$(SignetRoot)VENET_Informes\VENET_Informes_UI\bin\Debug</NativeDependenciesDir>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(SignetRoot)VENET_Gestion\VENET_Gestion_BL\GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="..\..\..\shared\VENET_Gestion_BL.Web\VENET_Gestion_BL.Web.Sources.props" />
+  <Import Project="..\..\..\shared\VENET_Tesoreria_BL.Web\VENET_Tesoreria_BL.Web.Sources.props" />
+  <ItemGroup>
+    <Compile Include="..\Program.cs" Link="Program.cs" />
+    <Compile Include="..\IntegracionSql.cs" Link="IntegracionSql.cs" />
+    <Compile Include="$(SignetRoot)VENET_Contabilidad\VENET_Contabilidad_BL\*.cs" Link="Contabilidad\%(Filename)%(Extension)" />
+    <Compile Include="$(SignetRoot)VENET_Gestion\VENET_Gestion_UI\frmComprasDocumentos.cs" Link="frmComprasDocumentos.cs" />
+    <Reference Include="VENET_Common"><HintPath>$(NativeDependenciesDir)\VENET_Common.dll</HintPath></Reference>
+    <Reference Include="VENET_Comun"><HintPath>$(NativeDependenciesDir)\VENET_Comun.dll</HintPath></Reference>
+    <Reference Include="VENET_DataEntity"><HintPath>$(SignetRoot)Builds\VENET_DataEntity.dll</HintPath></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <PackageReference Include="Docnet.Core" Version="2.6.0" />
+    <PackageReference Include="StrongNamer" Version="0.2.5" PrivateAssets="all" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+  </ItemGroup>
+  <Target Name="EmbedOfficeInteropTypes" AfterTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'Microsoft.Office.Interop.Excel' or '%(FileName)' == 'office'">
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+</Project>

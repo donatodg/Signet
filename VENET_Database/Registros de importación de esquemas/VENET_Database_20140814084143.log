@@ -1,0 +1,71 @@
+14/08/2014 17:41:43	Este registro contiene información acerca de la operación de importación de esquema en el proyecto 'VENET_Database' del equipo 'ERSA-PC' por el usuario 'Diego'.
+14/08/2014 17:41:43	Se inició la importación del esquema de la base de datos.
+14/08/2014 17:41:49	Recopilando opciones de base de datos
+14/08/2014 17:41:49	Recopilando usuarios
+14/08/2014 17:41:49	Recopilando roles
+14/08/2014 17:41:49	Recopilando roles de aplicación
+14/08/2014 17:41:49	Recopilando pertenencias a roles
+14/08/2014 17:41:49	Recopilando grupos de archivos
+14/08/2014 17:41:49	Recopilando catálogos de texto completo
+14/08/2014 17:41:49	Recopilando ensamblados
+14/08/2014 17:41:49	Recopilando certificados
+14/08/2014 17:41:49	Recopilando claves asimétricas
+14/08/2014 17:41:49	Recopilando claves simétricas
+14/08/2014 17:41:49	Recopilando claves simétricas cifradas
+14/08/2014 17:41:49	Recopilando esquemas
+14/08/2014 17:41:49	Recopilando colecciones de esquemas XML
+14/08/2014 17:41:49	Recopilando tipos de datos definidos por el usuario
+14/08/2014 17:41:49	Recopilando tipos definidos por el usuario
+14/08/2014 17:41:49	Recopilando tipos de tabla
+14/08/2014 17:41:49	Recopilando claves únicas para tipos de tabla
+14/08/2014 17:41:49	Recopilando claves principales para tipos de tabla
+14/08/2014 17:41:49	Recopilando restricciones CHECK para tipos de tabla
+14/08/2014 17:41:49	Recopilando restricciones DEFAULT para tipos de tabla
+14/08/2014 17:41:49	Recopilando funciones de partición
+14/08/2014 17:41:49	Recopilando esquemas de partición
+14/08/2014 17:41:49	Recopilando funciones
+14/08/2014 17:41:49	Recopilando funciones cifradas
+14/08/2014 17:41:49	Recopilando agregados
+14/08/2014 17:41:49	Recopilando procedimientos
+14/08/2014 17:41:50	Recopilando procedimientos cifrados
+14/08/2014 17:41:50	Recopilando tablas
+14/08/2014 17:41:50	Recopilando claves principales
+14/08/2014 17:41:50	Recopilando restricciones UNIQUE
+14/08/2014 17:41:50	Recopilando claves externas
+14/08/2014 17:41:50	Recopilando restricciones DEFAULT
+14/08/2014 17:41:50	Recopilando restricciones CHECK
+14/08/2014 17:41:50	Recopilando vistas
+14/08/2014 17:41:50	Recopilando vistas cifradas
+14/08/2014 17:41:50	Recopilando índices
+14/08/2014 17:41:50	Recopilando estadísticas
+14/08/2014 17:41:50	Recopilando listas de palabras irrelevantes de índices de texto completo
+14/08/2014 17:41:50	Recopilando índices de texto completo
+14/08/2014 17:41:50	Recopilando índices espaciales
+14/08/2014 17:41:50	Recopilando índices XML
+14/08/2014 17:41:50	Recopilando desencadenadores cifrados
+14/08/2014 17:41:50	Recopilando desencadenadores
+14/08/2014 17:41:50	Recopilando DDL triggers cifrados y de CLR
+14/08/2014 17:41:50	Recopilando DDL triggers
+14/08/2014 17:41:50	Recopilando sinónimos
+14/08/2014 17:41:50	Recopilando valores predeterminados
+14/08/2014 17:41:50	Recopilando enlaces UDDT de restricción de datos
+14/08/2014 17:41:50	Recopilando reglas
+14/08/2014 17:41:50	Recopilando enlaces UDDT de restricción de datos
+14/08/2014 17:41:50	Recopilando tipos de mensaje
+14/08/2014 17:41:50	Recopilando colas
+14/08/2014 17:41:50	Recopilando contratos
+14/08/2014 17:41:50	Recopilando servicios
+14/08/2014 17:41:50	Recopilando notificaciones de eventos
+14/08/2014 17:41:50	Recopilando enlaces de servicio remoto
+14/08/2014 17:41:50	Recopilando prioridades de Broker
+14/08/2014 17:41:50	Recopilando firmas
+14/08/2014 17:41:50	Recopilando opciones de compresión de datos
+14/08/2014 17:41:50	Recopilando propiedades extendidas
+14/08/2014 17:41:50	Recopilando credenciales
+14/08/2014 17:41:50	Recopilando inicios de sesión
+14/08/2014 17:41:50	Recopilando auditorías de servidor
+14/08/2014 17:41:51	Buscando elementos duplicados en el proyecto
+14/08/2014 17:41:51	Ha finalizado el procesamiento de los elementos duplicados
+14/08/2014 17:41:52	Finalizó la importación de la base de datos.
+14/08/2014 17:41:52	Se guardó un resumen de la importación en la siguiente ubicación: D:\Proyectos\ErsaNET\VENET_Database\Registros de importación de esquemas\VENET_Database_20140814084143.log
+14/08/2014 17:41:52	Haga clic en Finalizar para continuar...

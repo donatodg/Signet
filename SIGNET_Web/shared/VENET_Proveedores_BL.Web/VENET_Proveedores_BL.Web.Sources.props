@@ -1,0 +1,6 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Proveedores\VENET_Proveedores_BL\ProveedoresManager.cs" Link="Original\ProveedoresManager.cs" />
+  </ItemGroup>
+</Project>

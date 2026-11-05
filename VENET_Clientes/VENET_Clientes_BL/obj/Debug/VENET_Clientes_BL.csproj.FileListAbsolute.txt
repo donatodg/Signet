@@ -1,0 +1,12 @@
+E:\ProyectosTeam\Builds\VENET_Clientes_BL.dll
+E:\ProyectosTeam\Builds\VENET_Clientes_BL.pdb
+E:\ProyectosTeam\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Clientes_BL.dll
+E:\ProyectosTeam\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Clientes_BL.pdb
+E:\ProyectosTeam\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Clientes_BL.csprojResolveAssemblyReference.cache
+E:\Proyectos\Builds\VENET_Clientes_BL.dll
+E:\Proyectos\Builds\VENET_Clientes_BL.pdb
+E:\Proyectos\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Clientes_BL.dll
+E:\Proyectos\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Clientes_BL.pdb
+E:\Proyectos\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Clientes_BL.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Clientes_BL.csproj.CoreCompileInputs.cache
+E:\Proyectos\VENET_Clientes\VENET_Clientes_BL\obj\Debug\VENET_Cl.5A6E820A.Up2Date

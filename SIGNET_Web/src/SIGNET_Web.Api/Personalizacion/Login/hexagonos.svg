@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f8fb"/>
+      <stop offset="1" stop-color="#dbe6f5"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d5fa8"/>
+      <stop offset="1" stop-color="#4cc9f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <g fill="url(#a)">
+    <polygon points="450,150 700,295 700,585 450,730 200,585 200,295" fill-opacity="0.95"/>
+    <polygon points="760,560 900,640 900,800 760,880 620,800 620,640" fill-opacity="0.55"/>
+    <polygon points="140,760 250,825 250,955 140,1020 30,955 30,825" fill-opacity="0.4"/>
+    <polygon points="600,930 680,976 680,1068 600,1114 520,1068 520,976" fill-opacity="0.25"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="3" stroke-opacity="0.8">
+    <polyline points="450,150 450,440 700,585"/>
+    <polyline points="450,440 200,585"/>
+  </g>
+  <circle cx="450" cy="440" r="14" fill="#fff"/>
+</svg>

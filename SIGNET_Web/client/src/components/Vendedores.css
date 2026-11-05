@@ -1,0 +1,25 @@
+.seller-portal { max-width: 720px; margin: 0 auto; padding: 12px; }
+.seller-header { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 16px; }
+.seller-header h2 { flex: 1; margin: 0; }
+.seller-home { display: grid; gap: 16px; }
+.seller-home .btn { min-height: 92px; font-size: 20px; white-space: normal; }
+.seller-card { background: #fff; border: 1px solid #d5dce5; border-radius: 12px; padding: 16px; margin: 12px 0; overflow-wrap: anywhere; }
+.seller-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; font-weight: 600; }
+.seller-field input, .seller-field select, .seller-field textarea { width: 100%; min-width: 0; box-sizing: border-box; min-height: 46px; font-size: 16px; padding: 10px; }
+.seller-portal .btn { min-height: 46px; white-space: normal; }
+.seller-options { display: grid; gap: 8px; max-height: 280px; overflow-y: auto; }
+.seller-options .btn { text-align: left; }
+.seller-product { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #e1e6ed; padding: 14px 0; }
+.seller-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.seller-wide { display: block; width: 100%; margin-top: 12px; }
+.seller-fields { padding: 0; border: 0; min-width: 0; }
+.seller-review { border: 2px solid #2e6aba; }
+.seller-portal details summary { cursor: pointer; min-height: 44px; padding-top: 12px; }
+@media (max-width: 600px) {
+  .seller-mode .topbar { flex-wrap: wrap; gap: 8px; padding: 10px; }
+  .seller-mode main { padding: 12px; }
+  .seller-mode .topbar > span { overflow-wrap: anywhere; min-width: 0; }
+  .seller-portal { padding: 0; }
+  .seller-card { padding: 12px; }
+  .seller-portal .seller-two { grid-template-columns: 1fr; }
+}

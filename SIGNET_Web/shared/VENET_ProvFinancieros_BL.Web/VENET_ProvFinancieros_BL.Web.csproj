@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <Import Project="VENET_ProvFinancieros_BL.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_ProvFinancieros_BL</AssemblyName>
+    <RootNamespace>VENET_ProvFinancieros_BL</RootNamespace>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,119 @@
+﻿CREATE PROCEDURE [dbo].[TraspasaPersonalDeNexus]
+AS
+BEGIN
+select * from Personal
+	--INSERT INTO Personal
+	--SELECT	Id_Empresa = CASE WHEN a.COD_EMPRESA = 0001 THEN 1
+	--						  WHEN a.COD_EMPRESA = 0002 THEN 4
+	--						  WHEN a.COD_EMPRESA = 0003 THEN 5
+	--						  WHEN a.COD_EMPRESA = 0004 THEN 6
+	--						  WHEN a.COD_EMPRESA = 0005 THEN 3
+	--						  WHEN a.COD_EMPRESA = 0008 THEN 8
+	--						  WHEN a.COD_EMPRESA = 0009 THEN 2
+	--						  WHEN a.COD_EMPRESA = 0010 THEN 9
+	--						  WHEN a.COD_EMPRESA = 0020 THEN 7
+	--						  WHEN a.COD_EMPRESA = 0006 THEN 12
+	--						  WHEN a.COD_EMPRESA = 0017 THEN 13
+	--						  WHEN a.COD_EMPRESA = 0024 THEN 10
+	--						  WHEN a.COD_EMPRESA = 0016 THEN 20
+	--						  WHEN a.COD_EMPRESA = 8888 THEN 11
+	--						 -- ELSE COD_EMPRESA
+	--					  END,
+	--		Apellido = RTRIM(LTRIM(a.APELLIDO)),
+	--		Nombre = ISNULL(RTRIM(LTRIM(a.NOMBRE)), '') + ' ' + ISNULL(RTRIM(LTRIM(a.SEGUNDO_NOMBRE)),''),
+	--		ApellidoCasada = '',
+	--		DomicilioCalle = ISNULL(RTRIM(LTRIM(DOMIC_CALLE)),''),
+	--		DomicilioNro = ISNULL(DOMIC_NRO,''),
+	--		DomicilioPiso = ISNULL(DOMIC_PISO,''), 
+	--		DomicilioDpto = ISNULL(DOMIC_DEPTO,''),
+	--		CodPos = CASE WHEN DOMIC_CODPOSTAL = 'AAQ1187   ' THEN 0 
+	--					  WHEN DOMIC_CODPOSTAL = 'C1187AAP  ' THEN 0
+	--					  ELSE ISNULL(RTRIM(LTRIM(DOMIC_CODPOSTAL)),0) END,
+	--		Id_Provincia = CASE WHEN a.ID_PROVINCIA = 1  THEN 1  
+	--							WHEN a.ID_PROVINCIA = 10 THEN 16 
+	--							WHEN a.ID_PROVINCIA = 13 THEN 20
+	--							WHEN a.ID_PROVINCIA = 14 THEN 21 
+	--							WHEN a.ID_PROVINCIA = 15 THEN 23 
+	--							WHEN a.ID_PROVINCIA = 16 THEN 3 
+	--							WHEN a.ID_PROVINCIA = 18 THEN 8 
+	--							WHEN a.ID_PROVINCIA = 2  THEN 1 
+	--							WHEN a.ID_PROVINCIA = 20 THEN 13 
+	--							WHEN a.ID_PROVINCIA = 21 THEN 14 
+	--							WHEN a.ID_PROVINCIA = 4  THEN 5 
+	--							WHEN a.ID_PROVINCIA = 5  THEN 6 
+	--							WHEN a.ID_PROVINCIA = 6  THEN 7 
+	--							WHEN a.ID_PROVINCIA = 9  THEN 12 
+	--							END,
+	--		Telefono = ISNULL(a.TELEFONO,''),
+	--		Celular = ISNULL(a.CELULAR,''),
+	--		FechaAlta = a.FECHA_ALTA,
+	--		FechaBaja = a.FECHA_ESTADO,
+	--		FechaNacimiento = a.FECHA_NACIMIENTO,
+	--		Observaciones = '',
+	--		Id_EstadoCivil = CASE WHEN a.ESTADO_CIVIL ='CASA' THEN 2 ELSE 1 END,
+	--		Id_TipoDoc =  1,
+	--		NroDoc = a.NRO_DOC,
+	--		Id_Tipo = 1,
+	--		Id_Jerarquia = CASE WHEN A.Id_Categoria = 0051 THEN 1
+	--							WHEN A.Id_Categoria = 0052 THEN 1
+	--							WHEN A.Id_Categoria = 0216 THEN 1
+	--							WHEN A.Id_Categoria = 0178 THEN 1
+	--							WHEN A.Id_Categoria = 0054 THEN 1
+	--							WHEN A.Id_Categoria = 0055 THEN 1
+	--							WHEN A.Id_Categoria = 0056 THEN 1
+	--							WHEN A.Id_Categoria = 0057 THEN 1
+	--							ELSE 2 END,
+	--		Cuit = a.CUIL,
+	--		LaboralLegajo = a.LEGAJO, 
+	--		LaboralSucursal = '',
+	--		LaboralDomicilio = '',
+	--		LaboralCodPos = 0,
+	--		LaboralTelefono = ISNULL(a.TELEFONO_LABORAL,''),
+	--		LaboralId_Provincia = CASE WHEN a.ID_PROVINCIA = 1  THEN 1 
+	--								   WHEN a.ID_PROVINCIA = 10 THEN 16
+	--						  		   WHEN a.ID_PROVINCIA = 13 THEN 20
+	--						  		   WHEN a.ID_PROVINCIA = 14 THEN 21
+	--						  		   WHEN a.ID_PROVINCIA = 15 THEN 23
+	--						  		   WHEN a.ID_PROVINCIA = 16 THEN 3 
+	--						  		   WHEN a.ID_PROVINCIA = 18 THEN 8 
+	--						  		   WHEN a.ID_PROVINCIA = 2  THEN 1 
+	--						  		   WHEN a.ID_PROVINCIA = 20 THEN 13
+	--						  		   WHEN a.ID_PROVINCIA = 21 THEN 14
+	--						  		   WHEN a.ID_PROVINCIA = 4  THEN 5 
+	--						  		   WHEN a.ID_PROVINCIA = 5  THEN 6 
+	--						  		   WHEN a.ID_PROVINCIA = 6  THEN 7 
+	--						  		   WHEN a.ID_PROVINCIA = 9  THEN 12
+	--							  END,
+	--		LaboralId_UnidadNegocio = COD_UNIDAD,
+	--		LaboralId_TipoServicio = NULL,
+	--		LaboralId_Cabecera = NULL,
+	--		LaboralDiasRotacion = NULL,
+	--		LaboralDiaRotacion = 0,
+	--		LaboralTurnoFijo = 0,
+	--		LaboralFrancoDias = 0,
+	--		LaboralVencimientoCarnet = NULL,
+	--		LaboralVencimientoCarnetCNRT = NULL,
+	--		FechaAdd = GETDATE(),
+	--		FechaMod = NULL,
+	--		FechaDel = NULL,
+	--		UserAdd = 1,
+	--		UserMod = NULL,
+	--		UserDel = NULL
+	--FROM [192.168.1.22].[NexusHR].[dbo].[viewLegajos2] a
+	--LEFT JOIN Personal p ON a.legajo = p.laborallegajo AND p.UserDel IS NULL
+	--WHERE p.Id IS NULL AND 
+	--	  COD_EMPRESA <> 9999 AND COD_EMPRESA <> 0022 AND COD_EMPRESA <> 0007 AND 
+	--	  COD_EMPRESA <> 0011 AND COD_EMPRESA <> 0012 AND COD_EMPRESA <> 0013 AND 
+	--	  COD_EMPRESA <> 0014 AND COD_EMPRESA <> 0015 AND 
+	--	  COD_EMPRESA <> 0018 AND 
+	--	  FECHA_ESTADO IS NULL
+			  
+	--UPDATE Personal 
+	--	SET UserDel = 1, FechaDel = GETDATE(), FechaBaja = a.Fecha_Estado
+	--FROM [192.168.1.22].[NexusHR].[dbo].[viewLegajos2] a
+	--INNER JOIN Personal p ON a.Legajo = p.LaboralLegajo AND p.UserDel IS NULL
+	--INNER JOIN EmpresasNexus e ON p.Id_Empresa = e.Id_Empresa AND a.COD_EMPRESA = e.Id_Empresa_Nexus
+	--	WHERE p.UserDel IS NULL AND 
+	--		  a.Fecha_Estado <> '1900-01-01'
+
+END

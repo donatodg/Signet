@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/">
+      <s:element name="GetVehiculo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Matricula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehiculoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehiculoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ABMVehiculo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ABMVehiculoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ABMVehiculoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViajes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VehiculoID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViajesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetViajesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCarroceria">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VehiculoID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Orientacion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCarroceriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCarroceriaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Parameters" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeEstadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetVehiculoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="GetVehiculoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ABMVehiculoSoapIn">
+    <wsdl:part name="parameters" element="tns:ABMVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="ABMVehiculoSoapOut">
+    <wsdl:part name="parameters" element="tns:ABMVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetViajesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetViajes" />
+  </wsdl:message>
+  <wsdl:message name="GetViajesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetViajesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCarroceriaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCarroceria" />
+  </wsdl:message>
+  <wsdl:message name="GetCarroceriaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCarroceriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeEstado" />
+  </wsdl:message>
+  <wsdl:message name="ChangeEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeEstadoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VehiculoSoap">
+    <wsdl:operation name="GetVehiculo">
+      <wsdl:input message="tns:GetVehiculoSoapIn" />
+      <wsdl:output message="tns:GetVehiculoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ABMVehiculo">
+      <wsdl:input message="tns:ABMVehiculoSoapIn" />
+      <wsdl:output message="tns:ABMVehiculoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViajes">
+      <wsdl:input message="tns:GetViajesSoapIn" />
+      <wsdl:output message="tns:GetViajesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarroceria">
+      <wsdl:input message="tns:GetCarroceriaSoapIn" />
+      <wsdl:output message="tns:GetCarroceriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeEstado">
+      <wsdl:input message="tns:ChangeEstadoSoapIn" />
+      <wsdl:output message="tns:ChangeEstadoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VehiculoSoap" type="tns:VehiculoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVehiculo">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ABMVehiculo">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/ABMVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViajes">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetViajes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarroceria">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetCarroceria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeEstado">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/ChangeEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VehiculoSoap12" type="tns:VehiculoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVehiculo">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetVehiculo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ABMVehiculo">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/ABMVehiculo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViajes">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetViajes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarroceria">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetCarroceria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeEstado">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/ChangeEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Vehiculo">
+    <wsdl:port name="VehiculoSoap" binding="tns:VehiculoSoap">
+      <soap:address location="http://200.32.4.146/ERSA/TFC_Layer/vehiculo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VehiculoSoap12" binding="tns:VehiculoSoap12">
+      <soap12:address location="http://200.32.4.146/ERSA/TFC_Layer/vehiculo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

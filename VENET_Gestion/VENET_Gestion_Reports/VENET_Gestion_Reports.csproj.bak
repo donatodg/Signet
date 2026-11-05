@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C319359F-D727-4913-BD65-938408B59EFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_Gestion_Reports</RootNamespace>
+    <AssemblyName>VENET_Gestion_Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xrptComprobanteVenta2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrptComprobanteVenta2.Designer.cs">
+      <DependentUpon>xrptComprobanteVenta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xrptComprobanteVenta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrptComprobanteVenta.Designer.cs">
+      <DependentUpon>xrptComprobanteVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xrptListaPrecios.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrptListaPrecios.Designer.cs">
+      <DependentUpon>xrptListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xrptPedidoHorizontal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrptPedidoHorizontal.Designer.cs">
+      <DependentUpon>xrptPedidoHorizontal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xrptPedido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrptPedido.Designer.cs">
+      <DependentUpon>xrptPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xrptCotizacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrptCotizacion.Designer.cs">
+      <DependentUpon>xrptCotizacion.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="xrptComprobanteVenta2.resx">
+      <DependentUpon>xrptComprobanteVenta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrptComprobanteVenta.resx">
+      <DependentUpon>xrptComprobanteVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrptListaPrecios.resx">
+      <DependentUpon>xrptListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrptPedidoHorizontal.resx">
+      <DependentUpon>xrptPedidoHorizontal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrptPedido.resx">
+      <DependentUpon>xrptPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrptCotizacion.resx">
+      <DependentUpon>xrptCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GrupoErsa.snk" />
+    <None Include="Properties\DataSources\VENET_Common.Reportes+ComprobantesVentasReporte+DatosReporte.datasource" />
+    <None Include="Properties\DataSources\VENET_Common.Reportes+CotizacionesReporte+DatosReporte.datasource" />
+    <None Include="Properties\DataSources\VENET_Common.Reportes+PedidosReporte+DatosReporte.datasource" />
+    <None Include="Properties\DataSources\VENET_Gestion_BL.ProductosActualizaListasPreciosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Gestion_BL.ProductosListasPreciosManager+DatosReporte.datasource" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj">
+      <Project>{a3001d16-0bf0-41e7-b790-70b96f92561d}</Project>
+      <Name>VENET_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VENET_Gestion_BL\VENET_Gestion_BL.csproj">
+      <Project>{5088f8d0-c339-438f-80c0-4ea7866531f0}</Project>
+      <Name>VENET_Gestion_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

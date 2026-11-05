@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DFE19FAC-74A3-4CF3-AC05-1F75ED376789}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_Informes_UI</RootNamespace>
+    <AssemblyName>VENET_Informes_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Export, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.2.Wizard, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEncabezadoLibretas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEncabezadoLibretas.Designer.cs">
+      <DependentUpon>frmEncabezadoLibretas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKmsHsPlanificadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKmsHsPlanificadas.Designer.cs">
+      <DependentUpon>frmKmsHsPlanificadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanificacionCochesParadosPorFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanificacionCochesParadosPorFechas.Designer.cs">
+      <DependentUpon>frmPlanificacionCochesParadosPorFechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanificacionUnificadaPorDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanificacionUnificadaPorDia.Designer.cs">
+      <DependentUpon>frmPlanificacionUnificadaPorDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteCochesComparativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteCochesComparativo.Designer.cs">
+      <DependentUpon>frmReporteCochesComparativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteLibreta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteLibreta.Designer.cs">
+      <DependentUpon>frmReporteLibreta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteServiciosPorDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteServiciosPorDia.Designer.cs">
+      <DependentUpon>frmReporteServiciosPorDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSistemaAusencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSistemaAusencias.Designer.cs">
+      <DependentUpon>frmSistemaAusencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEncabezadoLibretas.resx">
+      <DependentUpon>frmEncabezadoLibretas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKmsHsPlanificadas.resx">
+      <DependentUpon>frmKmsHsPlanificadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanificacionCochesParadosPorFechas.resx">
+      <DependentUpon>frmPlanificacionCochesParadosPorFechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanificacionUnificadaPorDia.resx">
+      <DependentUpon>frmPlanificacionUnificadaPorDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteCochesComparativo.resx">
+      <DependentUpon>frmReporteCochesComparativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteLibreta.resx">
+      <DependentUpon>frmReporteLibreta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteServiciosPorDia.resx">
+      <DependentUpon>frmReporteServiciosPorDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSistemaAusencias.resx">
+      <DependentUpon>frmSistemaAusencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="GrupoErsa.snk" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.EncabezadoLibretasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.KmsHsPlanificadasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.KmsHsPlanificadasManager+Reporte.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.PlanificacionCochesParadosPorFechasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.PlanificacionCochesParadosPorFechasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.PlanificacionUnificadaPorDiaManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.PlanificacionUnificadaPorDiaManager+Reporte.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.ReporteCochesComparativoManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.ReporteCochesComparativoManager+Reporte.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.ReporteCochesComparativoManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.ReporteLibretaManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.ReporteServiciosPorDiaManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.ReporteServiciosPorDiaManager+Reporte.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.SistemaAusenciaManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Informes_BL.SistemaAusenciaManager+Reporte.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj">
+      <Project>{a3001d16-0bf0-41e7-b790-70b96f92561d}</Project>
+      <Name>VENET_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj">
+      <Project>{d390850f-7182-4492-a49d-a30c1f2791f9}</Project>
+      <Name>VENET_Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj">
+      <Project>{888ef654-ab63-4e91-afc1-fc3f60157dd2}</Project>
+      <Name>VENET_DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Personal\VENET_Personal_UI\VENET_Personal_UI.csproj">
+      <Project>{7017600a-2453-44de-8d88-777b6427e5e0}</Project>
+      <Name>VENET_Personal_UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Trafico\VENET_Trafico_Reports\VENET_Trafico_Reports.csproj">
+      <Project>{64896D32-F603-4CFB-BB3E-E21C9869BA12}</Project>
+      <Name>VENET_Trafico_Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VENET_Informes_BL\VENET_Informes_BL.csproj">
+      <Project>{E1BDA895-FB6B-449B-A189-502297DADCFD}</Project>
+      <Name>VENET_Informes_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x321.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

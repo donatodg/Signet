@@ -1,0 +1,2 @@
+C:\Signet\VENET_IA\VENET_IA_BL\obj\Debug\VENET_IA_BL.csproj.AssemblyReference.cache
+C:\Signet\VENET_IA\VENET_IA_BL\obj\Debug\VENET_IA_BL.csproj.CoreCompileInputs.cache

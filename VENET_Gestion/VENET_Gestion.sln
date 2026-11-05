@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Gestion_UI", "VENET_Gestion_UI\VENET_Gestion_UI.csproj", "{47D86691-24F2-4E56-8906-418008C996A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Gestion_BL", "VENET_Gestion_BL\VENET_Gestion_BL.csproj", "{5088F8D0-C339-438F-80C0-4EA7866531F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Gestion_Reports", "VENET_Gestion_Reports\VENET_Gestion_Reports.csproj", "{C319359F-D727-4913-BD65-938408B59EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Common", "..\VENET_Common\VENET_Common.csproj", "{A3001D16-0BF0-41E7-B790-70B96F92561D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_DataEntity", "..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj", "{888EF654-AB63-4E91-AFC1-FC3F60157DD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_WSFE_UI", "..\VENET_WSFE\VENET_WSFE_UI\VENET_WSFE_UI.csproj", "{4C09079D-BFEF-4A80-8EFF-24333E1EEA91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_WSFE_BL", "..\VENET_WSFE\VENET_WSFE_BL\VENET_WSFE_BL.csproj", "{712C92BB-F975-46FD-817A-120F5CF55A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Tesoreria_BL", "..\VENET_Tesoreria\VENET_Tesoreria_BL\VENET_Tesoreria_BL.csproj", "{5357EBD1-029C-4195-ABFC-D4E74556F636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Tesoreria_UI", "..\VENET_Tesoreria\VENET_Tesoreria_UI\VENET_Tesoreria_UI.csproj", "{C76FDC66-6793-47E8-8144-34F5573E06B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Comun", "..\VENET_Comun\VENET_Comun.csproj", "{D390850F-7182-4492-A49D-A30C1F2791F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Tesoreria_Reports", "..\VENET_Tesoreria\VENET_Tesoreria_Reports\VENET_Tesoreria_Reports.csproj", "{2F51B313-8A7F-4951-A883-BFCF51F4253A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47D86691-24F2-4E56-8906-418008C996A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D86691-24F2-4E56-8906-418008C996A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D86691-24F2-4E56-8906-418008C996A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D86691-24F2-4E56-8906-418008C996A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5088F8D0-C339-438F-80C0-4EA7866531F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5088F8D0-C339-438F-80C0-4EA7866531F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5088F8D0-C339-438F-80C0-4EA7866531F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5088F8D0-C339-438F-80C0-4EA7866531F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C319359F-D727-4913-BD65-938408B59EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C319359F-D727-4913-BD65-938408B59EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C319359F-D727-4913-BD65-938408B59EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C319359F-D727-4913-BD65-938408B59EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3001D16-0BF0-41E7-B790-70B96F92561D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3001D16-0BF0-41E7-B790-70B96F92561D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3001D16-0BF0-41E7-B790-70B96F92561D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3001D16-0BF0-41E7-B790-70B96F92561D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888EF654-AB63-4E91-AFC1-FC3F60157DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888EF654-AB63-4E91-AFC1-FC3F60157DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888EF654-AB63-4E91-AFC1-FC3F60157DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888EF654-AB63-4E91-AFC1-FC3F60157DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C09079D-BFEF-4A80-8EFF-24333E1EEA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C09079D-BFEF-4A80-8EFF-24333E1EEA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C09079D-BFEF-4A80-8EFF-24333E1EEA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C09079D-BFEF-4A80-8EFF-24333E1EEA91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712C92BB-F975-46FD-817A-120F5CF55A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712C92BB-F975-46FD-817A-120F5CF55A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712C92BB-F975-46FD-817A-120F5CF55A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712C92BB-F975-46FD-817A-120F5CF55A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5357EBD1-029C-4195-ABFC-D4E74556F636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5357EBD1-029C-4195-ABFC-D4E74556F636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5357EBD1-029C-4195-ABFC-D4E74556F636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5357EBD1-029C-4195-ABFC-D4E74556F636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C76FDC66-6793-47E8-8144-34F5573E06B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C76FDC66-6793-47E8-8144-34F5573E06B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C76FDC66-6793-47E8-8144-34F5573E06B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C76FDC66-6793-47E8-8144-34F5573E06B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D390850F-7182-4492-A49D-A30C1F2791F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D390850F-7182-4492-A49D-A30C1F2791F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D390850F-7182-4492-A49D-A30C1F2791F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D390850F-7182-4492-A49D-A30C1F2791F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F51B313-8A7F-4951-A883-BFCF51F4253A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F51B313-8A7F-4951-A883-BFCF51F4253A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F51B313-8A7F-4951-A883-BFCF51F4253A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F51B313-8A7F-4951-A883-BFCF51F4253A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.29:8080/tfs/ersa
+		SccProjectUniqueName0 = ..\\VENET_Comun\\VENET_Comun.csproj
+		SccProjectName0 = ../VENET_Comun
+		SccLocalPath0 = ..\\VENET_Comun
+		SccProjectUniqueName1 = ..\\VENET_DataEntity\\VENET_DataEntity\\VENET_DataEntity.csproj
+		SccProjectName1 = ../VENET_DataEntity/VENET_DataEntity
+		SccLocalPath1 = ..\\VENET_DataEntity\\VENET_DataEntity
+		SccProjectUniqueName2 = ..\\VENET_Common\\VENET_Common.csproj
+		SccProjectName2 = ../VENET_Common
+		SccLocalPath2 = ..\\VENET_Common
+		SccProjectUniqueName3 = ..\\VENET_WSFE\\VENET_WSFE_BL\\VENET_WSFE_BL.csproj
+		SccProjectName3 = ../VENET_WSFE/VENET_WSFE_BL
+		SccLocalPath3 = ..\\VENET_WSFE\\VENET_WSFE_BL
+		SccProjectUniqueName4 = ..\\VENET_WSFE\\VENET_WSFE_UI\\VENET_WSFE_UI.csproj
+		SccProjectName4 = ../VENET_WSFE/VENET_WSFE_UI
+		SccLocalPath4 = ..\\VENET_WSFE\\VENET_WSFE_UI
+		SccLocalPath5 = .
+		SccProjectUniqueName6 = VENET_Gestion_UI\\VENET_Gestion_UI.csproj
+		SccProjectName6 = VENET_Gestion_UI
+		SccLocalPath6 = VENET_Gestion_UI
+		SccProjectUniqueName7 = VENET_Gestion_BL\\VENET_Gestion_BL.csproj
+		SccProjectName7 = VENET_Gestion_BL
+		SccLocalPath7 = VENET_Gestion_BL
+		SccProjectUniqueName8 = VENET_Gestion_Reports\\VENET_Gestion_Reports.csproj
+		SccProjectName8 = VENET_Gestion_Reports
+		SccLocalPath8 = VENET_Gestion_Reports
+		SccProjectUniqueName9 = ..\\VENET_Tesoreria\\VENET_Tesoreria_BL\\VENET_Tesoreria_BL.csproj
+		SccProjectName9 = ../VENET_Tesoreria/VENET_Tesoreria_BL
+		SccLocalPath9 = ..\\VENET_Tesoreria\\VENET_Tesoreria_BL
+		SccProjectUniqueName10 = ..\\VENET_Tesoreria\\VENET_Tesoreria_UI\\VENET_Tesoreria_UI.csproj
+		SccProjectName10 = ../VENET_Tesoreria/VENET_Tesoreria_UI
+		SccLocalPath10 = ..\\VENET_Tesoreria\\VENET_Tesoreria_UI
+		SccProjectUniqueName11 = ..\\VENET_Tesoreria\\VENET_Tesoreria_Reports\\VENET_Tesoreria_Reports.csproj
+		SccProjectName11 = ../VENET_Tesoreria/VENET_Tesoreria_Reports
+		SccLocalPath11 = ..\\VENET_Tesoreria\\VENET_Tesoreria_Reports
+	EndGlobalSection
+EndGlobal

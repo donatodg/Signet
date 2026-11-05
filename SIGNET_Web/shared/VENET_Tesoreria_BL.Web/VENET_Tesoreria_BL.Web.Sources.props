@@ -1,0 +1,36 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\BoletaDepositoEfectivoManager.cs" Link="Original\BoletaDepositoEfectivoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\BoletasDepositosManager.cs" Link="Original\BoletasDepositosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ChequeDescuentoManager.cs" Link="Original\ChequeDescuentoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ChequePropiosManager.cs" Link="Original\ChequePropiosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ChequeTercerosManager.cs" Link="Original\ChequeTercerosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\EntidadesCtaCteSaldosManager.cs" Link="Original\EntidadesCtaCteSaldosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\EspeciesCotizacionesManager.cs" Link="Original\EspeciesCotizacionesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\EntidadesCtaCteManager.cs" Link="Original\EntidadesCtaCteManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\EspeciesCtaCteManager.cs" Link="Original\EspeciesCtaCteManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\CajasManager.cs" Link="Original\CajasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\EspeciesCtaCteSaldosManager.cs" Link="Original\EspeciesCtaCteSaldosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\EspeciesManager.cs" Link="Original\EspeciesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\FirmantesManager.cs" Link="Original\FirmantesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\OrdenesPago_ReporteCompletoManager.cs" Link="Original\OrdenesPago_ReporteCompletoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\RecibosComprobantesManager.cs" Link="Original\RecibosComprobantesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\OrdenesPagoComprobantesManager.cs" Link="Original\OrdenesPagoComprobantesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\OrdenesPagoDetalleManager.cs" Link="Original\OrdenesPagoDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ListaPagosDetalleManager.cs" Link="Original\ListaPagosDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ReciboDetalleManager.cs" Link="Original\ReciboDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\OrdenesPagoManager.cs" Link="Original\OrdenesPagoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ListaPagosManager.cs" Link="Original\ListaPagosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\RecibosManager.cs" Link="Original\RecibosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\Recibos_ReporteCompletoManager.cs" Link="Original\Recibos_ReporteCompletoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\RendicionesDetalleManager.cs" Link="Original\RendicionesDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\RendicionesManager.cs" Link="Original\RendicionesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\RendicionesPorConceptoManager.cs" Link="Original\RendicionesPorConceptoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\TipoComprobanteManager.cs" Link="Original\TipoComprobanteManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\TransferenciasManager.cs" Link="Original\TransferenciasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\TransferenciasManager_OLD.cs" Link="Original\TransferenciasManager_OLD.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ValesManager.cs" Link="Original\ValesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Tesoreria\VENET_Tesoreria_BL\ValesTransferenciaManager.cs" Link="Original\ValesTransferenciaManager.cs" />
+  </ItemGroup>
+</Project>

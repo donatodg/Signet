@@ -1,0 +1,12 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_IA\VENET_IA_BL\AsistenteIAConfiguracion.cs" Link="Original\AsistenteIAConfiguracion.cs" />
+    <Compile Include="$(SignetRoot)VENET_IA\VENET_IA_BL\AsistenteIAEsquema.cs" Link="Original\AsistenteIAEsquema.cs" />
+    <Compile Include="$(SignetRoot)VENET_IA\VENET_IA_BL\AsistenteIAManager.cs" Link="Original\AsistenteIAManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_IA\VENET_IA_BL\AsistenteIAModelos.cs" Link="Original\AsistenteIAModelos.cs" />
+    <Compile Include="$(SignetRoot)VENET_IA\VENET_IA_BL\AsistenteIAVentas.cs" Link="Original\AsistenteIAVentas.cs" />
+    <Compile Include="$(SignetRoot)VENET_IA\VENET_IA_BL\AsistenteIASeguridad.cs" Link="Original\AsistenteIASeguridad.cs" />
+    <Compile Include="$(SignetRoot)VENET_IA\VENET_IA_BL\AsistenteIASqlGuard.cs" Link="Original\AsistenteIASqlGuard.cs" />
+  </ItemGroup>
+</Project>

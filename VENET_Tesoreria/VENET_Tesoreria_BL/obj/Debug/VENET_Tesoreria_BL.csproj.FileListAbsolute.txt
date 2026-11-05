@@ -1,0 +1,14 @@
+E:\ProyectosTeam\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\Builds\VENET_Tesoreria_BL.dll
+E:\ProyectosTeam\Builds\VENET_Tesoreria_BL.pdb
+E:\ProyectosTeam\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.dll
+E:\ProyectosTeam\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.pdb
+E:\Proyectos\Builds\VENET_Tesoreria_BL.dll
+E:\Proyectos\Builds\VENET_Tesoreria_BL.pdb
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.dll
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.pdb
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.csproj.CoreCompileInputs.cache
+E:\Proyectos\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Te.94BDCA89.Up2Date
+C:\Signet\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.dll
+C:\Signet\VENET_Tesoreria\VENET_Tesoreria_BL\obj\Debug\VENET_Tesoreria_BL.pdb

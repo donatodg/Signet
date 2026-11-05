@@ -1,0 +1,11 @@
+E:\ProyectosTeam\Builds\VENET_Comun.dll
+E:\ProyectosTeam\Builds\VENET_Comun.pdb
+E:\ProyectosTeam\VENET_Comun\obj\Release\VENET_Comun.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\VENET_Comun\obj\Release\VENET_Comun.dll
+E:\ProyectosTeam\VENET_Comun\obj\Release\VENET_Comun.pdb
+E:\Proyectos\Builds\VENET_Comun.dll
+E:\Proyectos\Builds\VENET_Comun.pdb
+E:\Proyectos\VENET_Comun\obj\Release\VENET_Comun.dll
+E:\Proyectos\VENET_Comun\obj\Release\VENET_Comun.pdb
+E:\Proyectos\VENET_Comun\obj\Release\VENET_Comun.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_Comun\obj\Release\VENET_Comun.csproj.CoreCompileInputs.cache

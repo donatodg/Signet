@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D014D19-8BB0-4AA4-8A2A-9DA5AB20F999}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_General_UI</RootNamespace>
+    <AssemblyName>VENET_General_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCentroCostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCentroCostos.Designer.cs">
+      <DependentUpon>frmCentroCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCentroCostos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCentroCostos_AddMod.Designer.cs">
+      <DependentUpon>frmCentroCostos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresas.Designer.cs">
+      <DependentUpon>frmEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresas_AddMod.Designer.cs">
+      <DependentUpon>frmEmpresas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntidadesBancarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntidadesBancarias.Designer.cs">
+      <DependentUpon>frmEntidadesBancarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntidadesBancariasAddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntidadesBancariasAddMod.Designer.cs">
+      <DependentUpon>frmEntidadesBancariasAddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeriados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeriados.Designer.cs">
+      <DependentUpon>frmFeriados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComentarios.Designer.cs">
+      <DependentUpon>frmComentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeriados_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeriados_AddMod.Designer.cs">
+      <DependentUpon>frmFeriados_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImagenes.Designer.cs">
+      <DependentUpon>frmImagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJurisdicciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJurisdicciones.Designer.cs">
+      <DependentUpon>frmJurisdicciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJurisdicciones_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJurisdicciones_AddMod.Designer.cs">
+      <DependentUpon>frmJurisdicciones_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidades.Designer.cs">
+      <DependentUpon>frmLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidades_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidades_AddMod.Designer.cs">
+      <DependentUpon>frmLocalidades_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovedadesCochesAddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovedadesCochesAddMod.Designer.cs">
+      <DependentUpon>frmNovedadesCochesAddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovedadesCoches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovedadesCoches.Designer.cs">
+      <DependentUpon>frmNovedadesCoches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovedades.Designer.cs">
+      <DependentUpon>frmNovedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovedadesAddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovedadesAddMod.Designer.cs">
+      <DependentUpon>frmNovedadesAddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametros.Designer.cs">
+      <DependentUpon>frmParametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametros_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametros_AddMod.Designer.cs">
+      <DependentUpon>frmParametros_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPuntosVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPuntosVentas.Designer.cs">
+      <DependentUpon>frmPuntosVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPuntosVentas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPuntosVentas_AddMod.Designer.cs">
+      <DependentUpon>frmPuntosVentas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSucursales.Designer.cs">
+      <DependentUpon>frmSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSucursales_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSucursales_AddMod.Designer.cs">
+      <DependentUpon>frmSucursales_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalonariosComprobantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalonariosComprobantes.Designer.cs">
+      <DependentUpon>frmTalonariosComprobantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalonariosComprobantesDetalle_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalonariosComprobantesDetalle_AddMod.Designer.cs">
+      <DependentUpon>frmTalonariosComprobantesDetalle_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalonariosComprobantes_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalonariosComprobantes_AddMod.Designer.cs">
+      <DependentUpon>frmTalonariosComprobantes_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoCodigoServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoCodigoServicios.Designer.cs">
+      <DependentUpon>frmTipoCodigoServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoCodigoServicio_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoCodigoServicio_AddMod.Designer.cs">
+      <DependentUpon>frmTipoCodigoServicio_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoViaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoViaticos.Designer.cs">
+      <DependentUpon>frmTipoViaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoViaticosPrecios_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoViaticosPrecios_AddMod.Designer.cs">
+      <DependentUpon>frmTipoViaticosPrecios_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoViaticos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoViaticos_AddMod.Designer.cs">
+      <DependentUpon>frmTipoViaticos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnidadNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnidadNegocio.Designer.cs">
+      <DependentUpon>frmUnidadNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnidadNegocio_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnidadNegocio_AddMod.Designer.cs">
+      <DependentUpon>frmUnidadNegocio_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCentroCostos.resx">
+      <DependentUpon>frmCentroCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCentroCostos_AddMod.resx">
+      <DependentUpon>frmCentroCostos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresas.resx">
+      <DependentUpon>frmEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresas_AddMod.resx">
+      <DependentUpon>frmEmpresas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntidadesBancarias.resx">
+      <DependentUpon>frmEntidadesBancarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntidadesBancariasAddMod.resx">
+      <DependentUpon>frmEntidadesBancariasAddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeriados.resx">
+      <DependentUpon>frmFeriados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComentarios.resx">
+      <DependentUpon>frmComentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeriados_AddMod.resx">
+      <DependentUpon>frmFeriados_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImagenes.resx">
+      <DependentUpon>frmImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJurisdicciones.resx">
+      <DependentUpon>frmJurisdicciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJurisdicciones_AddMod.resx">
+      <DependentUpon>frmJurisdicciones_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidades.resx">
+      <DependentUpon>frmLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidades_AddMod.resx">
+      <DependentUpon>frmLocalidades_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovedadesCochesAddMod.resx">
+      <DependentUpon>frmNovedadesCochesAddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovedadesCoches.resx">
+      <DependentUpon>frmNovedadesCoches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovedades.resx">
+      <DependentUpon>frmNovedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovedadesAddMod.resx">
+      <DependentUpon>frmNovedadesAddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametros.resx">
+      <DependentUpon>frmParametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametros_AddMod.resx">
+      <DependentUpon>frmParametros_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuntosVentas.resx">
+      <DependentUpon>frmPuntosVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuntosVentas_AddMod.resx">
+      <DependentUpon>frmPuntosVentas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSucursales.resx">
+      <DependentUpon>frmSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSucursales_AddMod.resx">
+      <DependentUpon>frmSucursales_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalonariosComprobantes.resx">
+      <DependentUpon>frmTalonariosComprobantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalonariosComprobantesDetalle_AddMod.resx">
+      <DependentUpon>frmTalonariosComprobantesDetalle_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalonariosComprobantes_AddMod.resx">
+      <DependentUpon>frmTalonariosComprobantes_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoCodigoServicios.resx">
+      <DependentUpon>frmTipoCodigoServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoCodigoServicio_AddMod.resx">
+      <DependentUpon>frmTipoCodigoServicio_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoViaticos.resx">
+      <DependentUpon>frmTipoViaticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoViaticosPrecios_AddMod.resx">
+      <DependentUpon>frmTipoViaticosPrecios_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoViaticos_AddMod.resx">
+      <DependentUpon>frmTipoViaticos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnidadNegocio.resx">
+      <DependentUpon>frmUnidadNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnidadNegocio_AddMod.resx">
+      <DependentUpon>frmUnidadNegocio_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GrupoErsa.snk" />
+    <None Include="Properties\DataSources\VENET_General_BL.ComentariosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.EmpresasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.EmpresasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.EmpresasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.EntidadesBancariasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.EntidadesBancariasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.EntidadesBancariasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.FeriadosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.FeriadosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.FeriadosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.JurisdiccionesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.JurisdiccionesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.JurisdiccionesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.LocalidadesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.LocalidadesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.LocalidadesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.ParametrosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.ParametrosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.PuntosVentaManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.PuntosVentaManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.PuntosVentaManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.SucursalesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.SucursalesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.SucursalesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TalonariosComprobantesDetalleManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TalonariosComprobantesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TalonariosComprobantesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TalonariosComprobantesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoCodigoServicioManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoCodigoServicioManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoCodigoServicioManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoNovedadesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoNovedadesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoNovedadesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoViaticosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoViaticosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoViaticosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.TipoViaticosPreciosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.UnidadNegocioManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.UnidadNegocioManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_General_BL.UnidadNegocioManager.datasource" />
+    <None Include="Resources\addfile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj">
+      <Project>{a3001d16-0bf0-41e7-b790-70b96f92561d}</Project>
+      <Name>VENET_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj">
+      <Project>{d390850f-7182-4492-a49d-a30c1f2791f9}</Project>
+      <Name>VENET_Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj">
+      <Project>{888ef654-ab63-4e91-afc1-fc3f60157dd2}</Project>
+      <Name>VENET_DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Gestion\VENET_Gestion_BL\VENET_Gestion_BL.csproj">
+      <Project>{5088f8d0-c339-438f-80c0-4ea7866531f0}</Project>
+      <Name>VENET_Gestion_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VENET_General_BL\VENET_General_BL.csproj">
+      <Project>{cacc8570-99a4-4264-9f5d-7c9610f21318}</Project>
+      <Name>VENET_General_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\designreport_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\designreport_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\routes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

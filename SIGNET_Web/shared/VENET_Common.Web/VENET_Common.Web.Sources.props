@@ -1,0 +1,20 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Common\GestionAsientos.cs" Link="Original\GestionAsientos.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Configuracion\Config.cs" Link="Original\Configuracion\Config.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Encriptor.cs" Link="Original\Encriptor.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Licencia.cs" Link="Original\Licencia.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\DbConexion.cs" Link="Original\DbConexion.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Extension.cs" Link="Original\Extension.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\FuncionesLog.cs" Link="Original\FuncionesLog.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Login\LoginManager.cs" Link="Original\Login\LoginManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\NumeroALetras.cs" Link="Original\NumeroALetras.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\IForm.cs" Link="Original\IForm.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\KeyNamePair.cs" Link="Original\KeyNamePair.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Reportes.cs" Link="Original\Reportes.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Parametro.cs" Link="Original\Parametro.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\Sistema.cs" Link="Original\Sistema.cs" />
+    <Compile Include="$(SignetRoot)VENET_Common\TilePrincipal.cs" Link="Original\TilePrincipal.cs" />
+  </ItemGroup>
+</Project>

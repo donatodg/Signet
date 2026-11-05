@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Vendedores] (
+    [Id]             INT             IDENTITY (1, 1) NOT NULL,
+    [Nombre]         VARCHAR (50)    NOT NULL,
+    [CUIT]           VARCHAR (13)    NULL,
+    [Id_TipoIVA]     INT             NOT NULL,
+    [DomicilioCalle] VARCHAR (50)    NULL,
+    [DomicilioNro]   VARCHAR (10)    NULL,
+    [DomicilioPiso]  VARCHAR (5)     NULL,
+    [DomicilioDpto]  VARCHAR (5)     NULL,
+    [Id_Localidad]   INT             NULL,
+    [Telefono]       VARCHAR (50)    NULL,
+    [Celular]        VARCHAR (50)    NULL,
+    [Email]          VARCHAR (100)   NULL,
+    [Observaciones]  VARCHAR (1000)  NULL,
+    [Comision]       DECIMAL (18, 2) NULL,
+    [FechaAdd]       DATETIME        NOT NULL,
+    [FechaMod]       DATETIME        NULL,
+    [FechaDel]       DATETIME        NULL,
+    [UserAdd]        INT             NOT NULL,
+    [UserMod]        INT             NULL,
+    [UserDel]        INT             NULL,
+    CONSTRAINT [PK_Vendedores] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Vendedores_TipoIva] FOREIGN KEY ([Id_TipoIVA]) REFERENCES [dbo].[TipoIva] ([Id])
+);
+

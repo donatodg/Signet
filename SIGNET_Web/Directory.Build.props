@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <!-- Carpeta raíz de la solución original (C:\Signet\) -->
+    <SignetRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\'))</SignetRoot>
+    <LangVersion>7.3</LangVersion>
+    <Deterministic>true</Deterministic>
+    <!-- Advertencias preexistentes en el código original -->
+    <NoWarn>$(NoWarn);CS0168;CS0219;CS0162;CS0414;CS0649;CS0169;CS0618;CS0612;CS1998;CS0108;CS0114;CS0659;CS0661;CS0660;CS0252;CS0253;CS0472;CS1570;CS1572;CS1573;CS1587;CS1591;CS0067;CS0105;CS8032;NU1701;NU1603;MSB3277;MSB3245;MSB3243</NoWarn>
+  </PropertyGroup>
+</Project>

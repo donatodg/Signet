@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\VENET_Gestion\VENET_Gestion_BL\GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="*.cs" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(NativeDependenciesDir)' == ''">
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj" />
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj" />
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(NativeDependenciesDir)' != ''">
+    <Reference Include="VENET_Common"><HintPath>$(NativeDependenciesDir)\VENET_Common.dll</HintPath></Reference>
+    <Reference Include="VENET_DataEntity"><HintPath>$(NativeDependenciesDir)\VENET_DataEntity.dll</HintPath></Reference>
+    <Reference Include="VENET_Comun"><HintPath>$(NativeDependenciesDir)\VENET_Comun.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

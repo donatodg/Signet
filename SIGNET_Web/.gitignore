@@ -1,0 +1,7 @@
+bin/
+obj/
+node_modules/
+src/SIGNET_Web.Api/wwwroot/
+.vs/
+*.user
+src/SIGNET_Web.Api/App_Data/

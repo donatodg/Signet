@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <ItemGroup>
+    <PackageReference Include="Docnet.Core" Version="2.6.0" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VENET_Contabilidad_BL.Web\VENET_Contabilidad_BL.Web.csproj" />
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <ProjectReference Include="..\VENET_Tesoreria_BL.Web\VENET_Tesoreria_BL.Web.csproj" />
+  </ItemGroup>
+  <Import Project="VENET_Gestion_BL.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_Gestion_BL</AssemblyName>
+    <RootNamespace>VENET_Gestion_BL</RootNamespace>
+  </PropertyGroup>
+</Project>

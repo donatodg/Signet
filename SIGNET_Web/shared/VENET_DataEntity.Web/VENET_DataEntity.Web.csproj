@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Shared.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\VENET_Comun.Web\VENET_Comun.Web.csproj" />
+  </ItemGroup>
+  <Import Project="VENET_DataEntity.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_DataEntity</AssemblyName>
+    <RootNamespace>VENET_DataEntity</RootNamespace>
+  </PropertyGroup>
+</Project>

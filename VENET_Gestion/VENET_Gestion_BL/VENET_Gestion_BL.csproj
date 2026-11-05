@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5088F8D0-C339-438F-80C0-4EA7866531F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_Gestion_BL</RootNamespace>
+    <AssemblyName>VENET_Gestion_BL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json"><HintPath>..\..\SIGNET\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath></Reference>
+    <PackageReference Include="Docnet.Core" Version="2.6.0" />
+    <PackageReference Include="StrongNamer" Version="0.2.5" PrivateAssets="all" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Builds\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.3.3, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\SIGNET\packages\EPPlus.4.5.3.3\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\..\SIGNET\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\..\SIGNET\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_Contabilidad\VENET_Contabilidad_BL\VENET_Contabilidad_BL.csproj">
+      <Name>VENET_Contabilidad_BL</Name>
+    </ProjectReference>
+    <Compile Include="ComprobantesVentasDetalleMultipleManager.cs" />
+    <Compile Include="ComprobantesCompras_IvaComprasManager.cs" />
+    <Compile Include="ComprobantesVentas_IvaVentasManager.cs" />
+    <Compile Include="ComprobanteVentaAsociadoManager.cs" />
+    <Compile Include="DuplicaComprobanteManager.cs" />
+    <Compile Include="PedidosConfirmacionParcialManager.cs" />
+    <Compile Include="ControlGestionManager.cs" />
+    <Compile Include="PadronIIBB_DetalleManager.cs" />
+    <Compile Include="PedidosEstadosManager.cs" />
+    <Compile Include="PedidosManager.cs" />
+    <Compile Include="ProductosActualizaPreciosCostoManager.cs" />
+    <Compile Include="ProductosActualizaListasPreciosManager.cs" />
+    <Compile Include="ProductosActualizaPreciosManager.cs" />
+    <Compile Include="ProductosComposicionTodosManager.cs" />
+    <Compile Include="ProductosComposicion_AddModManager.cs" />
+    <Compile Include="ProductosComposicionManager.cs" />
+    <Compile Include="ProductosCompuestosManager.cs" />
+    <Compile Include="ProductosDerivadosManager.cs" />
+    <Compile Include="ProductosListasPreciosImprimirManager.cs" />
+    <Compile Include="ProductosListasPreciosManager.cs" />
+    <Compile Include="ProductosSinMovimientosManager.cs" />
+    <Compile Include="ComprobantesComprasDetalleManager.cs" />
+    <Compile Include="ComprobantesComprasManager.cs" />
+    <Compile Include="ComprasDocumentosModelos.cs" />
+    <Compile Include="ComprasDocumentosLector.cs" />
+    <Compile Include="ComprasDocumentosService.cs" />
+    <Compile Include="ComprobantesVentasAProcesarManager.cs" />
+    <Compile Include="ComprobantesVentasConfirmacionParcialManager.cs" />
+    <Compile Include="CotizacionesManager.cs" />
+    <Compile Include="ComprobantesVentasPresentacionManager.cs" />
+    <Compile Include="ComprobantesCompras_ReporteCompletoManager.cs" />
+    <Compile Include="ComprobantesVentas_ReporteCompletoManager.cs" />
+    <Compile Include="DepositosManager.cs" />
+    <Compile Include="EntidadesUnidadNegociosManager.cs" />
+    <Compile Include="EntidadesEmpresasManager.cs" />
+    <Compile Include="EntidadesImpuestosAlicuotasManager.cs" />
+    <Compile Include="IvaAlicuotaManager.cs" />
+    <Compile Include="ProductosActualizaStockManager.cs" />
+    <Compile Include="ProductosCategorias2Manager.cs" />
+    <Compile Include="ProductosMovimientosManager.cs" />
+    <Compile Include="ProductosStockManager.cs" />
+    <Compile Include="ProductosHistorialPreciosManager.cs" />
+    <Compile Include="ProductosManager.cs" />
+    <Compile Include="ProductosUnidadVentaManager.cs" />
+    <Compile Include="ProductosCategoriasManager.cs" />
+    <Compile Include="ComprobantesVentasManager.cs" />
+    <Compile Include="ComprobantesVentasDetalleManager.cs" />
+    <Compile Include="ImpuestosAlicuotasManager.cs" />
+    <Compile Include="TipoIvaConfiguracionManager.cs" />
+    <Compile Include="TipoImpuestosManager.cs" />
+    <Compile Include="PadronIIBBManager.cs" />
+    <Compile Include="VendedoresManager.cs" />
+    <Compile Include="TipoIvaManager.cs" />
+    <Compile Include="FormasPagosManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj">
+      <Project>{a3001d16-0bf0-41e7-b790-70b96f92561d}</Project>
+      <Name>VENET_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj">
+      <Project>{d390850f-7182-4492-a49d-a30c1f2791f9}</Project>
+      <Name>VENET_Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj">
+      <Project>{888ef654-ab63-4e91-afc1-fc3f60157dd2}</Project>
+      <Name>VENET_DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Tesoreria\VENET_Tesoreria_BL\VENET_Tesoreria_BL.csproj">
+      <Project>{5357EBD1-029C-4195-ABFC-D4E74556F636}</Project>
+      <Name>VENET_Tesoreria_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GrupoErsa.snk" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\PedidosConfirmacionParcialManager.datasource" />
+    <None Include="Properties\DataSources\PedidosConfirmacionParcialManager.SearchResult.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

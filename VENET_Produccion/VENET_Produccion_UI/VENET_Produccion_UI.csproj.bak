@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB584781-8444-4CA7-BD13-9F5C35A59405}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_Produccion_UI</RootNamespace>
+    <AssemblyName>VENET_Produccion_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmProduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccion.Designer.cs">
+      <DependentUpon>frmProduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionActualizarUtilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionActualizarUtilidad.Designer.cs">
+      <DependentUpon>frmProduccionActualizarUtilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionCopiarVariante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionCopiarVariante.Designer.cs">
+      <DependentUpon>frmProduccionCopiarVariante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionListaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionListaPrecios.Designer.cs">
+      <DependentUpon>frmProduccionListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionListaPreciosDetalle_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionListaPreciosDetalle_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionListaPreciosDetalle_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionListaPrecios_ActualizaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionListaPrecios_ActualizaProductos.Designer.cs">
+      <DependentUpon>frmProduccionListaPrecios_ActualizaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionListaPrecios_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionListaPrecios_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionListaPrecios_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionManoDeObraHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionManoDeObraHistorial.Designer.cs">
+      <DependentUpon>frmProduccionManoDeObraHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionVariantesActualizarUtilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionVariantesActualizarUtilidad.Designer.cs">
+      <DependentUpon>frmProduccionVariantesActualizarUtilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionVariantesCopiar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionVariantesCopiar.Designer.cs">
+      <DependentUpon>frmProduccionVariantesCopiar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionVariantesTareasCompleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionVariantesTareasCompleto.Designer.cs">
+      <DependentUpon>frmProduccionVariantesTareasCompleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionVariantesTareas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionVariantesTareas_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionVariantesTareas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionVariantesTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionVariantesTareas.Designer.cs">
+      <DependentUpon>frmProduccionVariantesTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionTareas.Designer.cs">
+      <DependentUpon>frmProduccionTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionTareas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionTareas_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionTareas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionManoDeObra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionManoDeObra.Designer.cs">
+      <DependentUpon>frmProduccionManoDeObra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionManoDeObra_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionManoDeObra_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionManoDeObra_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionLineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionLineas.Designer.cs">
+      <DependentUpon>frmProduccionLineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionLineasMedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionLineasMedidas.Designer.cs">
+      <DependentUpon>frmProduccionLineasMedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionLineasMedidas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionLineasMedidas_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionLineasMedidas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionLineas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionLineas_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionLineas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionMedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionMedidas.Designer.cs">
+      <DependentUpon>frmProduccionMedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionMedidas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionMedidas_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionMedidas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionVariantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionVariantes.Designer.cs">
+      <DependentUpon>frmProduccionVariantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionVariantes_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionVariantes_AddMod.Designer.cs">
+      <DependentUpon>frmProduccionVariantes_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccion_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccion_AddMod.Designer.cs">
+      <DependentUpon>frmProduccion_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionCopiar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionCopiar.Designer.cs">
+      <DependentUpon>frmProduccionCopiar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduccionListaPreciosDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduccionListaPreciosDetalle.Designer.cs">
+      <DependentUpon>frmProduccionListaPreciosDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionActualizarUtilidadManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionCopiarManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionCopiarVarianteManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionLineasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionLineasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionLineasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionLineasMedidasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionLineasMedidasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionListaPreciosDetalleManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionListaPreciosDetalleManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionListaPreciosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionListaPreciosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionListaPreciosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManager+SearchResultTareas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManoDeObraHistorialManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManoDeObraHistorialManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManoDeObraManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManoDeObraManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionManoDeObraManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionMedidasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionMedidasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionMedidasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionTareasManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionTareasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionTareasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionVariantesActualizarUtilidadManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionVariantesManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionVariantesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionVariantesManager+SearchResultCompleto.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionVariantesManager.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj">
+      <Project>{a3001d16-0bf0-41e7-b790-70b96f92561d}</Project>
+      <Name>VENET_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj">
+      <Project>{d390850f-7182-4492-a49d-a30c1f2791f9}</Project>
+      <Name>VENET_Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj">
+      <Project>{888ef654-ab63-4e91-afc1-fc3f60157dd2}</Project>
+      <Name>VENET_DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VENET_Produccion_BL\VENET_Produccion_BL.csproj">
+      <Project>{fea25431-b42a-42e0-8723-2577533ebefa}</Project>
+      <Name>VENET_Produccion_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmProduccion.resx">
+      <DependentUpon>frmProduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionActualizarUtilidad.resx">
+      <DependentUpon>frmProduccionActualizarUtilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionCopiarVariante.resx">
+      <DependentUpon>frmProduccionCopiarVariante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionListaPrecios.resx">
+      <DependentUpon>frmProduccionListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionListaPreciosDetalle_AddMod.resx">
+      <DependentUpon>frmProduccionListaPreciosDetalle_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionListaPrecios_ActualizaProductos.resx">
+      <DependentUpon>frmProduccionListaPrecios_ActualizaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionListaPrecios_AddMod.resx">
+      <DependentUpon>frmProduccionListaPrecios_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionManoDeObraHistorial.resx">
+      <DependentUpon>frmProduccionManoDeObraHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionVariantesActualizarUtilidad.resx">
+      <DependentUpon>frmProduccionVariantesActualizarUtilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionVariantesCopiar.resx">
+      <DependentUpon>frmProduccionVariantesCopiar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionVariantesTareasCompleto.resx">
+      <DependentUpon>frmProduccionVariantesTareasCompleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionVariantesTareas_AddMod.resx">
+      <DependentUpon>frmProduccionVariantesTareas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionVariantesTareas.resx">
+      <DependentUpon>frmProduccionVariantesTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionTareas.resx">
+      <DependentUpon>frmProduccionTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionTareas_AddMod.resx">
+      <DependentUpon>frmProduccionTareas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionManoDeObra.resx">
+      <DependentUpon>frmProduccionManoDeObra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionManoDeObra_AddMod.resx">
+      <DependentUpon>frmProduccionManoDeObra_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionLineas.resx">
+      <DependentUpon>frmProduccionLineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionLineasMedidas.resx">
+      <DependentUpon>frmProduccionLineasMedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionLineasMedidas_AddMod.resx">
+      <DependentUpon>frmProduccionLineasMedidas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionLineas_AddMod.resx">
+      <DependentUpon>frmProduccionLineas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionMedidas.resx">
+      <DependentUpon>frmProduccionMedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionMedidas_AddMod.resx">
+      <DependentUpon>frmProduccionMedidas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionVariantes.resx">
+      <DependentUpon>frmProduccionVariantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionVariantes_AddMod.resx">
+      <DependentUpon>frmProduccionVariantes_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccion_AddMod.resx">
+      <DependentUpon>frmProduccion_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionCopiar.resx">
+      <DependentUpon>frmProduccionCopiar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduccionListaPreciosDetalle.resx">
+      <DependentUpon>frmProduccionListaPreciosDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionVariantesTareasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Produccion_BL.ProduccionVariantesTareasManager.datasource" />
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

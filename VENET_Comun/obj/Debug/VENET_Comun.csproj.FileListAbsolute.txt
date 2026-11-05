@@ -1,0 +1,17 @@
+E:\ProyectosTeam\Builds\VENET_Comun.dll
+E:\ProyectosTeam\Builds\VENET_Comun.pdb
+E:\ProyectosTeam\VENET_Comun\obj\Debug\VENET_Comun.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\VENET_Comun\obj\Debug\VENET_Comun.dll
+E:\ProyectosTeam\VENET_Comun\obj\Debug\VENET_Comun.pdb
+E:\Proyectos\Builds\VENET_Comun.dll
+E:\Proyectos\Builds\VENET_Comun.pdb
+E:\Proyectos\VENET_Comun\obj\Debug\VENET_Comun.dll
+E:\Proyectos\VENET_Comun\obj\Debug\VENET_Comun.pdb
+E:\Proyectos\VENET_Comun\obj\Debug\VENET_Comun.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_Comun\obj\Debug\VENET_Comun.csproj.CoreCompileInputs.cache
+C:\Signet\Builds\VENET_Comun.dll
+C:\Signet\Builds\VENET_Comun.pdb
+C:\Signet\VENET_Comun\obj\Debug\VENET_Comun.csproj.AssemblyReference.cache
+C:\Signet\VENET_Comun\obj\Debug\VENET_Comun.csproj.CoreCompileInputs.cache
+C:\Signet\VENET_Comun\obj\Debug\VENET_Comun.dll
+C:\Signet\VENET_Comun\obj\Debug\VENET_Comun.pdb

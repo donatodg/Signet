@@ -1,0 +1,77 @@
+11/3/2016 9:26:38 a. m.	This log contains information about the import schema operation into project 'VENET_Database' on computer 'ERSA-PC' by user 'Diego'.
+11/3/2016 9:26:38 a. m.	Import of database schema has started.
+11/3/2016 9:26:49 a. m.	Gathering database options
+11/3/2016 9:26:49 a. m.	Gathering users
+11/3/2016 9:26:49 a. m.	Gathering roles
+11/3/2016 9:26:49 a. m.	Gathering application roles
+11/3/2016 9:26:49 a. m.	Gathering role memberships
+11/3/2016 9:26:49 a. m.	Gathering filegroups
+11/3/2016 9:26:49 a. m.	Gathering full-text catalogs
+11/3/2016 9:26:49 a. m.	Gathering assemblies
+11/3/2016 9:26:49 a. m.	Gathering certificates
+11/3/2016 9:26:49 a. m.	Gathering asymmetric keys
+11/3/2016 9:26:49 a. m.	Gathering symmetric keys
+11/3/2016 9:26:49 a. m.	Gathering encrypted symmetric keys
+11/3/2016 9:26:49 a. m.	Gathering schemas
+11/3/2016 9:26:49 a. m.	Gathering XML schema collections
+11/3/2016 9:26:49 a. m.	Gathering user-defined data types
+11/3/2016 9:26:49 a. m.	Gathering user-defined types
+11/3/2016 9:26:49 a. m.	Gathering table types
+11/3/2016 9:26:49 a. m.	Gathering unique keys for table types
+11/3/2016 9:26:49 a. m.	Gathering primary keys for table types
+11/3/2016 9:26:49 a. m.	Gathering indexes for table types
+11/3/2016 9:26:49 a. m.	Gathering check constraints for table types
+11/3/2016 9:26:49 a. m.	Gathering default constraints for table types
+11/3/2016 9:26:49 a. m.	Gathering partition functions
+11/3/2016 9:26:49 a. m.	Gathering partition schemes
+11/3/2016 9:26:49 a. m.	Gathering functions
+11/3/2016 9:26:50 a. m.	Gathering encrypted functions
+11/3/2016 9:26:50 a. m.	Gathering aggregates
+11/3/2016 9:26:50 a. m.	Gathering procedures
+11/3/2016 9:26:50 a. m.	Gathering encrypted procedures
+11/3/2016 9:26:50 a. m.	Gathering tables
+11/3/2016 9:26:51 a. m.	Gathering primary keys
+11/3/2016 9:26:52 a. m.	Gathering unique constraints
+11/3/2016 9:26:52 a. m.	Gathering foreign keys
+11/3/2016 9:26:52 a. m.	Gathering default constraints
+11/3/2016 9:26:52 a. m.	Gathering check constraints
+11/3/2016 9:26:52 a. m.	Gathering views
+11/3/2016 9:26:52 a. m.	Gathering encrypted views
+11/3/2016 9:26:52 a. m.	Gathering indexes
+11/3/2016 9:26:52 a. m.	Gathering statistics
+11/3/2016 9:26:52 a. m.	Gathering full-text index stoplists
+11/3/2016 9:26:52 a. m.	Gathering search property lists
+11/3/2016 9:26:52 a. m.	Gathering search properties
+11/3/2016 9:26:52 a. m.	Gathering full-text indexes
+11/3/2016 9:26:52 a. m.	Gathering column store indexes
+11/3/2016 9:26:52 a. m.	Gathering spatial indexes
+11/3/2016 9:26:52 a. m.	Gathering XML indexes
+11/3/2016 9:26:52 a. m.	Gathering Selective XML indexes
+11/3/2016 9:26:52 a. m.	Gathering encrypted triggers
+11/3/2016 9:26:52 a. m.	Gathering triggers
+11/3/2016 9:26:52 a. m.	Gathering encrypted and clr ddl triggers
+11/3/2016 9:26:52 a. m.	Gathering ddl triggers
+11/3/2016 9:26:52 a. m.	Gathering synonyms
+11/3/2016 9:26:52 a. m.	Gathering defaults
+11/3/2016 9:26:52 a. m.	Gathering data constraint uddt bindings
+11/3/2016 9:26:52 a. m.	Gathering rules
+11/3/2016 9:26:52 a. m.	Gathering data constraint uddt bindings
+11/3/2016 9:26:52 a. m.	Gathering message types
+11/3/2016 9:26:52 a. m.	Gathering queues
+11/3/2016 9:26:52 a. m.	Gathering contracts
+11/3/2016 9:26:52 a. m.	Gathering services
+11/3/2016 9:26:52 a. m.	Gathering event notifications
+11/3/2016 9:26:52 a. m.	Gathering remote service bindings
+11/3/2016 9:26:52 a. m.	Gathering broker priorities
+11/3/2016 9:26:52 a. m.	Gathering signatures
+11/3/2016 9:26:52 a. m.	Gathering data compression options
+11/3/2016 9:26:52 a. m.	Gathering sequence types
+11/3/2016 9:26:52 a. m.	Gathering extended properties
+11/3/2016 9:26:52 a. m.	Gathering credentials
+11/3/2016 9:26:52 a. m.	Gathering logins
+11/3/2016 9:26:52 a. m.	Gathering server audits
+11/3/2016 9:26:54 a. m.	Scanning project for duplicate elements
+11/3/2016 9:26:54 a. m.	Finished duplicate element processing
+11/3/2016 9:26:57 a. m.	Finished importing database.
+11/3/2016 9:26:57 a. m.	A summary of the import was saved to the following location: E:\Proyectos\ErsaNET\VENET_Database\Import Schema Logs\VENET_Database_20160311122638.log
+11/3/2016 9:26:57 a. m.	Click Finish to continue...

@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[ComprobantesComprasDetalle] (
+    [Id]                   INT             IDENTITY (1, 1) NOT NULL,
+    [Id_ComprobanteCompra] INT             NOT NULL,
+    [Id_Especie]           INT             NOT NULL,
+    [Cotizacion]           DECIMAL (18, 4) NOT NULL,
+    [Id_Producto]          INT             NULL,
+    [Descripcion]          VARCHAR (4000)  NOT NULL,
+    [Cantidad]             INT             NOT NULL,
+    [PorcDescuento]        DECIMAL (4, 2)  NOT NULL,
+    [ImporteUnitario]      DECIMAL (18, 2) NOT NULL,
+    [Id_AlicuotaIva]       INT             NOT NULL,
+    [AlicuotaIva]          DECIMAL (18, 2) NOT NULL,
+    [ImporteIVA]           DECIMAL (18, 2) NOT NULL,
+    [Importe]              DECIMAL (18, 2) NOT NULL,
+    [FechaAdd]             DATETIME        NOT NULL,
+    [FechaMod]             DATETIME        NULL,
+    [FechaDel]             DATETIME        NULL,
+    [UserAdd]              INT             NOT NULL,
+    [UserMod]              INT             NULL,
+    [UserDel]              INT             NULL,
+    CONSTRAINT [PK_ComprobantesComprasDetalle] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_ComprobantesComprasDetalle_ComprobantesCompras] FOREIGN KEY ([Id_ComprobanteCompra]) REFERENCES [dbo].[ComprobantesCompras] ([Id]),
+    CONSTRAINT [FK_ComprobantesComprasDetalle_Especies] FOREIGN KEY ([Id_Especie]) REFERENCES [dbo].[Especies] ([Id])
+);
+

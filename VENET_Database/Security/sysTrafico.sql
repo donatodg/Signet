@@ -1,0 +1,2 @@
+﻿CREATE USER [sysTrafico] WITHOUT LOGIN;
+

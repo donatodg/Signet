@@ -1,0 +1,12 @@
+E:\ProyectosTeam\Builds\VENET_Informes_BL.dll
+E:\ProyectosTeam\Builds\VENET_Informes_BL.pdb
+E:\ProyectosTeam\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_Informes_BL.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_Informes_BL.dll
+E:\ProyectosTeam\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_Informes_BL.pdb
+E:\Proyectos\Builds\VENET_Informes_BL.dll
+E:\Proyectos\Builds\VENET_Informes_BL.pdb
+E:\Proyectos\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_Informes_BL.dll
+E:\Proyectos\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_Informes_BL.pdb
+E:\Proyectos\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_Informes_BL.csproj.AssemblyReference.cache
+E:\Proyectos\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_Informes_BL.csproj.CoreCompileInputs.cache
+E:\Proyectos\VENET_Informes\VENET_Informes_BL\obj\Release\VENET_In.DA862021.Up2Date

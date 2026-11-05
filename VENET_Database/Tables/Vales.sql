@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Vales] (
+    [Id]                INT             IDENTITY (1, 1) NOT NULL,
+    [Id_Caja]           INT             NOT NULL,
+    [Numero]            INT             NOT NULL,
+    [Fecha]             DATE            NOT NULL,
+    [Id_Personal]       INT             NOT NULL,
+    [Id_CentroCosto]    INT             NOT NULL,
+    [Importe]           DECIMAL (18, 2) NOT NULL,
+    [Descripcion]       VARCHAR (100)   NOT NULL,
+    [FechaConfirmacion] DATETIME        NULL,
+    [Id_Rendicion]      INT             NULL,
+    [FechaAnulacion]    DATETIME        NULL,
+    [MotivoAnulacion]   VARCHAR (300)   NULL,
+    [FechaAdd]          DATETIME        NOT NULL,
+    [FechaMod]          DATETIME        NULL,
+    [FechaDel]          DATETIME        NULL,
+    [UserAdd]           INT             NOT NULL,
+    [UserMod]           INT             NULL,
+    [UserDel]           INT             NULL,
+    CONSTRAINT [PK_Vales] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Vales_Cajas] FOREIGN KEY ([Id_Caja]) REFERENCES [dbo].[Cajas] ([Id]),
+    CONSTRAINT [FK_Vales_Cajas1] FOREIGN KEY ([Id_Caja]) REFERENCES [dbo].[Cajas] ([Id]),
+    CONSTRAINT [FK_Vales_Personal] FOREIGN KEY ([Id_Personal]) REFERENCES [dbo].[Personal] ([Id])
+);
+

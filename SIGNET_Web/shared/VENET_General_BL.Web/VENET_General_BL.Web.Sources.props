@@ -1,0 +1,24 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\CentroCostosMananger.cs" Link="Original\CentroCostosMananger.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\EmpresasManager.cs" Link="Original\EmpresasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\EntidadesBancariasManager.cs" Link="Original\EntidadesBancariasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\ComentariosManager.cs" Link="Original\ComentariosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\FeriadosManager.cs" Link="Original\FeriadosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\ImagenesManager.cs" Link="Original\ImagenesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\JurisdiccionesManager.cs" Link="Original\JurisdiccionesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\LocalidadesManager.cs" Link="Original\LocalidadesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\ParametrosManager.cs" Link="Original\ParametrosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\PuntosVentaManager.cs" Link="Original\PuntosVentaManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\TalonariosComprobantesDetalleManager.cs" Link="Original\TalonariosComprobantesDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\SucursalesManager.cs" Link="Original\SucursalesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\TalonariosComprobantesManager.cs" Link="Original\TalonariosComprobantesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\TipoNovedadesCochesManager.cs" Link="Original\TipoNovedadesCochesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\TipoCodigoServicioManager.cs" Link="Original\TipoCodigoServicioManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\TipoNovedadesManager.cs" Link="Original\TipoNovedadesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\TipoViaticosPreciosManager.cs" Link="Original\TipoViaticosPreciosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\TipoViaticosManager.cs" Link="Original\TipoViaticosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_General\VENET_General_BL\UnidadNegocioManager.cs" Link="Original\UnidadNegocioManager.cs" />
+  </ItemGroup>
+</Project>

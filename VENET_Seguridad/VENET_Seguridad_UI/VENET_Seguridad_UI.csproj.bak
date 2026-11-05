@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF01D853-EA15-46FA-A2B8-83A2AF4EF676}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_Seguridad_UI</RootNamespace>
+    <AssemblyName>VENET_Seguridad_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmSeguridadGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadGrupos.Designer.cs">
+      <DependentUpon>frmSeguridadGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadGruposObjetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadGruposObjetos.Designer.cs">
+      <DependentUpon>frmSeguridadGruposObjetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadGruposUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadGruposUsuarios.Designer.cs">
+      <DependentUpon>frmSeguridadGruposUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadGrupos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadGrupos_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadGrupos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadObjetosGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadObjetosGrupos.Designer.cs">
+      <DependentUpon>frmSeguridadObjetosGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuarios.Designer.cs">
+      <DependentUpon>frmSeguridadUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosActivos.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCajas.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCajas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCajas_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosCajas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCambioPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCambioPassword.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosCambioPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCentrosCostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCentrosCostos.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosCentrosCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCentrosCostos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosCentrosCostos_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosCentrosCostos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosDepositos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosDepositos.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosDepositos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosDepositos_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosDepositos_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosDepositos_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosEmpresas.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosEmpresas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosEmpresas_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosEmpresas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosPuntosVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosPuntosVentas.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosPuntosVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosPuntosVentas_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosPuntosVentas_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosPuntosVentas_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosSucursales.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosSucursales_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosSucursales_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosSucursales_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosUltimoLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosUltimoLog.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosUltimoLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosUnidadNegocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosUnidadNegocios.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosUnidadNegocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosUnidadNegocios_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuariosUnidadNegocios_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuariosUnidadNegocios_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguridadUsuarios_AddMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguridadUsuarios_AddMod.Designer.cs">
+      <DependentUpon>frmSeguridadUsuarios_AddMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmSeguridadGrupos.resx">
+      <DependentUpon>frmSeguridadGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadGruposObjetos.resx">
+      <DependentUpon>frmSeguridadGruposObjetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadGruposUsuarios.resx">
+      <DependentUpon>frmSeguridadGruposUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadGrupos_AddMod.resx">
+      <DependentUpon>frmSeguridadGrupos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadObjetosGrupos.resx">
+      <DependentUpon>frmSeguridadObjetosGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuarios.resx">
+      <DependentUpon>frmSeguridadUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosActivos.resx">
+      <DependentUpon>frmSeguridadUsuariosActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosCajas.resx">
+      <DependentUpon>frmSeguridadUsuariosCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosCajas_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuariosCajas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosCambioPassword.resx">
+      <DependentUpon>frmSeguridadUsuariosCambioPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosCentrosCostos.resx">
+      <DependentUpon>frmSeguridadUsuariosCentrosCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosCentrosCostos_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuariosCentrosCostos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosDepositos.resx">
+      <DependentUpon>frmSeguridadUsuariosDepositos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosDepositos_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuariosDepositos_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosEmpresas.resx">
+      <DependentUpon>frmSeguridadUsuariosEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosEmpresas_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuariosEmpresas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosPuntosVentas.resx">
+      <DependentUpon>frmSeguridadUsuariosPuntosVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosPuntosVentas_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuariosPuntosVentas_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosSucursales.resx">
+      <DependentUpon>frmSeguridadUsuariosSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosSucursales_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuariosSucursales_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosUltimoLog.resx">
+      <DependentUpon>frmSeguridadUsuariosUltimoLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosUnidadNegocios.resx">
+      <DependentUpon>frmSeguridadUsuariosUnidadNegocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuariosUnidadNegocios_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuariosUnidadNegocios_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadUsuarios_AddMod.resx">
+      <DependentUpon>frmSeguridadUsuarios_AddMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GrupoErsa.snk" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadGruposManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadGruposManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadGruposManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadGruposObjetosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadGruposUsuariosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadGruposUsuariosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadObjetoGrupoManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosActivosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosCajasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosCajasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosCambioPasswordManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosCentrosCostosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosCentrosCostosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosDepositosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosDepositosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosEmpresasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosEmpresasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosManager+ParametrosBusquedas.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosPuntosVentasManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosPuntosVentasManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosSucursalesManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosSucursalesManager.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosUltimoLogManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosUnidadNegociosManager+SearchResult.datasource" />
+    <None Include="Properties\DataSources\VENET_Seguridad_BL.SeguridadUsuariosUnidadNegociosManager.datasource" />
+    <None Include="Resources\addfile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj">
+      <Project>{a3001d16-0bf0-41e7-b790-70b96f92561d}</Project>
+      <Name>VENET_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj">
+      <Project>{d390850f-7182-4492-a49d-a30c1f2791f9}</Project>
+      <Name>VENET_Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj">
+      <Project>{888ef654-ab63-4e91-afc1-fc3f60157dd2}</Project>
+      <Name>VENET_DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VENET_Seguridad_BL\VENET_Seguridad_BL.csproj">
+      <Project>{0d6f968d-7ba3-4ece-813e-9eceed355359}</Project>
+      <Name>VENET_Seguridad_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

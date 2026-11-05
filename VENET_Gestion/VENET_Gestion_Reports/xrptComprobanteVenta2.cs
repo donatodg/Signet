@@ -1,0 +1,40 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using DevExpress.XtraReports.UI;
+
+namespace VENET_Gestion_Reports
+{
+    public partial class xrptComprobanteVenta2 : DevExpress.XtraReports.UI.XtraReport
+    {
+        public xrptComprobanteVenta2()
+        {
+            InitializeComponent();
+        }
+
+        private void xrLabel28_BeforePrint(object sender, CancelEventArgs e)
+        {
+            if (xrLabel1.Text != "A")
+            {
+                xrLabel28.Visible = false;
+                xrLabel29.Visible = false;
+                xrLabel26.Visible = false;
+                xrRichText6.Visible = false;
+                xrLabel4.Visible = false;
+                xrLabel32.Visible = false;
+                xrLabel30.Visible = false;
+                xrLabel31.Visible = false;
+            }
+
+            if (xrLabel8.Text.Trim() == "")
+            {
+                xrLabel8.Visible = false;
+                xrRichText8.Visible = false;
+                xrRichText9.Visible = false;
+                xrBarCode1.Visible = false;
+            }
+
+        }
+    }
+}

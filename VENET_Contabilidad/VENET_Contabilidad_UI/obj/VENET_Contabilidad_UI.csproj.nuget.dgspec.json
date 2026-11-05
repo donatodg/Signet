@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_UI\\VENET_Contabilidad_UI.csproj": {}
+  },
+  "projects": {
+    "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\VENET_Contabilidad_BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\VENET_Contabilidad_BL.csproj",
+        "projectName": "VENET_Contabilidad_BL",
+        "projectPath": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\VENET_Contabilidad_BL.csproj",
+        "packagesPath": "C:\\Users\\C06139\\.nuget\\packages\\",
+        "outputPath": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\C06139\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_UI\\VENET_Contabilidad_UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_UI\\VENET_Contabilidad_UI.csproj",
+        "projectName": "VENET_Contabilidad_UI",
+        "projectPath": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_UI\\VENET_Contabilidad_UI.csproj",
+        "packagesPath": "C:\\Users\\C06139\\.nuget\\packages\\",
+        "outputPath": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\C06139\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\VENET_Contabilidad_BL.csproj": {
+                "projectPath": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\VENET_Contabilidad_BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "System.Resources.Extensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

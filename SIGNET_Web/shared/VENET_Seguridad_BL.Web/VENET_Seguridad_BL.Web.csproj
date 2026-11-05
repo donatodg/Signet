@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <Import Project="VENET_Seguridad_BL.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_Seguridad_BL</AssemblyName>
+    <RootNamespace>VENET_Seguridad_BL</RootNamespace>
+  </PropertyGroup>
+</Project>

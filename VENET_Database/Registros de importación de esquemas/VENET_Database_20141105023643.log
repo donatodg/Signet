@@ -1,0 +1,71 @@
+05/11/2014 11:36:43 a.m.	Este registro contiene información acerca de la operación de importación de esquema en el proyecto 'VENET_Database' del equipo 'ERSA-PC' por el usuario 'Diego'.
+05/11/2014 11:36:43 a.m.	Se inició la importación del esquema de la base de datos.
+05/11/2014 11:36:44 a.m.	Recopilando opciones de base de datos
+05/11/2014 11:36:44 a.m.	Recopilando usuarios
+05/11/2014 11:36:44 a.m.	Recopilando roles
+05/11/2014 11:36:44 a.m.	Recopilando roles de aplicación
+05/11/2014 11:36:44 a.m.	Recopilando pertenencias a roles
+05/11/2014 11:36:44 a.m.	Recopilando grupos de archivos
+05/11/2014 11:36:44 a.m.	Recopilando catálogos de texto completo
+05/11/2014 11:36:44 a.m.	Recopilando ensamblados
+05/11/2014 11:36:44 a.m.	Recopilando certificados
+05/11/2014 11:36:44 a.m.	Recopilando claves asimétricas
+05/11/2014 11:36:44 a.m.	Recopilando claves simétricas
+05/11/2014 11:36:44 a.m.	Recopilando claves simétricas cifradas
+05/11/2014 11:36:44 a.m.	Recopilando esquemas
+05/11/2014 11:36:44 a.m.	Recopilando colecciones de esquemas XML
+05/11/2014 11:36:44 a.m.	Recopilando tipos de datos definidos por el usuario
+05/11/2014 11:36:44 a.m.	Recopilando tipos definidos por el usuario
+05/11/2014 11:36:44 a.m.	Recopilando tipos de tabla
+05/11/2014 11:36:44 a.m.	Recopilando claves únicas para tipos de tabla
+05/11/2014 11:36:44 a.m.	Recopilando claves principales para tipos de tabla
+05/11/2014 11:36:44 a.m.	Recopilando restricciones CHECK para tipos de tabla
+05/11/2014 11:36:44 a.m.	Recopilando restricciones DEFAULT para tipos de tabla
+05/11/2014 11:36:44 a.m.	Recopilando funciones de partición
+05/11/2014 11:36:44 a.m.	Recopilando esquemas de partición
+05/11/2014 11:36:44 a.m.	Recopilando funciones
+05/11/2014 11:36:44 a.m.	Recopilando funciones cifradas
+05/11/2014 11:36:44 a.m.	Recopilando agregados
+05/11/2014 11:36:44 a.m.	Recopilando procedimientos
+05/11/2014 11:36:44 a.m.	Recopilando procedimientos cifrados
+05/11/2014 11:36:44 a.m.	Recopilando tablas
+05/11/2014 11:36:44 a.m.	Recopilando claves principales
+05/11/2014 11:36:44 a.m.	Recopilando restricciones UNIQUE
+05/11/2014 11:36:44 a.m.	Recopilando claves externas
+05/11/2014 11:36:44 a.m.	Recopilando restricciones DEFAULT
+05/11/2014 11:36:44 a.m.	Recopilando restricciones CHECK
+05/11/2014 11:36:44 a.m.	Recopilando vistas
+05/11/2014 11:36:44 a.m.	Recopilando vistas cifradas
+05/11/2014 11:36:44 a.m.	Recopilando índices
+05/11/2014 11:36:44 a.m.	Recopilando estadísticas
+05/11/2014 11:36:44 a.m.	Recopilando listas de palabras irrelevantes de índices de texto completo
+05/11/2014 11:36:44 a.m.	Recopilando índices de texto completo
+05/11/2014 11:36:44 a.m.	Recopilando índices espaciales
+05/11/2014 11:36:44 a.m.	Recopilando índices XML
+05/11/2014 11:36:44 a.m.	Recopilando desencadenadores cifrados
+05/11/2014 11:36:44 a.m.	Recopilando desencadenadores
+05/11/2014 11:36:44 a.m.	Recopilando DDL triggers cifrados y de CLR
+05/11/2014 11:36:44 a.m.	Recopilando DDL triggers
+05/11/2014 11:36:44 a.m.	Recopilando sinónimos
+05/11/2014 11:36:44 a.m.	Recopilando valores predeterminados
+05/11/2014 11:36:44 a.m.	Recopilando enlaces UDDT de restricción de datos
+05/11/2014 11:36:44 a.m.	Recopilando reglas
+05/11/2014 11:36:44 a.m.	Recopilando enlaces UDDT de restricción de datos
+05/11/2014 11:36:44 a.m.	Recopilando tipos de mensaje
+05/11/2014 11:36:44 a.m.	Recopilando colas
+05/11/2014 11:36:44 a.m.	Recopilando contratos
+05/11/2014 11:36:44 a.m.	Recopilando servicios
+05/11/2014 11:36:44 a.m.	Recopilando notificaciones de eventos
+05/11/2014 11:36:44 a.m.	Recopilando enlaces de servicio remoto
+05/11/2014 11:36:44 a.m.	Recopilando prioridades de Broker
+05/11/2014 11:36:44 a.m.	Recopilando firmas
+05/11/2014 11:36:44 a.m.	Recopilando opciones de compresión de datos
+05/11/2014 11:36:44 a.m.	Recopilando propiedades extendidas
+05/11/2014 11:36:44 a.m.	Recopilando credenciales
+05/11/2014 11:36:44 a.m.	Recopilando inicios de sesión
+05/11/2014 11:36:44 a.m.	Recopilando auditorías de servidor
+05/11/2014 11:36:45 a.m.	Buscando elementos duplicados en el proyecto
+05/11/2014 11:36:45 a.m.	Ha finalizado el procesamiento de los elementos duplicados
+05/11/2014 11:36:46 a.m.	Finalizó la importación de la base de datos.
+05/11/2014 11:36:46 a.m.	Se guardó un resumen de la importación en la siguiente ubicación: D:\Proyectos\ErsaNET\VENET_Database\Registros de importación de esquemas\VENET_Database_20141105023643.log
+05/11/2014 11:36:46 a.m.	Haga clic en Finalizar para continuar...

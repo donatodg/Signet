@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <Import Project="VENET_IA_BL.Web.Sources.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_IA_BL</AssemblyName>
+    <RootNamespace>VENET_IA_BL</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VENET_Gestion_BL.Web\VENET_Gestion_BL.Web.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

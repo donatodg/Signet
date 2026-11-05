@@ -1,0 +1,7 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_ProvFinancieros\VENET_ProvFinancieros_BL\ProvFinancierosCuentasManager.cs" Link="Original\ProvFinancierosCuentasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_ProvFinancieros\VENET_ProvFinancieros_BL\ProvFinancierosManager.cs" Link="Original\ProvFinancierosManager.cs" />
+  </ItemGroup>
+</Project>

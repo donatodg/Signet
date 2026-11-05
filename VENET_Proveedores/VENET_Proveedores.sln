@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Proveedores_UI", "VENET_Proveedores_UI\VENET_Proveedores_UI.csproj", "{FBC5A01A-39C9-4A2B-9DD1-44D6DE150B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Proveedores_BL", "VENET_Proveedores_BL\VENET_Proveedores_BL.csproj", "{31E45F1E-2565-4922-9C6C-6304D908E55E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBC5A01A-39C9-4A2B-9DD1-44D6DE150B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC5A01A-39C9-4A2B-9DD1-44D6DE150B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC5A01A-39C9-4A2B-9DD1-44D6DE150B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC5A01A-39C9-4A2B-9DD1-44D6DE150B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E45F1E-2565-4922-9C6C-6304D908E55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E45F1E-2565-4922-9C6C-6304D908E55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E45F1E-2565-4922-9C6C-6304D908E55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E45F1E-2565-4922-9C6C-6304D908E55E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.29:8080/tfs/ersa
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VENET_Proveedores_UI\\VENET_Proveedores_UI.csproj
+		SccProjectName1 = VENET_Proveedores_UI
+		SccLocalPath1 = VENET_Proveedores_UI
+		SccProjectUniqueName2 = VENET_Proveedores_BL\\VENET_Proveedores_BL.csproj
+		SccProjectName2 = VENET_Proveedores_BL
+		SccLocalPath2 = VENET_Proveedores_BL
+	EndGlobalSection
+EndGlobal

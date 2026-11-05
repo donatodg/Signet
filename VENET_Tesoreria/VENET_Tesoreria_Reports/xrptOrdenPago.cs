@@ -1,0 +1,72 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using DevExpress.XtraReports.UI;
+
+namespace VENET_Tesoreria_Reports
+{
+    public partial class xrptOrdenPago : DevExpress.XtraReports.UI.XtraReport
+    {
+        public xrptOrdenPago()
+        {
+            InitializeComponent();
+        }
+
+        private void xrLabel5_BeforePrint(object sender, CancelEventArgs e)
+        {
+            if (xrLabel5.Text == "DUPLICADO")
+            {
+                xrLabel9.Visible = false;
+                xrLabel10.Visible = false;
+                xrLabel11.Visible = false;
+                xrLabel2.Visible = false;
+                xrLabel6.Visible = false;
+                xrLabel7.Visible = false;
+                DetailReport.Visible = false;
+            }
+        }
+
+        private void xrLabel10_BeforePrint(object sender, CancelEventArgs e)
+        {
+            if (xrLabel5.Text == "DUPLICADO")
+            {
+                xrLabel9.Visible = false;
+                xrLabel10.Visible = false;
+                xrLabel11.Visible = false;
+                xrLabel2.Visible = false;
+                xrLabel6.Visible = false;
+                xrLabel7.Visible = false;
+                DetailReport.Visible = false;
+            }
+        }
+
+        private void xrLabel11_BeforePrint(object sender, CancelEventArgs e)
+        {
+            if (xrLabel5.Text == "DUPLICADO")
+            {
+                xrLabel9.Visible = false;
+                xrLabel10.Visible = false;
+                xrLabel11.Visible = false;
+                xrLabel2.Visible = false;
+                xrLabel6.Visible = false;
+                xrLabel7.Visible = false;
+                DetailReport.Visible = false;
+            }
+        }
+
+        private void xrLabel9_BeforePrint(object sender, CancelEventArgs e)
+        {
+            if (xrLabel5.Text == "DUPLICADO")
+            {
+                xrLabel9.Visible = false;
+                xrLabel10.Visible = false;
+                xrLabel11.Visible = false;
+                xrLabel2.Visible = false;
+                xrLabel6.Visible = false;
+                xrLabel7.Visible = false;
+                DetailReport.Visible = false;
+            }
+        }
+    }
+}

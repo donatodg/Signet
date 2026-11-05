@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://agilis.fics.tfc.sisorg.com.ar/">
+      <s:element name="GetTerminal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTerminalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTerminalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTerminalByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTerminalByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTerminalByIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTerminalSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTerminal" />
+  </wsdl:message>
+  <wsdl:message name="GetTerminalSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTerminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTerminalByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTerminalByID" />
+  </wsdl:message>
+  <wsdl:message name="GetTerminalByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTerminalByIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TerminalSoap">
+    <wsdl:operation name="GetTerminal">
+      <wsdl:input message="tns:GetTerminalSoapIn" />
+      <wsdl:output message="tns:GetTerminalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalByID">
+      <wsdl:input message="tns:GetTerminalByIDSoapIn" />
+      <wsdl:output message="tns:GetTerminalByIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TerminalSoap" type="tns:TerminalSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTerminal">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTerminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalByID">
+      <soap:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTerminalByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TerminalSoap12" type="tns:TerminalSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTerminal">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTerminal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalByID">
+      <soap12:operation soapAction="http://agilis.fics.tfc.sisorg.com.ar/GetTerminalByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Terminal">
+    <wsdl:port name="TerminalSoap" binding="tns:TerminalSoap">
+      <soap:address location="http://200.32.4.146/ERSA/TFC_Layer/Terminal.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TerminalSoap12" binding="tns:TerminalSoap12">
+      <soap12:address location="http://200.32.4.146/ERSA/TFC_Layer/Terminal.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

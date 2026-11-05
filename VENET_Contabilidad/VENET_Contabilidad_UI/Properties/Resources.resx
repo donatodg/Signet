@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="save_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\VENET_Gestion\VENET_Gestion_UI\Resources\save_16x16.png;System.Drawing.Bitmap, System.Drawing</value></data>
+  <data name="print_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\VENET_Gestion\VENET_Gestion_UI\Resources\print_16x16.png;System.Drawing.Bitmap, System.Drawing</value></data>
+  <data name="addfile_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\VENET_Gestion\VENET_Gestion_UI\Resources\addfile_16x16.png;System.Drawing.Bitmap, System.Drawing</value></data>
+  <data name="loadfrom_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\VENET_Gestion\VENET_Gestion_UI\Resources\loadfrom_16x16.png;System.Drawing.Bitmap, System.Drawing</value></data>
+  <data name="deletelist_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\VENET_Gestion\VENET_Gestion_UI\Resources\deletelist_16x16.png;System.Drawing.Bitmap, System.Drawing</value></data>
+</root>

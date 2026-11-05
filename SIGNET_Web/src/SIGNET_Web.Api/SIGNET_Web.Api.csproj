@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <!-- .NET Framework 4.8: necesario para reutilizar los proyectos *_BL / EF6 originales -->
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>9.0</LangVersion>
+    <RootNamespace>SIGNET_Web.Api</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <!-- Carpeta con el build del cliente React (client\dist se copia aquí con npm run build) -->
+    <SpaRoot>..\..\client\</SpaRoot>
+  </PropertyGroup>
+  <Import Project="Reporting\DevExpress.props" />
+  <ItemGroup>
+    <Compile Include="..\..\..\VENET_Contabilidad\VENET_Contabilidad_UI\InformeContable.cs" Link="Reporting\InformeContable.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.3.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.3.13" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.3.13" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="PDFsharp" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\VENET_Contabilidad_BL.Web\VENET_Contabilidad_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Comun.Web\VENET_Comun.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_DataEntity.Web\VENET_DataEntity.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Common.Web\VENET_Common.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_General_BL.Web\VENET_General_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Seguridad_BL.Web\VENET_Seguridad_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Clientes_BL.Web\VENET_Clientes_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Proveedores_BL.Web\VENET_Proveedores_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_ProvFinancieros_BL.Web\VENET_ProvFinancieros_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Personal_BL.Web\VENET_Personal_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Produccion_BL.Web\VENET_Produccion_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Tesoreria_BL.Web\VENET_Tesoreria_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Gestion_BL.Web\VENET_Gestion_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_IA_BL.Web\VENET_IA_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_WSFE_BL.Web\VENET_WSFE_BL.Web.csproj" />
+    <ProjectReference Include="..\..\shared\VENET_Personal_Sisorg.Web\VENET_Personal_Sisorg.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="permissions.generated.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="combos.generated.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\database\001-Contabilidad.sql" Link="database\001-Contabilidad.sql" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="..\..\database\002-Contabilidad.sql" Link="database\002-Contabilidad.sql" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="..\..\database\003-ContabilidadProductiva.sql" Link="database\003-ContabilidadProductiva.sql" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="..\..\database\004-ComprasDocumentos.sql" Link="database\004-ComprasDocumentos.sql" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <!-- Datos de usuarios (diseño de la pantalla principal) y configuración de desarrollo: no se publican -->
+    <Content Remove="App_Data\**" />
+    <None Remove="App_Data\**" />
+    <Content Update="appsettings.Development.json" CopyToPublishDirectory="Never" />
+    <Content Include="Personalizacion\**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

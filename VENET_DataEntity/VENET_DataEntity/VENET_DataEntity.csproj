@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{888EF654-AB63-4E91-AFC1-FC3F60157DD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENET_DataEntity</RootNamespace>
+    <AssemblyName>VENET_DataEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GrupoErsa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\SIGNET\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\SIGNET\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VENET_Comun, Version=1.0.0.1, Culture=neutral, PublicKeyToken=3e309b37c7ad5d7f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Builds\VENET_Comun.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activos\Remitos.cs" />
+    <Compile Include="Activos\RemitosDetalle.cs" />
+    <Compile Include="Activos\ServiciosRepositorio.cs" />
+    <Compile Include="Activos\Servicios.cs" />
+    <Compile Include="Activos\ActivosFijos.cs" />
+    <Compile Include="Activos\Familias.cs" />
+    <Compile Include="Activos\Clases.cs" />
+    <Compile Include="Clientes\ClientesEntregas.cs" />
+    <Compile Include="Clientes\ClientesDescuentos.cs" />
+    <Compile Include="Clientes\ClientesContactos.cs" />
+    <Compile Include="Clientes\Clientes.cs" />
+    <Compile Include="Configuracion.cs" />
+    <Compile Include="Contabilidad\Cuentas.cs" />
+    <Compile Include="Context\ProduccionContext.cs" />
+    <Compile Include="Context\GpsContext.cs" />
+    <Compile Include="Context\MantenimientoContext.cs" />
+    <Compile Include="Context\ActivosContext.cs" />
+    <Compile Include="Context\LogisticaContext.cs" />
+    <Compile Include="Context\ErsaContext.cs" />
+    <Compile Include="Context\GeneralContext.cs" />
+    <Compile Include="Context\PersonalContext.cs" />
+    <Compile Include="Context\GestionContext.cs" />
+    <Compile Include="Context\TesoreriaContext.cs" />
+    <Compile Include="Context\SeguridadContext.cs" />
+    <Compile Include="General\EntidadesBancarias.cs" />
+    <Compile Include="General\Comentarios.cs" />
+    <Compile Include="General\Jurisdicciones.cs" />
+    <Compile Include="General\Imagenes.cs" />
+    <Compile Include="General\SistemaLog.cs" />
+    <Compile Include="General\SucursalPuntosVentas.cs" />
+    <Compile Include="General\TalonariosComprobantes.cs" />
+    <Compile Include="General\TalonariosComprobantesDetalle.cs" />
+    <Compile Include="General\TipoCategoriasImagenes.cs" />
+    <Compile Include="General\TipoComentarios.cs" />
+    <Compile Include="General\TipoNovedadesCoches.cs" />
+    <Compile Include="General\TipoCodigoServicio.cs" />
+    <Compile Include="General\TipoPercepciones.cs" />
+    <Compile Include="General\TipoViaticosPrecios.cs" />
+    <Compile Include="General\TipoViaticos.cs" />
+    <Compile Include="General\UnidadNegocios.cs" />
+    <Compile Include="General\CentrosCostos.cs" />
+    <Compile Include="General\ClaseBase.cs" />
+    <Compile Include="General\Empresas.cs" />
+    <Compile Include="General\EstadosCiviles.cs" />
+    <Compile Include="General\Feriados.cs" />
+    <Compile Include="General\Localidades.cs" />
+    <Compile Include="General\Parametros.cs" />
+    <Compile Include="General\Provincias.cs" />
+    <Compile Include="General\PuntosVentas.cs" />
+    <Compile Include="General\Sucursales.cs" />
+    <Compile Include="General\TipoDoc.cs" />
+    <Compile Include="Gestion\AFIP_Tributos.cs" />
+    <Compile Include="Gestion\AsientosDetalle.cs" />
+    <Compile Include="Gestion\Asientos.cs" />
+    <Compile Include="Gestion\PedidosDetalleProcesados.cs" />
+    <Compile Include="Gestion\ComprobantesVentasImpuestos.cs" />
+    <Compile Include="Gestion\CotizacionesDetalle.cs" />
+    <Compile Include="Gestion\Cotizaciones.cs" />
+    <Compile Include="Gestion\ComprobantesVentasDetalleProcesados.cs" />
+    <Compile Include="Gestion\EjerciciosContables.cs" />
+    <Compile Include="Gestion\EntidadesUnidadNegocios.cs" />
+    <Compile Include="Gestion\EntidadesEmpresas.cs" />
+    <Compile Include="Gestion\EntidadesImpuestoAlicuotas.cs" />
+    <Compile Include="Gestion\CuentasContables.cs" />
+    <Compile Include="Gestion\PadronIIBB_Detalle.cs" />
+    <Compile Include="Gestion\ProductosListasPreciosDetalle.cs" />
+    <Compile Include="Gestion\ProductosListasPrecios.cs" />
+    <Compile Include="Gestion\ProductosUsuariosExcluidos.cs" />
+    <Compile Include="Gestion\ProductosListaPrecioActual.cs" />
+    <Compile Include="Gestion\ProductosCompuestos.cs" />
+    <Compile Include="Gestion\ProductosCompuestosDetalle.cs" />
+    <Compile Include="Gestion\ProductosDerivados.cs" />
+    <Compile Include="Gestion\ProductosComposicion.cs" />
+    <Compile Include="Gestion\ProductosDepositos.cs" />
+    <Compile Include="Gestion\ProductosCategorias2.cs" />
+    <Compile Include="Gestion\ProductosPreciosHistorico.cs" />
+    <Compile Include="Gestion\Depositos.cs" />
+    <Compile Include="Gestion\AFIP_Comprobantes.cs" />
+    <Compile Include="Gestion\TipoAsientosDetalle.cs" />
+    <Compile Include="Gestion\TipoAsientos.cs" />
+    <Compile Include="Gestion\TipoCategoriasContables.cs" />
+    <Compile Include="Gestion\TipoImpuestos.cs" />
+    <Compile Include="Gestion\ImpuestosAlicuotas.cs" />
+    <Compile Include="Gestion\PadronIIBB.cs" />
+    <Compile Include="Gestion\TipoIva_Configuracion.cs" />
+    <Compile Include="Gestion\Vendedores.cs" />
+    <Compile Include="Gestion\TipoIva.cs" />
+    <Compile Include="Gestion\FormasPagos.cs" />
+    <Compile Include="Gestion\Productos.cs" />
+    <Compile Include="Gestion\ComprobantesVentasDetalle.cs" />
+    <Compile Include="Gestion\ComprobantesComprasDetalle.cs" />
+    <Compile Include="Gestion\ComprobantesVentas.cs" />
+    <Compile Include="Gestion\ComprobantesCompras.cs" />
+    <Compile Include="Gestion\IvaAlicuotas.cs" />
+    <Compile Include="Gestion\ProductosUnidadVenta.cs" />
+    <Compile Include="Gestion\ProductosCategorias.cs" />
+    <Compile Include="Gps\Alarmas.cs" />
+    <Compile Include="Gps\AlarmasHistorico.cs" />
+    <Compile Include="Gps\Entradas.cs" />
+    <Compile Include="Gps\EquiposGpsMovimientos.cs" />
+    <Compile Include="Gps\EquiposSensores.cs" />
+    <Compile Include="Gps\EquiposGps.cs" />
+    <Compile Include="Gps\EventosHistorico.cs" />
+    <Compile Include="Gps\GpsHistorico.cs" />
+    <Compile Include="Gps\GpsUltimo.cs" />
+    <Compile Include="Gps\Eventos.cs" />
+    <Compile Include="Gps\Puntos.cs" />
+    <Compile Include="Gps\Rutas.cs" />
+    <Compile Include="Gps\SensoresUltimo.cs" />
+    <Compile Include="Gps\SensoresHistorico.cs" />
+    <Compile Include="Gps\Vehiculos.cs" />
+    <Compile Include="Gps\VehiculosEntradas.cs" />
+    <Compile Include="Gps\VehiculosPersonal.cs" />
+    <Compile Include="Gps\VehiculosPersonalDiario.cs" />
+    <Compile Include="Gps\Zonas.cs" />
+    <Compile Include="Logistica\CircuitosAutorizados.cs" />
+    <Compile Include="Logistica\ArchivosCajasUsuarios.cs" />
+    <Compile Include="Logistica\CircuitosAutorizadosDetalle.cs" />
+    <Compile Include="Logistica\ArchivosDetalle.cs" />
+    <Compile Include="Logistica\Autorizaciones.cs" />
+    <Compile Include="Logistica\Archivos.cs" />
+    <Compile Include="Logistica\EstadosFacturas.cs" />
+    <Compile Include="Logistica\ArchivosUbicacion.cs" />
+    <Compile Include="Logistica\UnidadesEventuales.cs" />
+    <Compile Include="Logistica\Reclamos.cs" />
+    <Compile Include="Logistica\Retenes.cs" />
+    <Compile Include="Logistica\Descuentos.cs" />
+    <Compile Include="Logistica\FacturasTango.cs" />
+    <Compile Include="Logistica\Datos.cs" />
+    <Compile Include="Mantenimiento\Aseguradoras.cs" />
+    <Compile Include="Mantenimiento\CarroceriasModelos.cs" />
+    <Compile Include="Mantenimiento\CarroceriasCaracteristicas.cs" />
+    <Compile Include="Mantenimiento\Deudores.cs" />
+    <Compile Include="Mantenimiento\Acreedores.cs" />
+    <Compile Include="Mantenimiento\EstadosDeudas.cs" />
+    <Compile Include="Mantenimiento\MotorModelos.cs" />
+    <Compile Include="Mantenimiento\MotorMarcas.cs" />
+    <Compile Include="Mantenimiento\ProveedoresCarroceria.cs" />
+    <Compile Include="Mantenimiento\TipoCombustibles.cs" />
+    <Compile Include="Mantenimiento\ChasisTipos.cs" />
+    <Compile Include="Mantenimiento\ChasisModelos.cs" />
+    <Compile Include="Mantenimiento\ChasisMarcas.cs" />
+    <Compile Include="Mantenimiento\ProveedoresChasisMotor.cs" />
+    <Compile Include="Mantenimiento\TipoCondicionUsos.cs" />
+    <Compile Include="Mantenimiento\TipoUnidades.cs" />
+    <Compile Include="Mantenimiento\EmpresasTitulares.cs" />
+    <Compile Include="Mantenimiento\EstadosUnidades.cs" />
+    <Compile Include="Mantenimiento\Unidades.cs" />
+    <Compile Include="Personal\Personal.cs" />
+    <Compile Include="Personal\PersonalJerarquias.cs" />
+    <Compile Include="Personal\PersonalNovedades.cs" />
+    <Compile Include="Personal\PersonalTipos.cs" />
+    <Compile Include="Gestion\Pedidos.cs" />
+    <Compile Include="Gestion\PedidosDetalle.cs" />
+    <Compile Include="Produccion\Produccion_ListaPrecioActual.cs" />
+    <Compile Include="Produccion\Produccion.cs" />
+    <Compile Include="Produccion\Produccion_ListaPreciosDetalle.cs" />
+    <Compile Include="Produccion\Produccion_ManoDeObraHistorial.cs" />
+    <Compile Include="Produccion\Produccion_ListaPrecios.cs" />
+    <Compile Include="Produccion\Produccion_ListaPrecioActual_VariantesTareas.cs" />
+    <Compile Include="Produccion\Produccion_VariantesTareas.cs" />
+    <Compile Include="Produccion\Produccion_Tareas.cs" />
+    <Compile Include="Produccion\Produccion_Medidas.cs" />
+    <Compile Include="Produccion\Produccion_ManoDeObra.cs" />
+    <Compile Include="Produccion\Produccion_Variantes.cs" />
+    <Compile Include="Produccion\Produccion_Lineas.cs" />
+    <Compile Include="Produccion\Produccion_LineasMedidas.cs" />
+    <Compile Include="Produccion\TipoProduccion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores\Proveedores.cs" />
+    <Compile Include="ProvFinanciero\ProvFinancieros.cs" />
+    <Compile Include="ProvFinanciero\ProvFinancieros_Cuentas.cs" />
+    <Compile Include="Seguridad\SeguridadGrupos.cs" />
+    <Compile Include="Seguridad\SeguridadGruposObjetos.cs" />
+    <Compile Include="Seguridad\SeguridadObjetos.cs" />
+    <Compile Include="Seguridad\SeguridadUsuarioDepositoDefault.cs" />
+    <Compile Include="Seguridad\SeguridadUsuarioCentrosCostoDefault.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosIndicadores.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosDepositos.cs" />
+    <Compile Include="Seguridad\SeguridadUsuarioSucursalDefault.cs" />
+    <Compile Include="Seguridad\SeguridadUsuarioCajaDefault.cs" />
+    <Compile Include="Seguridad\SeguridadUsuarios.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosCajas.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosSucursales.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosPuntosVentas.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosCentrosCostos.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosEmpresas.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosUnidadNegocios.cs" />
+    <Compile Include="Seguridad\SeguridadUsuariosConfiguracion.cs" />
+    <Compile Include="Tesoreria\BoletasDepositos.cs" />
+    <Compile Include="Tesoreria\BoletasDepositosDetalle.cs" />
+    <Compile Include="Tesoreria\Cajas.cs" />
+    <Compile Include="Tesoreria\ChequesDescuento.cs" />
+    <Compile Include="Tesoreria\ChequesDescuentoDetalle.cs" />
+    <Compile Include="Tesoreria\ChequesPropios.cs" />
+    <Compile Include="Tesoreria\ChequesTerceros.cs" />
+    <Compile Include="Gestion\ComprobantesVentasAProcesar.cs" />
+    <Compile Include="Tesoreria\EntidadesCtaCte.cs" />
+    <Compile Include="Tesoreria\Especies.cs" />
+    <Compile Include="Tesoreria\EspeciesCotizaciones.cs" />
+    <Compile Include="Tesoreria\EspeciesCtaCte.cs" />
+    <Compile Include="Tesoreria\Firmantes.cs" />
+    <Compile Include="Tesoreria\FirmantesCuentas.cs" />
+    <Compile Include="Tesoreria\OrdenesPago.cs" />
+    <Compile Include="Tesoreria\ListaPagos.cs" />
+    <Compile Include="Tesoreria\RecibosComprobantes.cs" />
+    <Compile Include="Tesoreria\OrdenesPagoComprobantes.cs" />
+    <Compile Include="Tesoreria\OrdenesPagoImpuestos.cs" />
+    <Compile Include="Tesoreria\Recibos.cs" />
+    <Compile Include="Tesoreria\OrdenesPagoDetalle.cs" />
+    <Compile Include="Tesoreria\ListaPagosDetalle.cs" />
+    <Compile Include="Tesoreria\RecibosDetalle.cs" />
+    <Compile Include="Tesoreria\Rendiciones.cs" />
+    <Compile Include="Tesoreria\RendicionesDetalle.cs" />
+    <Compile Include="Tesoreria\TipoComprobante.cs" />
+    <Compile Include="Tesoreria\Transferencias.cs" />
+    <Compile Include="Tesoreria\Turnos.cs" />
+    <Compile Include="Tesoreria\Vales.cs" />
+    <Compile Include="Trafico\FrancosCompensatorios.cs" />
+    <Compile Include="Trafico\GruposLineas.cs" />
+    <Compile Include="Trafico\PlanificacionComentariosInspectores.cs" />
+    <Compile Include="Trafico\PlanificacionDetallesInspectores.cs" />
+    <Compile Include="Trafico\PlanificacionLargaDetallesConfirmado.cs" />
+    <Compile Include="Trafico\PlanificacionServiciosInspectores.cs" />
+    <Compile Include="Trafico\PuntosdePaso.cs" />
+    <Compile Include="Trafico\TraficoRutas.cs" />
+    <Compile Include="Trafico\ServiciosInspectores.cs" />
+    <Compile Include="Trafico\PuntasDeLineas.cs" />
+    <Compile Include="Trafico\PlanificacionComentariosDiario.cs" />
+    <Compile Include="Trafico\PlanillasViajesDetalle.cs" />
+    <Compile Include="Trafico\PlanillasViajes.cs" />
+    <Compile Include="Trafico\Cabeceras.cs" />
+    <Compile Include="Trafico\Coches.cs" />
+    <Compile Include="Trafico\CochesPersonal.cs" />
+    <Compile Include="Trafico\CochesPublicidad.cs" />
+    <Compile Include="Trafico\CodigoServiciosEventuales.cs" />
+    <Compile Include="Trafico\CodigosServiciosEstados.cs" />
+    <Compile Include="Trafico\CodigosServicios.cs" />
+    <Compile Include="Trafico\CodigosServiciosTodos.cs" />
+    <Compile Include="Trafico\CodigosServiciosViaticos.cs" />
+    <Compile Include="Trafico\CodigosServiciosVueltas.cs" />
+    <Compile Include="Trafico\CodigosServiciosVueltasDetalle.cs" />
+    <Compile Include="Trafico\Diagramas.cs" />
+    <Compile Include="Trafico\DiagramasDetalle.cs" />
+    <Compile Include="Trafico\CodigosServiciosFechas.cs" />
+    <Compile Include="Trafico\DiagramasFecha.cs" />
+    <Compile Include="Trafico\DiagramasServicios.cs" />
+    <Compile Include="Trafico\Lineas.cs" />
+    <Compile Include="Trafico\Planificacion.cs" />
+    <Compile Include="Trafico\PlanificacionLargaCochesComentarios.cs" />
+    <Compile Include="Trafico\PlanificacionCochesComentarios.cs" />
+    <Compile Include="Trafico\PlanificacionLargaCochesTurnoExtendido.cs" />
+    <Compile Include="Trafico\PlanificacionLargaDetallesCoches.cs" />
+    <Compile Include="Trafico\PlanificacionLargaDiaCerrado.cs" />
+    <Compile Include="Trafico\PlanificacionLargaComentarios.cs" />
+    <Compile Include="Trafico\PlanificacionComentarios.cs" />
+    <Compile Include="Trafico\PlanificacionDetallesCoches.cs" />
+    <Compile Include="Trafico\PlanificacionDetalles.cs" />
+    <Compile Include="Trafico\PlanificacionDiaCerrado.cs" />
+    <Compile Include="Trafico\PlanificacionLarga.cs" />
+    <Compile Include="Trafico\PlanificacionLargaDetalles.cs" />
+    <Compile Include="Trafico\PlanificacionLargaServicios.cs" />
+    <Compile Include="Trafico\PlanificacionServicios.cs" />
+    <Compile Include="Trafico\PlanificacionLargaTurnoExtendido.cs" />
+    <Compile Include="Trafico\PlanificacionTurnoExtendido.cs" />
+    <Compile Include="Trafico\PlanillasViajesKms.cs" />
+    <Compile Include="Trafico\Ramales.cs" />
+    <Compile Include="Trafico\Secciones.cs" />
+    <Compile Include="Trafico\UnidadNegocios_Configuracion.cs" />
+    <Compile Include="Trafico\TipoDia.cs" />
+    <Compile Include="General\TipoNovedades.cs" />
+    <Compile Include="Trafico\TipoServicios.cs" />
+    <Compile Include="ViajesEspeciales\ViajesEspecialesComentarios.cs" />
+    <Compile Include="ViajesEspeciales\ViajesEspecialesVales.cs" />
+    <Compile Include="ViajesEspeciales\ViajesEspeciales.cs" />
+    <Compile Include="ViajesEspeciales\ViajesEspecialesDetalle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="GrupoErsa.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

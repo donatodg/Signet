@@ -1,0 +1,430 @@
+{
+  "Asientos": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Id_Especie": "Sistema.Especies"
+  },
+  "AsientosDetalle": {
+    "Id_CuentaContable": "manager.CuentasContables"
+  },
+  "BoletaDepositoEfectivo": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_CuentaPF": "manager.CuentasPF"
+  },
+  "BoletasDepositos": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_ProvFinancieroCuenta": "manager.CuentasPF",
+    "Id_Sucursal": "Sistema.Sucursales"
+  },
+  "Cajas": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Id_Especie": "Sistema.EspeciesTodas"
+  },
+  "ChequeDescuento": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_ProvFinancieroCuenta": "manager.CuentasPF",
+    "Id_Sucursal": "Sistema.Sucursales"
+  },
+  "ChequesPropios": {
+    "Estado": "Enums.ChequesEstados",
+    "Id_Sucursal": "Sistema.Sucursales"
+  },
+  "ChequeTerceros": {
+    "Estado": "Enums.ChequesEstados",
+    "Id_EntidadBancaria": "manager.Bancos",
+    "Id_Especie": "Sistema.Especies",
+    "Id_Firmante": "manager.Firmantes",
+    "Id_Sucursal": "Sistema.Sucursales"
+  },
+  "Clientes": {
+    "Id_CodPostal": "Sistema.CodPostal",
+    "Id_FormaPago": "Sistema.FormasPagos",
+    "Id_ListaPrecio": "manager.ListasPrecios",
+    "Id_TipoIva": "Sistema.TiposIva"
+  },
+  "ClientesDescuentos": {
+    "Id_Categoria2": "manager.Categorias"
+  },
+  "Comentarios": {
+    "Id_Color": "Enums.Colores"
+  },
+  "ComprobantesCompras": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Deposito": "Sistema.Depositos",
+    "Id_Entidad": "manager.Entidades",
+    "Id_FormaPago": "Sistema.FormasPagos",
+    "Id_Sucursal": "Sistema.Sucursales",
+    "Id_TalonariosComprobantes": "manager.Letra",
+    "Id_TipoComprobante": "Sistema.TipoComprobanteCompras",
+    "Id_TipoEntidad": "Enums.TipoEntidad",
+    "Id_Vendedor": "manager.Vendedores",
+    "TipoEntidad": "Enums.TipoEntidad"
+  },
+  "ComprobantesCompras_IvaCompras": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Mes": "Enums.Meses"
+  },
+  "ComprobantesCompras_ReporteCompleto": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Id_TipoComprobante": "Sistema.TipoComprobanteCompras"
+  },
+  "ComprobantesComprasDetalle": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_AlicuotaIva": "manager.Alicuotas",
+    "Id_Especie": "Sistema.EspeciesTodas",
+    "Id_Producto": "manager.Productos"
+  },
+  "ComprobantesVentas": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Deposito": "Sistema.Depositos",
+    "Id_Entidad": "manager.Entidades",
+    "Id_EntidadDomicilioEntrega": "manager.ClienteEntrega",
+    "Id_FormaPago": "Sistema.FormasPagos",
+    "Id_Sucursal": "Sistema.Sucursales",
+    "Id_TipoComprobante": "Sistema.TipoComprobanteVentas",
+    "Id_TipoEntidad": "Enums.TipoEntidad",
+    "Id_Vendedor": "manager.Vendedores",
+    "TipoEntidad": "Enums.TipoEntidad"
+  },
+  "ComprobantesVentas_IvaVentas": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Mes": "Enums.Meses"
+  },
+  "ComprobantesVentas_ReporteCompleto": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Id_TipoComprobante": "Sistema.TipoComprobanteVentas"
+  },
+  "ComprobantesVentasAProcesar": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_AlicuotaIva": "manager.Alicuotas",
+    "Id_Entidad": "manager.Entidades",
+    "Id_Especie": "Sistema.Especies",
+    "Id_Producto": "manager.Productos",
+    "Id_TipoEntidad": "Enums.TipoEntidad",
+    "TipoEntidad": "Enums.TipoEntidad"
+  },
+  "ComprobantesVentasDetalle": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_AlicuotaIva": "manager.Alicuotas",
+    "Id_Especie": "Sistema.Especies",
+    "Id_Producto": "manager.Productos"
+  },
+  "ComprobantesVentasPresentacion": {
+    "Id_Empresa": "Sistema.EmpresasCuit"
+  },
+  "ComprobanteVentaAsociado": {
+    "Id_ComprobanteVenta_Asociado": "manager.ComprobantesLista"
+  },
+  "Cotizaciones": {
+    "Id_Entidad": "manager.Entidades",
+    "Id_FormaPago": "Sistema.FormasPagos",
+    "Id_Sucursal": "Sistema.Sucursales",
+    "Id_TalonariosComprobantes": "manager.Letra",
+    "Id_TipoEntidad": "Enums.TipoEntidad"
+  },
+  "CotizacionesComprobante": {
+    "Id_TipoComprobante": "Sistema.TipoComprobanteVentas"
+  },
+  "DuplicaComprobante": {
+    "Id_TipoComprobante": "Sistema.TipoComprobanteVentas",
+    "Id_TipoEntidad": "Enums.TipoEntidad"
+  },
+  "EjerciciosContables": {
+    "Id_Empresa": "Sistema.Empresas"
+  },
+  "Empresas": {
+    "Id_CodPostal": "Sistema.CodPostal",
+    "Id_TipoIva": "Sistema.TiposIva"
+  },
+  "EncabezadoLibretas": {
+    "id_Empresa": "Sistema.Empresas"
+  },
+  "EntidadesCtaCte": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Especie": "Sistema.Especies",
+    "Id_TipoComprobante": "Sistema.TipoComprobante",
+    "Id_TipoEntidad": "Enums.TipoEntidad"
+  },
+  "EntidadesCtaCteSaldos": {
+    "Id_TipoEntidad": "Enums.TipoEntidadTodos"
+  },
+  "EspeciesCtaCte": {
+    "Id_Caja": "Sistema.Cajas",
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_TipoComprobante": "Sistema.TipoComprobante"
+  },
+  "Imagenes": {
+    "Id_Categoria": "manager.Categorias"
+  },
+  "ImpuestosAlicuotas": {
+    "Id_Provincia": "Sistema.Provincias"
+  },
+  "ListaPagos": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Especie": "Sistema.Especies",
+    "Id_Sucursal": "Sistema.Sucursales",
+    "Id_TipoEntidad": "Enums.TipoEntidad",
+    "Sentido": "Enums.TipoMovimiento"
+  },
+  "ListaPagosDetalle": {
+    "Id_Entidad": "manager.Entidades"
+  },
+  "Localidades": {
+    "Id_Provincia": "Sistema.Provincias"
+  },
+  "OrdenesPago": {
+    "Estado": "Enums.OPEstados",
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Entidad": "manager.Entidades",
+    "Id_Sucursal": "Sistema.Sucursales",
+    "Id_TalonariosComprobantes": "manager.Letra",
+    "TipoEntidad": "Enums.TipoEntidad"
+  },
+  "OrdenesPago_ReporteCompleto": {
+    "Id_Sucursal": "Sistema.Sucursales"
+  },
+  "OrdenesPagoDetalle": {
+    "IdEspecie": "Sistema.Especies"
+  },
+  "OrdenesPagoDetallePF": {
+    "Id_Entidad": "manager.Entidades",
+    "Id_TipoEntidad": "Enums.TipoEntidad",
+    "IdEspecie": "Sistema.Especies"
+  },
+  "Pedidos": {
+    "Estado": "Enums.PedidosEstados",
+    "Id_Entidad": "manager.Entidades",
+    "Id_Sucursal": "Sistema.Sucursales",
+    "Id_TalonariosComprobantes": "manager.Letra",
+    "Id_TipoEntidad": "Enums.TipoEntidad",
+    "Id_Vendedor": "manager.Vendedores",
+    "TipoEntidad": "Enums.TipoEntidad"
+  },
+  "PedidosEstados": {
+    "RepositoryItemLookUpEditPersonal": "manager.Personal"
+  },
+  "PedidosEstadosPersonal": {
+    "LookUpEditPersonal1": "manager.Personal",
+    "LookUpEditPersonal2": "manager.Personal",
+    "LookUpEditPersonal3": "manager.Personal"
+  },
+  "Personal": {
+    "Id_EstadoCivil": "manager.Estados_Civiles",
+    "Id_Jerarquia": "manager.Jerarquias",
+    "Id_Provincia": "manager.Provincias",
+    "Id_Tipo": "manager.Tipos_Personal",
+    "Id_TipoDoc": "manager.TipoDoc",
+    "Id_TipoIva": "Sistema.TiposIva",
+    "LaboralDiaRotacion": "Enums.DiasSemana",
+    "LaboralId_Cabecera": "manager.Cabeceras",
+    "LaboralId_GrupoLinea": "manager.GrupoLineas",
+    "LaboralId_Provincia": "manager.Provincias",
+    "LaboralId_PuntaDeLinea": "manager.PuntasDeLineas",
+    "LaboralId_ServicioInspectores": "manager.ServiciosInspectores",
+    "LaboralId_TipoServicio": "manager.Servicios",
+    "LaboralId_UnidadNegocio": "manager.UnidadNegocio",
+    "LaboralTurnoFijo": "Enums.Turno"
+  },
+  "PersonalEmpresas": {
+    "Id_Empresa": "Sistema.Empresas"
+  },
+  "PersonalNovedadesAddMod": {
+    "Id_Personal": "manager.Personal",
+    "Id_TipoNovedad": "manager.TipoNovedad"
+  },
+  "Produccion": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_Producto": "manager.Productos",
+    "Id_ProductoDerivado": "manager.ProductosDerivados"
+  },
+  "ProduccionActualizarUtilidad": {
+    "Id_Linea": "manager.Lineas",
+    "Id_Variante": "manager.Variantes"
+  },
+  "ProduccionCopiar": {
+    "Id_Linea": "manager.Lineas",
+    "Id_Linea_Destino": "manager.Lineas",
+    "Id_Medida": "manager.Medidas",
+    "Id_Variante": "manager.Variantes",
+    "Id_Variante_Destino": "manager.Variantes_Destino"
+  },
+  "ProduccionCopiarVariante": {
+    "Id_Linea": "manager.Lineas",
+    "Id_Linea_Destino": "manager.Lineas",
+    "Id_Medida": "manager.Medidas",
+    "Id_Variante": "manager.Variantes",
+    "Id_Variante_Destino": "manager.Variantes_Destino"
+  },
+  "ProduccionLineas": {
+    "Id_Empresa": "Sistema.Empresas"
+  },
+  "ProduccionListaPrecios": {
+    "Id_Empresa": "Sistema.Empresas"
+  },
+  "ProduccionVariantesActualizarUtilidad": {
+    "Id_Linea": "manager.Lineas"
+  },
+  "ProduccionVariantesTareas": {
+    "Id_ManoObra": "manager.ManoObras",
+    "Id_Tarea": "manager.Tareas"
+  },
+  "Productos": {
+    "Id_Categoria": "manager.Categorias",
+    "Id_Categoria2": "manager.Categorias2",
+    "Id_Especie": "Sistema.EspeciesTodas",
+    "Id_EspecieOriginal": "Sistema.EspeciesTodas",
+    "Id_IvaAlicuota": "manager.Alicuotas",
+    "Id_UnidadCompra": "manager.UnidadesVenta",
+    "Id_UnidadStock": "manager.UnidadesVenta",
+    "Id_UnidadVenta": "manager.UnidadesVenta"
+  },
+  "ProductosComposicion": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_AlicuotaIva": "manager.Alicuotas",
+    "Id_Especie": "Sistema.Especies",
+    "Id_ProductoComposicion": "manager.Productos"
+  },
+  "ProductosComposicionTodos": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas"
+  },
+  "ProductosCompuestos": {
+    "Id_AlicuotaIva": "manager.Alicuotas",
+    "Id_Linea": "manager.Lineas",
+    "Id_Medida": "manager.Medidas",
+    "Id_TipoProduccion": "manager.Tipo",
+    "Id_Variante": "manager.Variantes"
+  },
+  "ProductosDerivados": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_Categoria": "manager.Categorias",
+    "Id_Producto": "manager.Productos",
+    "Id_UnidadVenta": "manager.UnidadesVenta"
+  },
+  "ProductosHistorialPrecios": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas"
+  },
+  "ProductosMovimientos": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_Deposito": "Sistema.Depositos"
+  },
+  "ProductosStock": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_Deposito": "Sistema.Depositos"
+  },
+  "Proveedores": {
+    "Id_CodPostal": "Sistema.CodPostal",
+    "Id_ListaPrecio": "manager.ListasPrecios",
+    "Id_TipoIva": "Sistema.TiposIva"
+  },
+  "ProvFinancieros": {
+    "Id_CodPostal": "Sistema.CodPostal",
+    "Id_TipoIva": "Sistema.TiposIva"
+  },
+  "ProvFinancierosCuentas": {
+    "Id_EntidadBancaria": "manager.Entidades",
+    "Id_Especie": "Sistema.Especies"
+  },
+  "PuntosVentas": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Id_Sucursal": "manager.Sucursales"
+  },
+  "ReciboDetalle": {
+    "IdEspecie": "manager.Especies"
+  },
+  "ReciboDetallePercep": {
+    "Id_TipoPercepcion": "manager.TipoPercepciones",
+    "IdEspecie": "manager.Especies"
+  },
+  "ReciboDetallePF": {
+    "Id_Entidad": "manager.Entidades",
+    "Id_TipoEntidad": "Enums.TipoEntidad",
+    "IdEspecie": "manager.EspeciesPF"
+  },
+  "Recibos": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Entidad": "manager.Entidades",
+    "Id_Sucursal": "Sistema.Sucursales",
+    "Id_TalonariosComprobantes": "manager.Letra",
+    "TipoEntidad": "Enums.TipoEntidad"
+  },
+  "Recibos_ReporteCompleto": {
+    "Id_Sucursal": "Sistema.Sucursales"
+  },
+  "Rendiciones": {
+    "Id_Caja": "Sistema.Cajas",
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Personal": "manager.ListaPersonal"
+  },
+  "ReporteLibreta": {
+    "Id_Empresa": "Sistema.Empresas",
+    "Mes": "Enums.Meses"
+  },
+  "ReporteServiciosPorDia": {
+    "Id_UnidadNegocio": "Sistema.UnidadesNegociosTrafico"
+  },
+  "SeguridadUsuarios": {
+    "Id_Grupo": "manager.Grupos"
+  },
+  "Sucursales": {
+    "CodPos": "Sistema.CodPostal",
+    "Id_Empresa": "Sistema.Empresas"
+  },
+  "TalonariosComprobantes": {
+    "Id_AFIP_Comprobante": "manager.TiposComprobantesAFIP",
+    "Id_Comprobante": "Sistema.TipoComprobanteConTalonarios",
+    "Id_Deposito": "Sistema.Depositos",
+    "Id_Empresa": "Sistema.Empresas",
+    "Id_PuntoVenta": "manager.PuntosVentas"
+  },
+  "TipoAsientos": {
+    "Id_AsientoPredefinido": "Enums.TiposDeAsientos",
+    "Id_Empresa": "Sistema.Empresas"
+  },
+  "TipoAsientosDetalle": {
+    "FiltroBusqueda": "Enums.ProductosFiltroBusquedas",
+    "Id_AlicuotaIva": "manager.Alicuotas"
+  },
+  "TipoComprobante": {
+    "Id_Area": "Enums.ComprobanteArea",
+    "Id_MovimientoCaja": "Enums.TipoMovimiento",
+    "Id_MovimientoEntidad": "Enums.TipoMovimientoDebitoCredito",
+    "Id_TipoCompAnula": "manager.TiposComprobantes",
+    "Id_TipoCompProcesa": "manager.TiposComprobantes"
+  },
+  "TipoImpuestos": {
+    "AplicaSobre": "Enums.AplicaSobre",
+    "Id_AFIP_Tributos": "manager.AfipTributo",
+    "Id_TipoImpuesto": "Enums.TipoImpuesto"
+  },
+  "TipoIva_Configuracion": {
+    "Id_TipoIvaDestino": "Sistema.TiposIva",
+    "Id_TipoIvaOrigen": "Sistema.TiposIva"
+  },
+  "Transferencia_OLD": {
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_TipoComprobante": "Sistema.TipoComprobante",
+    "IdEspecieDestino": "Sistema.Especies",
+    "IdEspecieOrigen": "Sistema.Especies"
+  },
+  "Transferencias": {
+    "Id_Caja_Destino": "Sistema.Cajas",
+    "Id_Caja_Origen": "Sistema.Cajas",
+    "Id_CentroCosto": "Sistema.CentrosCostos"
+  },
+  "Vales": {
+    "Estado": "Enums.ValesEstados",
+    "Id_Caja": "Sistema.Cajas",
+    "Id_CentroCosto": "Sistema.CentrosCostos",
+    "Id_Personal": "manager.ListaPersonal"
+  },
+  "ValesMasivo": {
+    "Id_CentroCosto": "Sistema.CentrosCostos"
+  },
+  "ValesTransferencia": {
+    "Id_CajaDestino": "manager.CajasDestino",
+    "Id_CajaOrigen": "Sistema.Cajas"
+  },
+  "Vendedores": {
+    "Id_Localidad": "manager.CP",
+    "Id_TipoIVA": "Sistema.TiposIva"
+  }
+}

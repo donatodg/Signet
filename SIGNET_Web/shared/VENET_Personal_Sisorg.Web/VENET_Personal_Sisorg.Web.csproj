@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Integración Sisorg (servicios SOAP): fuentes originales de VENET_Personal_Sisorg, sin los formularios -->
+  <Import Project="..\BL.props" />
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_Sisorg\WebServicesSisorg.cs" Link="Original\WebServicesSisorg.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_Sisorg\Service References\Terminales\Reference.cs" Link="Original\Terminales.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_Sisorg\Service References\Token\Reference.cs" Link="Original\Token.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_Sisorg\Service References\Tripulante\Reference.cs" Link="Original\Tripulante.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_Sisorg\Service References\Vehiculos\Reference.cs" Link="Original\Vehiculos.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_Sisorg\Service References\Viajes\Reference.cs" Link="Original\Viajes.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AssemblyName>VENET_Personal_Sisorg</AssemblyName>
+    <RootNamespace>VENET_Personal_Sisorg</RootNamespace>
+  </PropertyGroup>
+</Project>

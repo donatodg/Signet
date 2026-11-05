@@ -1,0 +1,19 @@
+.accounting { max-width: 1280px; margin: auto; }
+.accounting label { display: flex; flex-direction: column; gap: .35rem; min-width: 0; }
+.accounting fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.accounting select, .accounting input { max-width: 100%; }
+.account-card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; margin: 1rem 0; }
+.account-card summary { cursor: pointer; font-weight: 600; padding: .5rem 0; }
+.account-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1rem; align-items: end; margin: 1rem 0; }
+.account-tabs { display: flex; gap: .6rem; flex-wrap: wrap; margin: 1rem 0; }
+.account-rule { border-left: 3px solid var(--primary); padding: 0 1rem 1rem; margin: 1rem 0; background: var(--bg); }
+.account-priority { display: flex; gap: .5rem; align-items: center; margin: .5rem 0; }
+.accounting .account-check { flex-direction: row; align-items: center; }
+.account-check input { width: auto; }
+.account-table { overflow-x: auto; }
+.account-table .grid { white-space: normal; }
+@media (max-width: 600px) {
+  .accounting input, .accounting select { font-size: 16px; min-height: 44px; }
+  .accounting .btn { min-height: 44px; }
+  .account-card { padding: .75rem; }
+}

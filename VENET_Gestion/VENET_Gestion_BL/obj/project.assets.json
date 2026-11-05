@@ -1,0 +1,896 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Docnet.Core/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net45/Docnet.Core.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/LICENSE": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/pdfium.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/LICENSE": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/pdfium.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux/native/LICENSE": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/linux/native/pdfium.so": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/osx-arm64/native/LICENSE": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-arm64/native/pdfium.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/LICENSE": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/osx-x64/native/pdfium.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/LICENSE": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/pdfium.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/LICENSE": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/pdfium.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "VENET_Common/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Common.dll": {}
+        }
+      },
+      "VENET_Comun/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        }
+      },
+      "VENET_Contabilidad_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Newtonsoft.Json": "13.0.3",
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        }
+      },
+      "VENET_DataEntity/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        }
+      },
+      "VENET_Tesoreria_BL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "Docnet.Core/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net45/Docnet.Core.targets": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "VENET_Common/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Common.dll": {}
+        }
+      },
+      "VENET_Comun/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        }
+      },
+      "VENET_Contabilidad_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Newtonsoft.Json": "13.0.3",
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        }
+      },
+      "VENET_DataEntity/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        }
+      },
+      "VENET_Tesoreria_BL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "Docnet.Core/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net45/Docnet.Core.targets": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "VENET_Common/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Common.dll": {}
+        }
+      },
+      "VENET_Comun/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        }
+      },
+      "VENET_Contabilidad_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Newtonsoft.Json": "13.0.3",
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        }
+      },
+      "VENET_DataEntity/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        }
+      },
+      "VENET_Tesoreria_BL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "Docnet.Core/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/LICENSE": {},
+          "runtimes/win-x64/native/pdfium.dll": {}
+        },
+        "build": {
+          "build/net45/Docnet.Core.targets": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "VENET_Common/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Common.dll": {}
+        }
+      },
+      "VENET_Comun/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        }
+      },
+      "VENET_Contabilidad_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Newtonsoft.Json": "13.0.3",
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        }
+      },
+      "VENET_DataEntity/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        }
+      },
+      "VENET_Tesoreria_BL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "Docnet.Core/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Docnet.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x86/native/LICENSE": {},
+          "runtimes/win-x86/native/pdfium.dll": {}
+        },
+        "build": {
+          "build/net45/Docnet.Core.targets": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "VENET_Common/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Common.dll": {}
+        }
+      },
+      "VENET_Comun/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Comun.dll": {}
+        }
+      },
+      "VENET_Contabilidad_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Newtonsoft.Json": "13.0.3",
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Contabilidad_BL.dll": {}
+        }
+      },
+      "VENET_DataEntity/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_DataEntity.dll": {}
+        }
+      },
+      "VENET_Tesoreria_BL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "VENET_Common": "1.0.0",
+          "VENET_Comun": "1.0.0",
+          "VENET_DataEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VENET_Tesoreria_BL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Docnet.Core/2.6.0": {
+      "sha512": "in7fpB16Zbdz7D7Qv+4QrapTKKOU1ub2XOvmVGVDEyEwnEZjlbGIiwmpfO03q/GDDEkDM/gIAumxK0U988qSsQ==",
+      "type": "package",
+      "path": "docnet.core/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net45/Docnet.Core.targets",
+        "docnet.core.2.6.0.nupkg.sha512",
+        "docnet.core.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Docnet.Core.dll",
+        "lib/netstandard2.0/Docnet.Core.xml",
+        "runtimes/linux-arm/native/LICENSE",
+        "runtimes/linux-arm/native/pdfium.so",
+        "runtimes/linux-arm64/native/LICENSE",
+        "runtimes/linux-arm64/native/pdfium.so",
+        "runtimes/linux/native/LICENSE",
+        "runtimes/linux/native/pdfium.so",
+        "runtimes/osx-arm64/native/LICENSE",
+        "runtimes/osx-arm64/native/pdfium.dylib",
+        "runtimes/osx-x64/native/LICENSE",
+        "runtimes/osx-x64/native/pdfium.dylib",
+        "runtimes/win-x64/native/LICENSE",
+        "runtimes/win-x64/native/pdfium.dll",
+        "runtimes/win-x86/native/LICENSE",
+        "runtimes/win-x86/native/pdfium.dll"
+      ]
+    },
+    "EntityFramework/6.4.4": {
+      "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
+      "type": "package",
+      "path": "entityframework/6.4.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/EntityFramework.DefaultItems.props",
+        "build/EntityFramework.props",
+        "build/EntityFramework.targets",
+        "build/Microsoft.Data.Entity.Build.Tasks.dll",
+        "build/netcoreapp3.0/EntityFramework.props",
+        "build/netcoreapp3.0/EntityFramework.targets",
+        "buildTransitive/EntityFramework.props",
+        "buildTransitive/EntityFramework.targets",
+        "buildTransitive/netcoreapp3.0/EntityFramework.props",
+        "buildTransitive/netcoreapp3.0/EntityFramework.targets",
+        "content/net40/App.config.install.xdt",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.install.xdt",
+        "content/net40/Web.config.transform",
+        "entityframework.6.4.4.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "lib/netstandard2.1/EntityFramework.SqlServer.dll",
+        "lib/netstandard2.1/EntityFramework.SqlServer.xml",
+        "lib/netstandard2.1/EntityFramework.dll",
+        "lib/netstandard2.1/EntityFramework.xml",
+        "tools/EntityFramework6.PS2.psd1",
+        "tools/EntityFramework6.PS2.psm1",
+        "tools/EntityFramework6.psd1",
+        "tools/EntityFramework6.psm1",
+        "tools/about_EntityFramework6.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/net40/any/ef6.exe",
+        "tools/net40/any/ef6.pdb",
+        "tools/net40/win-x86/ef6.exe",
+        "tools/net40/win-x86/ef6.pdb",
+        "tools/net45/any/ef6.exe",
+        "tools/net45/any/ef6.pdb",
+        "tools/net45/win-x86/ef6.exe",
+        "tools/net45/win-x86/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.dll",
+        "tools/netcoreapp3.0/any/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "VENET_Common/1.0.0": {
+      "type": "project",
+      "path": "../../VENET_Common/VENET_Common.csproj",
+      "msbuildProject": "../../VENET_Common/VENET_Common.csproj"
+    },
+    "VENET_Comun/1.0.0": {
+      "type": "project",
+      "path": "../../VENET_Comun/VENET_Comun.csproj",
+      "msbuildProject": "../../VENET_Comun/VENET_Comun.csproj"
+    },
+    "VENET_Contabilidad_BL/1.0.0": {
+      "type": "project",
+      "path": "../../VENET_Contabilidad/VENET_Contabilidad_BL/VENET_Contabilidad_BL.csproj",
+      "msbuildProject": "../../VENET_Contabilidad/VENET_Contabilidad_BL/VENET_Contabilidad_BL.csproj"
+    },
+    "VENET_DataEntity/1.0.0": {
+      "type": "project",
+      "path": "../../VENET_DataEntity/VENET_DataEntity/VENET_DataEntity.csproj",
+      "msbuildProject": "../../VENET_DataEntity/VENET_DataEntity/VENET_DataEntity.csproj"
+    },
+    "VENET_Tesoreria_BL/1.0.0": {
+      "type": "project",
+      "path": "../../VENET_Tesoreria/VENET_Tesoreria_BL/VENET_Tesoreria_BL.csproj",
+      "msbuildProject": "../../VENET_Tesoreria/VENET_Tesoreria_BL/VENET_Tesoreria_BL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Docnet.Core >= 2.6.0",
+      "VENET_Common >= 1.0.0",
+      "VENET_Comun >= 1.0.0",
+      "VENET_Contabilidad_BL >= 1.0.0",
+      "VENET_DataEntity >= 1.0.0",
+      "VENET_Tesoreria_BL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\C06139\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Signet\\VENET_Gestion\\VENET_Gestion_BL\\VENET_Gestion_BL.csproj",
+      "projectName": "VENET_Gestion_BL",
+      "projectPath": "C:\\Signet\\VENET_Gestion\\VENET_Gestion_BL\\VENET_Gestion_BL.csproj",
+      "packagesPath": "C:\\Users\\C06139\\.nuget\\packages\\",
+      "outputPath": "C:\\Signet\\VENET_Gestion\\VENET_Gestion_BL\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "configFilePaths": [
+        "C:\\Users\\C06139\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {
+            "C:\\Signet\\VENET_Common\\VENET_Common.csproj": {
+              "projectPath": "C:\\Signet\\VENET_Common\\VENET_Common.csproj"
+            },
+            "C:\\Signet\\VENET_Comun\\VENET_Comun.csproj": {
+              "projectPath": "C:\\Signet\\VENET_Comun\\VENET_Comun.csproj"
+            },
+            "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\VENET_Contabilidad_BL.csproj": {
+              "projectPath": "C:\\Signet\\VENET_Contabilidad\\VENET_Contabilidad_BL\\VENET_Contabilidad_BL.csproj"
+            },
+            "C:\\Signet\\VENET_DataEntity\\VENET_DataEntity\\VENET_DataEntity.csproj": {
+              "projectPath": "C:\\Signet\\VENET_DataEntity\\VENET_DataEntity\\VENET_DataEntity.csproj"
+            },
+            "C:\\Signet\\VENET_Tesoreria\\VENET_Tesoreria_BL\\VENET_Tesoreria_BL.csproj": {
+              "projectPath": "C:\\Signet\\VENET_Tesoreria\\VENET_Tesoreria_BL\\VENET_Tesoreria_BL.csproj"
+            }
+          }
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "Docnet.Core": {
+            "target": "Package",
+            "version": "[2.6.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

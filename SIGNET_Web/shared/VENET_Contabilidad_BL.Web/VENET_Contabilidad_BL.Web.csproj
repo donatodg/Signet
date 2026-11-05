@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\BL.props" />
+  <PropertyGroup>
+    <AssemblyName>VENET_Contabilidad_BL</AssemblyName>
+    <RootNamespace>VENET_Contabilidad_BL</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <Compile Include="$(SignetRoot)VENET_Contabilidad\VENET_Contabilidad_BL\*.cs" Link="Original\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

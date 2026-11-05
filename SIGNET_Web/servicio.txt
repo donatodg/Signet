@@ -1,0 +1,26 @@
+En esta PC de desarrollo (PowerShell):
+Iniciar (espera a que responda y avisa "Listo"):
+
+ powershell -ExecutionPolicy Bypass -File C:\Signet\SIGNET_Web\tools\Iniciar.ps1
+
+Detener:
+
+ powershell -ExecutionPolicy Bypass -File C:\Signet\SIGNET_Web\tools\Detener.ps1
+ 
+Iniciar:
+
+ cd C:\Signet\SIGNET_Web\src\SIGNET_Web.Api $env:ASPNETCORE_ENVIRONMENT = 'Development' .\bin\Debug\net48\SIGNET_Web.Api.exe
+
+Queda corriendo en esa ventana; tarda unos 20 segundos en responder en http://localhost:5080. Para detenerla, Ctrl+C en esa ventana.
+
+Detener desde otra ventana:
+
+ Get-Process SIGNET_Web.Api -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.Id }
+
+En el servidor instalado con la guía  INSTALACION.md  (PowerShell como administrador):
+
+ Start-ScheduledTask -TaskName 'SIGNET Web'   # iniciar
+ Stop-ScheduledTask  -TaskName 'SIGNET Web'   # detener
+ Get-Process SIGNET_Web.Api -ErrorAction SilentlyContinue   # comprobar: sin resultado = detenido
+
+Si después de  Stop-ScheduledTask  el proceso sigue vivo, detenelo con el mismo  Stop-Process  de arriba.

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Personal_BL", "VENET_Personal_BL\VENET_Personal_BL.csproj", "{C5482DDF-1D03-4F65-A9FF-43DBEEE855AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VENET_Personal_UI", "VENET_Personal_UI\VENET_Personal_UI.csproj", "{7017600A-2453-44DE-8D88-777B6427E5E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5482DDF-1D03-4F65-A9FF-43DBEEE855AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5482DDF-1D03-4F65-A9FF-43DBEEE855AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5482DDF-1D03-4F65-A9FF-43DBEEE855AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5482DDF-1D03-4F65-A9FF-43DBEEE855AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7017600A-2453-44DE-8D88-777B6427E5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7017600A-2453-44DE-8D88-777B6427E5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7017600A-2453-44DE-8D88-777B6427E5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7017600A-2453-44DE-8D88-777B6427E5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

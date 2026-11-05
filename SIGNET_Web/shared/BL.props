@@ -1,0 +1,17 @@
+<Project>
+  <!-- Referencias comunes de todos los proyectos *_BL -->
+  <Import Project="Shared.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\VENET_Comun.Web\VENET_Comun.Web.csproj" />
+    <ProjectReference Include="..\VENET_DataEntity.Web\VENET_DataEntity.Web.csproj" />
+    <ProjectReference Include="..\VENET_Common.Web\VENET_Common.Web.csproj" />
+  </ItemGroup>
+  <!-- Igual que en los proyectos originales: tipos de interop de Office incrustados (object -> dynamic) -->
+  <Target Name="EmbedOfficeInteropTypes" AfterTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'Microsoft.Office.Interop.Excel' or '%(FileName)' == 'office'">
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+</Project>

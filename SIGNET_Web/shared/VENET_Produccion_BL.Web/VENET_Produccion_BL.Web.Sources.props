@@ -1,0 +1,20 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionCopiarVarianteManager.cs" Link="Original\ProduccionCopiarVarianteManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionCopiarManager.cs" Link="Original\ProduccionCopiarManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionListaPreciosDetalleManager.cs" Link="Original\ProduccionListaPreciosDetalleManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionListaPreciosManager.cs" Link="Original\ProduccionListaPreciosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionManager.cs" Link="Original\ProduccionManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionManoDeObraHistorialManager.cs" Link="Original\ProduccionManoDeObraHistorialManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionActualizarUtilidadManager.cs" Link="Original\ProduccionActualizarUtilidadManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionVariantesActualizarUtilidadManager.cs" Link="Original\ProduccionVariantesActualizarUtilidadManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionVariantesTareasManager.cs" Link="Original\ProduccionVariantesTareasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionTareasManager.cs" Link="Original\ProduccionTareasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionManoDeObraManager.cs" Link="Original\ProduccionManoDeObraManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionMedidasManager.cs" Link="Original\ProduccionMedidasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionVariantesManager.cs" Link="Original\ProduccionVariantesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionLineasManager.cs" Link="Original\ProduccionLineasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Produccion\VENET_Produccion_BL\ProduccionLineasMedidasManager.cs" Link="Original\ProduccionLineasMedidasManager.cs" />
+  </ItemGroup>
+</Project>

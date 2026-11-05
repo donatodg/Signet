@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Presentación de comprobantes en AFIP (WSFEv1 / WSMTXCA): fuentes originales de VENET_WSFE_BL -->
+  <Import Project="..\BL.props" />
+  <ItemGroup>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.VisualBasic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\WSFE.cs" Link="Original\WSFE.cs" />
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\ManejoCertificados.cs" Link="Original\ManejoCertificados.cs" />
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\Properties\Settings.Designer.cs" Link="Original\Settings.Designer.cs" />
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\Web References\mtxcas\Reference.cs" Link="Original\mtxcas.cs" />
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\Web References\Wsaa\Reference.cs" Link="Original\Wsaa.cs" />
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\Web References\Wsfev1\Reference.cs" Link="Original\Wsfev1.cs" />
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\Web References\Wsmtxca\Reference.cs" Link="Original\Wsmtxca.cs" />
+    <Compile Include="$(SignetRoot)VENET_WSFE\VENET_WSFE_BL\Web References\Wsseg\Reference.cs" Link="Original\Wsseg.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AssemblyName>VENET_WSFE_BL</AssemblyName>
+    <RootNamespace>VENET_WSFE_BL</RootNamespace>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,16 @@
+E:\ProyectosTeam\Builds\VENET_WSFE_BL.dll.config
+E:\ProyectosTeam\Builds\VENET_WSFE_BL.dll
+E:\ProyectosTeam\Builds\VENET_WSFE_BL.XmlSerializers.dll
+E:\ProyectosTeam\Builds\VENET_WSFE_BL.pdb
+E:\ProyectosTeam\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.csprojResolveAssemblyReference.cache
+E:\ProyectosTeam\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.dll
+E:\ProyectosTeam\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.pdb
+E:\ProyectosTeam\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.XmlSerializers.dll
+E:\Proyectos\Builds\VENET_WSFE_BL.dll.config
+E:\Proyectos\Builds\VENET_WSFE_BL.dll
+E:\Proyectos\Builds\VENET_WSFE_BL.XmlSerializers.dll
+E:\Proyectos\Builds\VENET_WSFE_BL.pdb
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.csprojResolveAssemblyReference.cache
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.dll
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.pdb
+E:\Proyectos\VENET_WSFE\VENET_WSFE_BL\obj\Release\VENET_WSFE_BL.XmlSerializers.dll

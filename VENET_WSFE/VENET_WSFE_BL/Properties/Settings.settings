@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VENET_WSFE_BL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ClienteLoginCms_CS_Wsaa_LoginCMSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wsaahomo.afip.gov.ar/ws/services/LoginCms</Value>
+    </Setting>
+    <Setting Name="VENET_WSFE_BL_Wsfev1_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wswhomo.afip.gov.ar/wsfev1/service.asmx</Value>
+    </Setting>
+    <Setting Name="VENET_WSFE_BL_Wsmtxca_MTXCAService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService</Value>
+    </Setting>
+    <Setting Name="VENET_WSFE_BL_mtxcas_MTXCAService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://serviciosjava.afip.gob.ar/wsmtxca/services/MTXCAService</Value>
+    </Setting>
+    <Setting Name="VENET_WSFE_BL_Wsseg_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wswhomo.afip.gov.ar/wsseg/service.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

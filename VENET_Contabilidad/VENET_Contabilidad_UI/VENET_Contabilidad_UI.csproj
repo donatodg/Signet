@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>7.3</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\VENET_Gestion\VENET_Gestion_UI\GrupoErsa.snk</AssemblyOriginatorKeyFile>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <DevExpressRuntimeDir Condition="'$(DevExpressRuntimeDir)' == ''">$(MSBuildThisFileDirectory)..\..\VENET_Informes\VENET_Informes_UI\bin\Debug</DevExpressRuntimeDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="frmPlanDeCuentas.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmPlanDeCuentas.Designer.cs"><DependentUpon>frmPlanDeCuentas.cs</DependentUpon></Compile>
+    <Compile Include="frmPlanDeCuentas_AddMod.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmPlanDeCuentas_AddMod.Designer.cs"><DependentUpon>frmPlanDeCuentas_AddMod.cs</DependentUpon></Compile>
+    <Compile Include="frmEjerciciosContables.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmEjerciciosContables.Designer.cs"><DependentUpon>frmEjerciciosContables.cs</DependentUpon></Compile>
+    <Compile Include="frmEjerciciosContables_AddMod.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmEjerciciosContables_AddMod.Designer.cs"><DependentUpon>frmEjerciciosContables_AddMod.cs</DependentUpon></Compile>
+    <Compile Include="frmAsientos.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmAsientos.Designer.cs"><DependentUpon>frmAsientos.cs</DependentUpon></Compile>
+    <Compile Include="frmAsientos_AddMod.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmAsientos_AddMod.Designer.cs"><DependentUpon>frmAsientos_AddMod.cs</DependentUpon></Compile>
+    <Compile Include="frmAsientosDetalle_AddMod.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmAsientosDetalle_AddMod.Designer.cs"><DependentUpon>frmAsientosDetalle_AddMod.cs</DependentUpon></Compile>
+    <Compile Include="frmTipoAsientos.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmTipoAsientos.Designer.cs"><DependentUpon>frmTipoAsientos.cs</DependentUpon></Compile>
+    <Compile Include="frmTipoAsientos_AddMod.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmTipoAsientos_AddMod.Designer.cs"><DependentUpon>frmTipoAsientos_AddMod.cs</DependentUpon></Compile>
+    <Compile Include="frmTipoAsientosDetalle_AddMod.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmTipoAsientosDetalle_AddMod.Designer.cs"><DependentUpon>frmTipoAsientosDetalle_AddMod.cs</DependentUpon></Compile>
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="frmContabilidad.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="frmContabilidad.Productiva.cs" />
+    <Compile Include="InformeContable.cs" />
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+    <Reference Include="$(DevExpressRuntimeDir)\DevExpress.*v23.2*.dll" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <ProjectReference Include="..\VENET_Contabilidad_BL\VENET_Contabilidad_BL.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(NativeDependenciesDir)' == ''">
+    <ProjectReference Include="..\..\VENET_Common\VENET_Common.csproj" />
+    <ProjectReference Include="..\..\VENET_Comun\VENET_Comun.csproj" />
+    <ProjectReference Include="..\..\VENET_DataEntity\VENET_DataEntity\VENET_DataEntity.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(NativeDependenciesDir)' != ''">
+    <Reference Include="VENET_Common"><HintPath>$(NativeDependenciesDir)\VENET_Common.dll</HintPath></Reference>
+    <Reference Include="VENET_DataEntity"><HintPath>$(NativeDependenciesDir)\VENET_DataEntity.dll</HintPath></Reference>
+    <Reference Include="VENET_Comun"><HintPath>$(NativeDependenciesDir)\VENET_Comun.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,577 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Proyectos\\SIGNET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CACC8570-99A4-4264-9F5D-7C9610F21318}|..\\VENET_General\\VENET_General_BL\\VENET_General_BL.csproj|e:\\proyectos\\venet_general\\venet_general_bl\\empresasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77F2BB6-AB9E-4AC4-A9F5-13FDBD851A87}|SIGNET\\SIGNET.csproj|E:\\Proyectos\\SIGNET\\signet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A77F2BB6-AB9E-4AC4-A9F5-13FDBD851A87}|SIGNET\\SIGNET.csproj|solutionrelative:signet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D86691-24F2-4E56-8906-418008C996A2}|..\\VENET_Gestion\\VENET_Gestion_UI\\VENET_Gestion_UI.csproj|e:\\proyectos\\venet_gestion\\venet_gestion_ui\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D86691-24F2-4E56-8906-418008C996A2}|..\\VENET_Gestion\\VENET_Gestion_UI\\VENET_Gestion_UI.csproj|e:\\proyectos\\venet_gestion\\venet_gestion_ui\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D86691-24F2-4E56-8906-418008C996A2}|..\\VENET_Gestion\\VENET_Gestion_UI\\VENET_Gestion_UI.csproj|e:\\proyectos\\venet_gestion\\venet_gestion_ui\\frmcomprobantesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\chatiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C9C340B-2FF9-421E-97A7-245E2ADB81D1}|..\\VENET_IA\\VENET_IA_UI\\VENET_IA_UI.csproj|e:\\proyectos\\venet_ia\\venet_ia_ui\\frmchatia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C9C340B-2FF9-421E-97A7-245E2ADB81D1}|..\\VENET_IA\\VENET_IA_UI\\VENET_IA_UI.csproj|e:\\proyectos\\venet_ia\\venet_ia_ui\\frmchatia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C9C340B-2FF9-421E-97A7-245E2ADB81D1}|..\\VENET_IA\\VENET_IA_UI\\VENET_IA_UI.csproj|e:\\proyectos\\venet_ia\\venet_ia_ui\\frmia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\gestioniaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77F2BB6-AB9E-4AC4-A9F5-13FDBD851A87}|SIGNET\\SIGNET.csproj|E:\\Proyectos\\SIGNET\\signet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A77F2BB6-AB9E-4AC4-A9F5-13FDBD851A87}|SIGNET\\SIGNET.csproj|solutionrelative:signet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\externaldataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\dynamicpromptbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\sistemadataextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\azureopenaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\TipoProveedorIA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\TipoProveedorIA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\ChatIAService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\ChatIAService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\DynamicPromptBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\DynamicPromptBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\PreguntaClassifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\PreguntaClassifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\ExternalDataService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\ExternalDataService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\SistemaDataExtractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\SistemaDataExtractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\TipoPregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\TipoPregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\geminiiaprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\AzureOpenAIProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\AzureOpenAIProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\IIAProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\IIAProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C9C340B-2FF9-421E-97A7-245E2ADB81D1}|..\\VENET_IA\\VENET_IA_UI\\VENET_IA_UI.csproj|e:\\proyectos\\venet_ia\\venet_ia_ui\\frmia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_UI\\frmChatIA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_UI\\frmChatIA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_BL\\GeminiIAProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_BL\\GeminiIAProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Proyectos\\SIGNET\\VENET_IA_UI\\frmChatIA.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VENET_IA_UI\\frmChatIA.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D86691-24F2-4E56-8906-418008C996A2}|..\\VENET_Gestion\\VENET_Gestion_UI\\VENET_Gestion_UI.csproj|e:\\proyectos\\venet_gestion\\venet_gestion_ui\\frmcomprobantesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77F2BB6-AB9E-4AC4-A9F5-13FDBD851A87}|SIGNET\\SIGNET.csproj|E:\\Proyectos\\SIGNET\\signet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A77F2BB6-AB9E-4AC4-A9F5-13FDBD851A87}|SIGNET\\SIGNET.csproj|solutionrelative:signet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088F8D0-C339-438F-80C0-4EA7866531F0}|..\\VENET_Gestion\\VENET_Gestion_BL\\VENET_Gestion_BL.csproj|e:\\proyectos\\venet_gestion\\venet_gestion_bl\\comprobantesventasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C9C340B-2FF9-421E-97A7-245E2ADB81D1}|..\\VENET_IA\\VENET_IA_UI\\VENET_IA_UI.csproj|e:\\proyectos\\venet_ia\\venet_ia_ui\\frmchatia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF069A-F658-4CEC-9EE7-CF9490E82868}|..\\VENET_IA\\VENET_IA_BL\\VENET_IA_BL.csproj|e:\\proyectos\\venet_ia\\venet_ia_bl\\iaprompts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D86691-24F2-4E56-8906-418008C996A2}|..\\VENET_Gestion\\VENET_Gestion_UI\\VENET_Gestion_UI.csproj|e:\\proyectos\\venet_gestion\\venet_gestion_ui\\frmcomprobantesventas_addmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3001D16-0BF0-41E7-B790-70B96F92561D}|..\\VENET_Common\\VENET_Common.csproj|e:\\proyectos\\venet_common\\sistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpresasManager.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_General\\VENET_General_BL\\EmpresasManager.cs",
+              "RelativeDocumentMoniker": "..\\VENET_General\\VENET_General_BL\\EmpresasManager.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_General\\VENET_General_BL\\EmpresasManager.cs",
+              "RelativeToolTip": "..\\VENET_General\\VENET_General_BL\\EmpresasManager.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAqwF8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:40:36.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SistemaDataExtractor.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\SistemaDataExtractor.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\SistemaDataExtractor.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\SistemaDataExtractor.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\SistemaDataExtractor.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:33:13.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\SIGNET\\frmMain.cs",
+              "RelativeDocumentMoniker": "SIGNET\\frmMain.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\SIGNET\\frmMain.cs",
+              "RelativeToolTip": "SIGNET\\frmMain.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAAwAwBAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T20:44:10.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmProductos.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs",
+              "RelativeDocumentMoniker": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs",
+              "RelativeToolTip": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFgAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T17:57:20.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TipoProveedorIA.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\TipoProveedorIA.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\TipoProveedorIA.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\TipoProveedorIA.cs",
+              "RelativeToolTip": "VENET_IA_BL\\TipoProveedorIA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:23:24.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DynamicPromptBuilder.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "RelativeToolTip": "VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:22:44.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmProductos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs",
+              "RelativeDocumentMoniker": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmProductos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T17:57:17.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmComprobantesVentas.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs",
+              "RelativeDocumentMoniker": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs",
+              "RelativeToolTip": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs",
+              "ViewState": "AgIAADcEAAAAAAAAAAAIwEkEAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T20:29:42.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DynamicPromptBuilder.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\DynamicPromptBuilder.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:44:52.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExternalDataService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\ExternalDataService.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\ExternalDataService.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\ExternalDataService.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\ExternalDataService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAkwC0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:45:00.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PreguntaClassifier.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\PreguntaClassifier.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\PreguntaClassifier.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\PreguntaClassifier.cs",
+              "RelativeToolTip": "VENET_IA_BL\\PreguntaClassifier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:22:33.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ExternalDataService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\ExternalDataService.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\ExternalDataService.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\ExternalDataService.cs",
+              "RelativeToolTip": "VENET_IA_BL\\ExternalDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:22:09.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SistemaDataExtractor.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\SistemaDataExtractor.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\SistemaDataExtractor.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\SistemaDataExtractor.cs",
+              "RelativeToolTip": "VENET_IA_BL\\SistemaDataExtractor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:21:57.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TipoPregunta.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\TipoPregunta.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\TipoPregunta.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\TipoPregunta.cs",
+              "RelativeToolTip": "VENET_IA_BL\\TipoPregunta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T20:21:50.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AzureOpenAIProvider.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAewC8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T19:30:38.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GeminiIAProvider.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\GeminiIAProvider.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\GeminiIAProvider.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\GeminiIAProvider.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\GeminiIAProvider.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T19:30:23.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IIAProvider.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\IIAProvider.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\IIAProvider.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\IIAProvider.cs",
+              "RelativeToolTip": "VENET_IA_BL\\IIAProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:40:04.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AzureOpenAIProvider.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "RelativeToolTip": "VENET_IA_BL\\AzureOpenAIProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:39:57.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GeminiIAProvider.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\GeminiIAProvider.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\GeminiIAProvider.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\GeminiIAProvider.cs",
+              "RelativeToolTip": "VENET_IA_BL\\GeminiIAProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:39:49.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frmChatIA.Designer.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_UI\\frmChatIA.Designer.cs",
+              "RelativeDocumentMoniker": "VENET_IA_UI\\frmChatIA.Designer.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_UI\\frmChatIA.Designer.cs",
+              "RelativeToolTip": "VENET_IA_UI\\frmChatIA.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:38:58.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmChatIA.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_UI\\frmChatIA.cs",
+              "RelativeDocumentMoniker": "VENET_IA_UI\\frmChatIA.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_UI\\frmChatIA.cs",
+              "RelativeToolTip": "VENET_IA_UI\\frmChatIA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:38:41.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChatIAService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\ChatIAService.cs",
+              "RelativeDocumentMoniker": "VENET_IA_BL\\ChatIAService.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\VENET_IA_BL\\ChatIAService.cs",
+              "RelativeToolTip": "VENET_IA_BL\\ChatIAService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0BAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:38:27.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmIA.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmIA.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_UI\\frmIA.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmIA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_UI\\frmIA.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:29:18.685Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChatIAService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\ChatIAService.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\ChatIAService.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\ChatIAService.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\ChatIAService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:21:07.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "frmChatIA.Designer.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmChatIA.Designer.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_UI\\frmChatIA.Designer.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmChatIA.Designer.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_UI\\frmChatIA.Designer.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAowD4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:18:29.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frmIA.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmIA.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_UI\\frmIA.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmIA.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_UI\\frmIA.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:14:27.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ComprobantesVentasManager.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_BL\\ComprobantesVentasManager.cs",
+              "RelativeDocumentMoniker": "..\\VENET_Gestion\\VENET_Gestion_BL\\ComprobantesVentasManager.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_BL\\ComprobantesVentasManager.cs",
+              "RelativeToolTip": "..\\VENET_Gestion\\VENET_Gestion_BL\\ComprobantesVentasManager.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswDQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:14:27.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmChatIA.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:16:43.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmChatIA.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_UI\\frmChatIA.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:16:38.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frmComprobantesVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs",
+              "RelativeDocumentMoniker": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T00:13:02.06Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "frmComprobantesVentas_AddMod.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas_AddMod.cs",
+              "RelativeDocumentMoniker": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas_AddMod.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas_AddMod.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\VENET_Gestion\\VENET_Gestion_UI\\frmComprobantesVentas_AddMod.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T14:13:31.127Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Sistema.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_Common\\Sistema.cs",
+              "RelativeDocumentMoniker": "..\\VENET_Common\\Sistema.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_Common\\Sistema.cs",
+              "RelativeToolTip": "..\\VENET_Common\\Sistema.cs",
+              "ViewState": "AgIAAOYBAAAAAAAAAAAywPYBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T14:16:37.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IAPrompts.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\IAPrompts.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\IAPrompts.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\IAPrompts.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\IAPrompts.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAjwBoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T20:17:13.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GestionIAService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\GestionIAService.cs",
+              "RelativeDocumentMoniker": "..\\VENET_IA\\VENET_IA_BL\\GestionIAService.cs",
+              "ToolTip": "E:\\Proyectos\\VENET_IA\\VENET_IA_BL\\GestionIAService.cs",
+              "RelativeToolTip": "..\\VENET_IA\\VENET_IA_BL\\GestionIAService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAGIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T20:07:42.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmMain.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\SIGNET\\frmMain.cs",
+              "RelativeDocumentMoniker": "SIGNET\\frmMain.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\SIGNET\\frmMain.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SIGNET\\frmMain.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T20:42:57.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Proyectos\\SIGNET\\SIGNET\\Program.cs",
+              "RelativeDocumentMoniker": "SIGNET\\Program.cs",
+              "ToolTip": "E:\\Proyectos\\SIGNET\\SIGNET\\Program.cs",
+              "RelativeToolTip": "SIGNET\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T20:05:43.84Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

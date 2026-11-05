@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2027"/>
+      <stop offset="0.5" stop-color="#145a5a"/>
+      <stop offset="1" stop-color="#2c9a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2">
+    <path d="M-100 200 Q 200 100 450 220 T 1000 180"/>
+    <path d="M-100 260 Q 200 160 450 280 T 1000 240"/>
+    <path d="M-100 320 Q 200 220 450 340 T 1000 300"/>
+    <path d="M-100 380 Q 200 280 450 400 T 1000 360"/>
+    <path d="M-100 440 Q 200 340 450 460 T 1000 420"/>
+    <path d="M-100 500 Q 200 400 450 520 T 1000 480"/>
+    <path d="M-100 560 Q 200 460 450 580 T 1000 540"/>
+    <path d="M-100 620 Q 200 520 450 640 T 1000 600"/>
+    <path d="M-100 680 Q 200 580 450 700 T 1000 660"/>
+    <path d="M-100 740 Q 200 640 450 760 T 1000 720"/>
+    <path d="M-100 800 Q 200 700 450 820 T 1000 780"/>
+    <path d="M-100 860 Q 200 760 450 880 T 1000 840"/>
+    <path d="M-100 920 Q 200 820 450 940 T 1000 900"/>
+  </g>
+  <circle cx="700" cy="300" r="180" fill="#a8ffe6" fill-opacity="0.18"/>
+  <circle cx="200" cy="900" r="260" fill="#0f2027" fill-opacity="0.35"/>
+</svg>

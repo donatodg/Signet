@@ -1,0 +1,11 @@
+.purchase-document-dialog { background: var(--bg, #fff); color: var(--text, #222); width: min(1500px, 98vw); max-height: 96vh; overflow: auto; padding: 1.2rem; border-radius: 12px; }
+.purchase-document-dialog header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.purchase-doc-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .75rem; align-items: end; }
+.purchase-doc-fields label, .purchase-document-dialog > fieldset > label { display: flex; flex-direction: column; gap: .3rem; }
+.purchase-doc-fields input, .purchase-doc-fields select { width: 100%; }
+.purchase-doc-split { display: grid; grid-template-columns: minmax(250px, 40%) minmax(0, 1fr); gap: 1rem; margin-top: 1rem; }
+.purchase-doc-split aside { position: sticky; top: 0; align-self: start; max-height: 85vh; overflow: auto; }
+.purchase-doc-split img { width: 100%; height: auto; }
+.purchase-doc-item { border: 1px solid #9996; padding: .8rem; margin: .8rem 0; border-radius: 8px; }
+.purchase-document-dialog fieldset { min-width: 0; }
+@media (max-width: 800px) { .purchase-doc-split { grid-template-columns: 1fr; } .purchase-doc-split aside { position: static; max-height: 45vh; } }

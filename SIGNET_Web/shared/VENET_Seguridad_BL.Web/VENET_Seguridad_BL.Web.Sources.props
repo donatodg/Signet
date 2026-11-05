@@ -1,0 +1,20 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadGruposManager.cs" Link="Original\SeguridadGruposManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadGruposObjetosManager.cs" Link="Original\SeguridadGruposObjetosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadGruposUsuariosManager.cs" Link="Original\SeguridadGruposUsuariosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadObjetoGrupoManager.cs" Link="Original\SeguridadObjetoGrupoManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosActivosManager.cs" Link="Original\SeguridadUsuariosActivosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosCajasManager.cs" Link="Original\SeguridadUsuariosCajasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosCambioPasswordManager.cs" Link="Original\SeguridadUsuariosCambioPasswordManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosDepositosManager.cs" Link="Original\SeguridadUsuariosDepositosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosSucursalesManager .cs" Link="Original\SeguridadUsuariosSucursalesManager .cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosPuntosVentasManager.cs" Link="Original\SeguridadUsuariosPuntosVentasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosCentrosCostosManager.cs" Link="Original\SeguridadUsuariosCentrosCostosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosEmpresasManager.cs" Link="Original\SeguridadUsuariosEmpresasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosManager.cs" Link="Original\SeguridadUsuariosManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosUltimoLogManager.cs" Link="Original\SeguridadUsuariosUltimoLogManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Seguridad\VENET_Seguridad_BL\SeguridadUsuariosUnidadNegociosManager.cs" Link="Original\SeguridadUsuariosUnidadNegociosManager.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+E:\Proyectos\ErsaNET\VENET_Database\bin\Release\VENET_Database.dacpac
+E:\Proyectos\ErsaNET\VENET_Database\bin\Release\VENET_Database.dll
+E:\Proyectos\ErsaNET\VENET_Database\bin\Release\VENET_Database.pdb
+E:\Proyectos\ErsaNET\VENET_Database\obj\Release\VENET_Database.dll
+E:\Proyectos\ErsaNET\VENET_Database\obj\Release\VENET_Database.pdb

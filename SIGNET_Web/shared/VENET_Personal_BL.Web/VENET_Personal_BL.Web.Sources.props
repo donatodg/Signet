@@ -1,0 +1,10 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_BL\PersonalJerarquiasManager.cs" Link="Original\PersonalJerarquiasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_BL\PersonalEmpresasManager.cs" Link="Original\PersonalEmpresasManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_BL\PersonalManager.cs" Link="Original\PersonalManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_BL\PersonalNovedadesManager.cs" Link="Original\PersonalNovedadesManager.cs" />
+    <Compile Include="$(SignetRoot)VENET_Personal\VENET_Personal_BL\PersonalTiposManager.cs" Link="Original\PersonalTiposManager.cs" />
+  </ItemGroup>
+</Project>

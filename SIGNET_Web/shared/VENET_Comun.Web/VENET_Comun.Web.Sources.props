@@ -1,0 +1,6 @@
+<!-- GENERADO por tools\Sync-Sources.ps1. No editar a mano. -->
+<Project>
+  <ItemGroup>
+    <Compile Include="$(SignetRoot)VENET_Comun\Enums.cs" Link="Original\Enums.cs" />
+  </ItemGroup>
+</Project>

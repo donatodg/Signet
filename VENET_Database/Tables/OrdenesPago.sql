@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[OrdenesPago] (
+    [Id]                        INT            IDENTITY (1, 1) NOT NULL,
+    [Id_Sucursal]               INT            NOT NULL,
+    [Id_TalonariosComprobantes] INT            NOT NULL,
+    [Id_CentroCosto]            INT            NOT NULL,
+    [TipoEntidad]               INT            NOT NULL,
+    [Id_Entidad]                INT            NOT NULL,
+    [Fecha]                     DATE           NOT NULL,
+    [Concepto]                  VARCHAR (200)  NOT NULL,
+    [Letra]                     VARCHAR (1)    NOT NULL,
+    [PuntoVenta]                VARCHAR (4)    NOT NULL,
+    [NroComprobante]            VARCHAR (8)    NOT NULL,
+    [Fecha_Liquidacion]         DATETIME       NULL,
+    [Fecha_Anulacion]           DATETIME       NULL,
+    [Motivo_Anulacion]          VARCHAR (3000) NULL,
+    [Id_Entidad_Mov]            INT            NULL,
+    [Observaciones]             VARCHAR (3000) NULL,
+    [FechaAdd]                  DATETIME       NOT NULL,
+    [FechaMod]                  DATETIME       NULL,
+    [FechaDel]                  DATETIME       NULL,
+    [UserAdd]                   INT            NOT NULL,
+    [UserMod]                   INT            NULL,
+    [UserDel]                   INT            NULL,
+    CONSTRAINT [PK_OrdenesPago] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

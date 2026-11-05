@@ -1,0 +1,74 @@
+7/4/2016 4:57:14 p. m.	This log contains information about the import schema operation into project 'VENET_Database' on computer 'ERSA-PC' by user 'Diego'.
+7/4/2016 4:57:14 p. m.	Import of database schema has started.
+7/4/2016 4:57:32 p. m.	Gathering database options
+7/4/2016 4:57:32 p. m.	Gathering users
+7/4/2016 4:57:32 p. m.	Gathering roles
+7/4/2016 4:57:32 p. m.	Gathering application roles
+7/4/2016 4:57:32 p. m.	Gathering role memberships
+7/4/2016 4:57:32 p. m.	Gathering filegroups
+7/4/2016 4:57:32 p. m.	Gathering full-text catalogs
+7/4/2016 4:57:32 p. m.	Gathering assemblies
+7/4/2016 4:57:32 p. m.	Gathering certificates
+7/4/2016 4:57:32 p. m.	Gathering asymmetric keys
+7/4/2016 4:57:32 p. m.	Gathering symmetric keys
+7/4/2016 4:57:32 p. m.	Gathering encrypted symmetric keys
+7/4/2016 4:57:32 p. m.	Gathering schemas
+7/4/2016 4:57:32 p. m.	Gathering XML schema collections
+7/4/2016 4:57:32 p. m.	Gathering user-defined data types
+7/4/2016 4:57:32 p. m.	Gathering user-defined types
+7/4/2016 4:57:32 p. m.	Gathering table types
+7/4/2016 4:57:32 p. m.	Gathering unique keys for table types
+7/4/2016 4:57:32 p. m.	Gathering primary keys for table types
+7/4/2016 4:57:32 p. m.	Gathering indexes for table types
+7/4/2016 4:57:32 p. m.	Gathering check constraints for table types
+7/4/2016 4:57:32 p. m.	Gathering default constraints for table types
+7/4/2016 4:57:32 p. m.	Gathering partition functions
+7/4/2016 4:57:32 p. m.	Gathering partition schemes
+7/4/2016 4:57:32 p. m.	Gathering functions
+7/4/2016 4:57:33 p. m.	Gathering encrypted functions
+7/4/2016 4:57:33 p. m.	Gathering aggregates
+7/4/2016 4:57:33 p. m.	Gathering procedures
+7/4/2016 4:57:34 p. m.	Gathering encrypted procedures
+7/4/2016 4:57:34 p. m.	Gathering tables
+7/4/2016 4:57:35 p. m.	Gathering primary keys
+7/4/2016 4:57:35 p. m.	Gathering unique constraints
+7/4/2016 4:57:35 p. m.	Gathering foreign keys
+7/4/2016 4:57:35 p. m.	Gathering default constraints
+7/4/2016 4:57:35 p. m.	Gathering check constraints
+7/4/2016 4:57:35 p. m.	Gathering views
+7/4/2016 4:57:35 p. m.	Gathering encrypted views
+7/4/2016 4:57:35 p. m.	Gathering indexes
+7/4/2016 4:57:35 p. m.	Gathering statistics
+7/4/2016 4:57:35 p. m.	Gathering full-text index stoplists
+7/4/2016 4:57:35 p. m.	Gathering search property lists
+7/4/2016 4:57:35 p. m.	Gathering search properties
+7/4/2016 4:57:35 p. m.	Gathering full-text indexes
+7/4/2016 4:57:35 p. m.	Gathering column store indexes
+7/4/2016 4:57:35 p. m.	Gathering spatial indexes
+7/4/2016 4:57:35 p. m.	Gathering XML indexes
+7/4/2016 4:57:35 p. m.	Gathering Selective XML indexes
+7/4/2016 4:57:35 p. m.	Gathering encrypted triggers
+7/4/2016 4:57:35 p. m.	Gathering triggers
+7/4/2016 4:57:35 p. m.	Gathering encrypted and clr ddl triggers
+7/4/2016 4:57:35 p. m.	Gathering ddl triggers
+7/4/2016 4:57:35 p. m.	Gathering synonyms
+7/4/2016 4:57:35 p. m.	Gathering defaults
+7/4/2016 4:57:35 p. m.	Gathering data constraint uddt bindings
+7/4/2016 4:57:35 p. m.	Gathering rules
+7/4/2016 4:57:35 p. m.	Gathering data constraint uddt bindings
+7/4/2016 4:57:35 p. m.	Gathering message types
+7/4/2016 4:57:35 p. m.	Gathering queues
+7/4/2016 4:57:35 p. m.	Gathering contracts
+7/4/2016 4:57:35 p. m.	Gathering services
+7/4/2016 4:57:35 p. m.	Gathering event notifications
+7/4/2016 4:57:35 p. m.	Gathering remote service bindings
+7/4/2016 4:57:35 p. m.	Gathering broker priorities
+7/4/2016 4:57:35 p. m.	Gathering signatures
+7/4/2016 4:57:35 p. m.	Gathering data compression options
+7/4/2016 4:57:35 p. m.	Gathering sequence types
+7/4/2016 4:57:35 p. m.	Gathering extended properties
+7/4/2016 4:57:37 p. m.	Scanning project for duplicate elements
+7/4/2016 4:57:38 p. m.	Finished duplicate element processing
+7/4/2016 4:57:42 p. m.	Finished importing database.
+7/4/2016 4:57:42 p. m.	A summary of the import was saved to the following location: E:\Proyectos\ErsaNET\VENET_Database\Import Schema Logs\VENET_Database_20160407075714.log
+7/4/2016 4:57:42 p. m.	Click Finish to continue...
